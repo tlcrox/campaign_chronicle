@@ -1,0 +1,150 @@
+# WhisperX Configuration
+# Unified configuration for transcription, scene detection, and storyboard generation
+# Environment variables override these values. Per-source overrides live in <source_dir>/speaker_config.json
+
+# ============================================================================
+# WHISPER TRANSCRIPTION
+# ============================================================================
+whisper:
+  # Model selection: tiny, base, small, medium, large-v2, large-v3, large-v3-turbo
+  model: "large-v3-turbo"
+
+  # Language: BCP-47 code (leave empty to auto-detect)
+  language: "en"
+
+  # Torch device: cuda (default) or cpu.
+  # MUST be paired with a compatible compute_type — CTranslate2 has no efficient
+  # float16 path on CPU, so device: cpu needs compute_type int8 or float32.
+  # Note the container still requests a GPU (compose deploy.resources), so cpu
+  # here selects CPU inference; it does not make the image runnable GPU-free.
+  compute_type: "int8"
+  device: "cuda"
+
+  # Batch size for processing (tune based on VRAM: default 16, lower if OOM)
+  batch_size: 16
+
+  # Output format: json, srt, vtt, tsv, txt, aud
+  output_format: "json"
+
+  # Enable speaker diarization (requires HF_TOKEN)
+  diarize: true
+
+  # Hint phrases (rare character names, campaign jargon) passed to WhisperX as
+  # --hotwords to improve recognition of terms it habitually mis-hears.
+  # Path is relative to orchestration.source_dir. If the file is missing or
+  # empty, hotwords are silently skipped. One phrase list, e.g.:
+  #   Golden Gate Guardians. Characters and terms: Mechanon, Aberrancy, OCV, DCV
+  # ---- Recognition hints: two different WhisperX features, two files ----
+  # Both paths are relative to orchestration.source_dir; a missing file simply
+  # means that flag is not passed.
+  #
+  # --hotwords biases recognition for the WHOLE run. Proper nouns and jargon
+  # belong here ("Mysteria", not "Mysterio" / "mystery").
+  hotwords_file: whisperx_hotwords.txt
+  #
+  # --initial_prompt seeds only the FIRST WINDOW, setting spelling and style
+  # conventions ("DEX", not "decks"). Its influence fades over a long session,
+  # so anything that must hold throughout belongs in hotwords_file instead.
+  initial_prompt_file: whisperx_initial_prompt.txt
+
+  # Hallucination cleanup thresholds (pipeline.transcribe.remove_hallucination)
+  # A segment is kept only if it passes all of these and has non-empty text.
+  clean:
+    no_speech_max: 0.6      # drop if no_speech_prob >= this
+    logprob_min: -1.0       # drop if avg_logprob <= this
+    compression_max: 2.4    # drop if compression_ratio >= this
+
+# ============================================================================
+# SCENE DETECTION
+# ============================================================================
+scenes:
+  # Scene detection sensitivity threshold (5.0 is default, lower = more scenes)
+  threshold: 5.0
+
+  # Minimum scene length (examples: 1s, 0.5s, 2s)
+  min_length: "2s"
+
+  # Number of images to extract per scene
+  num_images: 1
+
+  # Image format: jpg or png. WebP is rejected at config load — PySceneDetect
+  # can write it, but python-docx cannot embed it in the storyboard.
+  image_format: "jpg"
+
+  # Region of Interest (ROI) for cropping video before scene detection
+  # Format: "x1 y1 x2 y2" (top-left and bottom-right corners)
+  # Crops to focus scene detection on main content, ignoring UI/chat/etc.
+  # Set to empty string or null to disable cropping (full frame)
+  roi: "400 445 925 745"
+
+  # Optional: Load time-varying ROI from a separate file in the session dir.
+  # Used by multi-ROI scene detection.
+  # Format: hierarchical / video-keyed JSON:
+  #   {"video.mkv": {"_metadata": {"fps": 60.0},
+  #                  "HH:MM:SS": {"frame": N, "roi": "x1 y1 x2 y2"}}}
+  # Leave empty to disable.
+  roi_file: ""
+
+  # Manual scene override: if this folder exists in a session, merge_scenes uses
+  # the user-captured scenes there (one per-video subdir, each with a
+  # manual_csv_name CSV) instead of the auto-detected scenes_output.
+  manual_source: screens
+
+  # Filename for manually captured screen snapshots CSV
+  manual_csv_name: "Scenes.csv"
+
+# ============================================================================
+# ORCHESTRATION
+# ============================================================================
+orchestration:
+  # Default source directory containing session folders
+  # Can be overridden by environment variable DEFAULT_SOURCE_DIR
+  source_dir: "D:/Docker/whisper/TestWhisper"
+
+  # Explicit session directories to process 
+  # Paths can be relative to source_dir or absolute
+  session_dirs:
+    - SingleROI
+    - MultiROI
+
+  # Number of parallel sessions to process
+  parallel_workers: 1
+
+# ============================================================================
+# MERGE / STORYBOARD CONFIGURATION
+# ============================================================================
+merge:
+  # Automatically merge and generate storyboard after orchestrate completes
+  auto_merge: true
+
+  # Scene CSV configuration
+  csv:
+    # Column names in the scene CSV output
+    scene_number_column: "Scene Number"
+    start_time_column: "Start Time (seconds)"
+    end_time_column: "End Time (seconds)"
+
+  # Scene image configuration for storyboard
+  images:
+    # Width for images in generated document (in inches)
+    width: 6.0
+
+  # Document formatting
+  document:
+    # Title for the generated storyboard document
+    title: "Transcript"
+
+# ============================================================================
+# SPEAKER RECOGNITION & MAPPING
+# ============================================================================
+speakers:
+  # Path to speaker configuration file (relative to source_dir)
+  # Contains filename_mapping (for Workflow A audio files) and filler_phrases
+  # to exclude from merged transcripts
+  config_file: "speaker_config.json"
+
+# ============================================================================
+# ENVIRONMENT VARIABLES (for reference)
+# ============================================================================
+# These values should be configured in .env and are user-specific:
+#   HF_TOKEN (required for speaker diarization)

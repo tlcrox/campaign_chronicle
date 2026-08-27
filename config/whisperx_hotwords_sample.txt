@@ -1,0 +1,33 @@
+# WhisperX hint terms — Omega Force, Season 2 (Weeks 76-79)
+# Built from manual corrections found by diffing cleaned storyboard .docx vs raw whisperx JSON.
+# One term per line. Feed these to whisperx as hotwords / append to --initial_prompt.
+
+
+# --- Names / proper nouns ---
+Omega Force
+Aberrancy
+Max Miracle
+Captain Miracle
+Nick Van Allen
+Street Legal
+Bedbug
+Claymation
+Underworld
+Crossover
+Supersonic Tomstone
+Mechanon
+
+
+# --- Champions / HERO System game terms ---
+Body
+break fall
+Comms
+DCV
+Dex
+Field
+OCV
+Rolled
+Stun
+Turn
+Seg
+Segment

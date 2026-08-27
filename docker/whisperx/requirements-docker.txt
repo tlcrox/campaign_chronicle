@@ -1,0 +1,40 @@
+# Container Python deps for the WhisperX image — installed by the Dockerfile:
+#   pip install -r requirements-docker.txt
+#
+# torch / torchaudio / torchvision are intentionally NOT listed here: the
+# Dockerfile installs them first from the CUDA (cu128) wheel index, so PyPI
+# wheels can't shadow the GPU build. Install order is torch, then this file.
+#
+# WHY whisperx IS PINNED
+# ----------------------
+# It used to be unpinned, so every rebuild silently tracked the newest release.
+# whisperx 3.8.6 requires torch~=2.8.0 while the Dockerfile pinned torch==2.5.1;
+# pip resolved the conflict by upgrading torch from PyPI, discarding the CUDA
+# build. Pinning both ends is what makes that stage meaningful — if you bump
+# whisperx, check its torch constraint and update the Dockerfile to match.
+#
+# Version chosen to match a known-good build (pip freeze from a working image):
+#   whisperx 3.8.6 -> torch 2.8.0, torchaudio 2.8.0, torchvision 0.23.0,
+#                     torchcodec 0.7.0, ctranslate2 4.8.0, pyannote-audio 4.x
+#
+# REMOVED FROM THIS LIST (deliberately, not by accident):
+#   scenedetect[opencv-headless] — scene detection has its own image now
+#                                  (docker/pyscenedetect/); this image only runs
+#                                  the whisperx CLI via entrypoint.sh.
+#   speechbrain, librosa, numpy, scikit-learn, requests — none are imported by
+#                                  this repo, and all arrive transitively via
+#                                  whisperx -> pyannote-audio / huggingface_hub
+#                                  at versions those packages actually want.
+#                                  (scikit-learn was flagged as unused in
+#                                  CODE_REVIEW.md once speakers/ was removed.)
+#
+# To produce a full lock from a successful build:
+#   docker compose -f compose/whisperx/docker-compose.yml run --rm \
+#       --entrypoint pip whisperx freeze > requirements-docker.lock.txt
+
+whisperx==3.8.6
+torchcodec==0.7.0
+
+# Read by pipeline.config if anything in-container imports the pipeline package
+# (the compose file mounts src/ and sets WHISPERX_CONFIG for that reason).
+PyYAML

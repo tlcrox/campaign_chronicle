@@ -1,0 +1,74 @@
+{
+  "segments": [
+    {
+      "start": 0.507,
+      "end": 0.855,
+      "text": " Yes.",
+      "words": [
+        {
+          "word": "Yes.",
+          "start": 0.507,
+          "end": 0.855,
+          "score": 0.948,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.15283203125,
+      "speaker": "Monk"
+    },
+    {
+      "start": 212.056,
+      "end": 212.325,
+      "text": " lives.",
+      "words": [
+        {
+          "word": "lives.",
+          "start": 212.056,
+          "end": 212.325,
+          "score": 0.34,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.9114583333333334,
+      "speaker": "Monk"
+    },
+    {
+      "start": 335.005,
+      "end": 335.135,
+      "text": " Okay.",
+      "words": [
+        {
+          "word": "Okay.",
+          "start": 335.005,
+          "end": 335.135,
+          "score": 0.186
+        }
+      ],
+      "avg_logprob": -1.0768229166666667,
+      "speaker": "Monk"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "Yes.",
+      "start": 0.507,
+      "end": 0.855,
+      "score": 0.948,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "lives.",
+      "start": 212.056,
+      "end": 212.325,
+      "score": 0.34,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Okay.",
+      "start": 335.005,
+      "end": 335.135,
+      "score": 0.186
+    }
+  ],
+  "language": "en"
+}

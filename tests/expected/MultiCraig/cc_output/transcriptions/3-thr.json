@@ -1,0 +1,752 @@
+{
+  "segments": [
+    {
+      "start": 4.292,
+      "end": 4.461,
+      "text": " Here.",
+      "words": [
+        {
+          "word": "Here.",
+          "start": 4.292,
+          "end": 4.461,
+          "score": 0.56,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.5364583333333334,
+      "speaker": "Lure"
+    },
+    {
+      "start": 281.241,
+      "end": 286.385,
+      "text": " No, I don't think anything beyond getting the message out that...",
+      "words": [
+        {
+          "word": "No,",
+          "start": 281.241,
+          "end": 281.441,
+          "score": 0.944,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "I",
+          "start": 281.521,
+          "end": 281.561,
+          "score": 0.991,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "don't",
+          "start": 281.601,
+          "end": 281.782,
+          "score": 0.777,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "think",
+          "start": 281.822,
+          "end": 282.022,
+          "score": 0.859,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "anything",
+          "start": 282.522,
+          "end": 282.862,
+          "score": 0.942,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "beyond",
+          "start": 282.922,
+          "end": 283.343,
+          "score": 0.871,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "getting",
+          "start": 283.463,
+          "end": 283.763,
+          "score": 0.838,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 283.783,
+          "end": 284.123,
+          "score": 0.762,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "message",
+          "start": 284.164,
+          "end": 284.504,
+          "score": 0.904,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "out",
+          "start": 284.644,
+          "end": 284.804,
+          "score": 0.777,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "that...",
+          "start": 284.924,
+          "end": 286.385,
+          "score": 0.9,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.07309027910232543,
+      "speaker": "Lure"
+    },
+    {
+      "start": 295.353,
+      "end": 300.657,
+      "text": "I think leaving how we're alive a mystery is the best case scenario.",
+      "words": [
+        {
+          "word": "I",
+          "start": 295.353,
+          "end": 295.393,
+          "score": 0.974,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "think",
+          "start": 295.433,
+          "end": 295.613,
+          "score": 0.846,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "leaving",
+          "start": 296.754,
+          "end": 296.974,
+          "score": 0.877,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "how",
+          "start": 297.014,
+          "end": 297.134,
+          "score": 0.886,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "we're",
+          "start": 297.154,
+          "end": 297.514,
+          "score": 0.557,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "alive",
+          "start": 297.554,
+          "end": 298.015,
+          "score": 0.802,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "a",
+          "start": 298.035,
+          "end": 298.055,
+          "score": 0.001,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "mystery",
+          "start": 298.355,
+          "end": 298.755,
+          "score": 0.855,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "is",
+          "start": 298.836,
+          "end": 298.976,
+          "score": 0.708,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 299.476,
+          "end": 299.576,
+          "score": 0.935,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "best",
+          "start": 299.616,
+          "end": 299.836,
+          "score": 0.948,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "case",
+          "start": 299.916,
+          "end": 300.117,
+          "score": 0.884,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "scenario.",
+          "start": 300.137,
+          "end": 300.657,
+          "score": 0.668,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "avg_logprob": -0.07309027910232543,
+      "speaker": "Lure"
+    },
+    {
+      "start": 302.499,
+      "end": 308.984,
+      "text": "And making sure that we mentioned that fighting for what's right and just...",
+      "words": [
+        {
+          "word": "And",
+          "start": 302.499,
+          "end": 302.959,
+          "score": 0.825,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "making",
+          "start": 303.299,
+          "end": 303.559,
+          "score": 0.86,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "sure",
+          "start": 303.639,
+          "end": 303.82,
+          "score": 0.808,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "that",
+          "start": 303.86,
+          "end": 304.58,
+          "score": 0.92,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "we",
+          "start": 305.641,
+          "end": 305.741,
+          "score": 0.992,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "mentioned",
+          "start": 305.781,
+          "end": 306.041,
+          "score": 0.77,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "that",
+          "start": 306.061,
+          "end": 306.202,
+          "score": 0.889,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "fighting",
+          "start": 306.522,
+          "end": 306.862,
+          "score": 0.85,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "for",
+          "start": 306.942,
+          "end": 307.142,
+          "score": 0.838,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "what's",
+          "start": 307.463,
+          "end": 307.683,
+          "score": 0.732,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "right",
+          "start": 307.743,
+          "end": 307.983,
+          "score": 0.707,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "and",
+          "start": 308.063,
+          "end": 308.183,
+          "score": 0.719,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "just...",
+          "start": 308.604,
+          "end": 308.984,
+          "score": 0.952,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "avg_logprob": -0.07309027910232543,
+      "speaker": "Lure"
+    },
+    {
+      "start": 311.482,
+      "end": 318.328,
+      "text": " And that those who opposed were wrongfully accused and imprisoned, et cetera.",
+      "words": [
+        {
+          "word": "And",
+          "start": 311.482,
+          "end": 311.722,
+          "score": 0.765,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "that",
+          "start": 311.822,
+          "end": 312.523,
+          "score": 0.534,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "those",
+          "start": 312.543,
+          "end": 313.484,
+          "score": 0.893,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "who",
+          "start": 313.524,
+          "end": 313.624,
+          "score": 0.887,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "opposed",
+          "start": 313.664,
+          "end": 314.144,
+          "score": 0.914,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "were",
+          "start": 315.045,
+          "end": 316.326,
+          "score": 0.78,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "wrongfully",
+          "start": 316.406,
+          "end": 316.827,
+          "score": 0.874,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "accused",
+          "start": 316.847,
+          "end": 317.227,
+          "score": 0.86,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 317.267,
+          "end": 317.327,
+          "score": 0.839,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "imprisoned,",
+          "start": 317.367,
+          "end": 317.848,
+          "score": 0.842,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "et",
+          "start": 317.908,
+          "end": 317.968,
+          "score": 0.956,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "cetera.",
+          "start": 318.008,
+          "end": 318.328,
+          "score": 0.891,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.157470703125,
+      "speaker": "Lure"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "Here.",
+      "start": 4.292,
+      "end": 4.461,
+      "score": 0.56,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "No,",
+      "start": 281.241,
+      "end": 281.441,
+      "score": 0.944,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "I",
+      "start": 281.521,
+      "end": 281.561,
+      "score": 0.991,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "don't",
+      "start": 281.601,
+      "end": 281.782,
+      "score": 0.777,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "think",
+      "start": 281.822,
+      "end": 282.022,
+      "score": 0.859,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "anything",
+      "start": 282.522,
+      "end": 282.862,
+      "score": 0.942,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "beyond",
+      "start": 282.922,
+      "end": 283.343,
+      "score": 0.871,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "getting",
+      "start": 283.463,
+      "end": 283.763,
+      "score": 0.838,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 283.783,
+      "end": 284.123,
+      "score": 0.762,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "message",
+      "start": 284.164,
+      "end": 284.504,
+      "score": 0.904,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "out",
+      "start": 284.644,
+      "end": 284.804,
+      "score": 0.777,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "that...",
+      "start": 284.924,
+      "end": 286.385,
+      "score": 0.9,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "I",
+      "start": 295.353,
+      "end": 295.393,
+      "score": 0.974,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "think",
+      "start": 295.433,
+      "end": 295.613,
+      "score": 0.846,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "leaving",
+      "start": 296.754,
+      "end": 296.974,
+      "score": 0.877,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "how",
+      "start": 297.014,
+      "end": 297.134,
+      "score": 0.886,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "we're",
+      "start": 297.154,
+      "end": 297.514,
+      "score": 0.557,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "alive",
+      "start": 297.554,
+      "end": 298.015,
+      "score": 0.802,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "a",
+      "start": 298.035,
+      "end": 298.055,
+      "score": 0.001,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "mystery",
+      "start": 298.355,
+      "end": 298.755,
+      "score": 0.855,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "is",
+      "start": 298.836,
+      "end": 298.976,
+      "score": 0.708,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 299.476,
+      "end": 299.576,
+      "score": 0.935,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "best",
+      "start": 299.616,
+      "end": 299.836,
+      "score": 0.948,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "case",
+      "start": 299.916,
+      "end": 300.117,
+      "score": 0.884,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "scenario.",
+      "start": 300.137,
+      "end": 300.657,
+      "score": 0.668,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "And",
+      "start": 302.499,
+      "end": 302.959,
+      "score": 0.825,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "making",
+      "start": 303.299,
+      "end": 303.559,
+      "score": 0.86,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "sure",
+      "start": 303.639,
+      "end": 303.82,
+      "score": 0.808,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "that",
+      "start": 303.86,
+      "end": 304.58,
+      "score": 0.92,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "we",
+      "start": 305.641,
+      "end": 305.741,
+      "score": 0.992,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "mentioned",
+      "start": 305.781,
+      "end": 306.041,
+      "score": 0.77,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "that",
+      "start": 306.061,
+      "end": 306.202,
+      "score": 0.889,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "fighting",
+      "start": 306.522,
+      "end": 306.862,
+      "score": 0.85,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "for",
+      "start": 306.942,
+      "end": 307.142,
+      "score": 0.838,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "what's",
+      "start": 307.463,
+      "end": 307.683,
+      "score": 0.732,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "right",
+      "start": 307.743,
+      "end": 307.983,
+      "score": 0.707,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 308.063,
+      "end": 308.183,
+      "score": 0.719,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "just...",
+      "start": 308.604,
+      "end": 308.984,
+      "score": 0.952,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "And",
+      "start": 311.482,
+      "end": 311.722,
+      "score": 0.765,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "that",
+      "start": 311.822,
+      "end": 312.523,
+      "score": 0.534,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "those",
+      "start": 312.543,
+      "end": 313.484,
+      "score": 0.893,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "who",
+      "start": 313.524,
+      "end": 313.624,
+      "score": 0.887,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "opposed",
+      "start": 313.664,
+      "end": 314.144,
+      "score": 0.914,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "were",
+      "start": 315.045,
+      "end": 316.326,
+      "score": 0.78,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "wrongfully",
+      "start": 316.406,
+      "end": 316.827,
+      "score": 0.874,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "accused",
+      "start": 316.847,
+      "end": 317.227,
+      "score": 0.86,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "and",
+      "start": 317.267,
+      "end": 317.327,
+      "score": 0.839,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "imprisoned,",
+      "start": 317.367,
+      "end": 317.848,
+      "score": 0.842,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "et",
+      "start": 317.908,
+      "end": 317.968,
+      "score": 0.956,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "cetera.",
+      "start": 318.008,
+      "end": 318.328,
+      "score": 0.891,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "language": "en"
+}

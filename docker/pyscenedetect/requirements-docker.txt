@@ -1,0 +1,21 @@
+# Container Python deps for the PySceneDetect image — installed by the Dockerfile:
+#   pip install -r requirements-docker.txt
+#
+# This file was previously a UTF-16LE `pip freeze` dump of a *WhisperX* env
+# (whisperx, pyannote-audio, speechbrain, the full nvidia-*-cu12 set, and
+# torch==2.8.0). Installing that on top of the Dockerfile's deliberate
+# torch==2.5.1 CUDA-12.4 build silently replaced it with PyPI wheels — exactly
+# what the whisperx Dockerfile's own comment warns against. Rewritten UTF-8 with
+# only what scene detection actually needs.
+#
+# What runs in this image:
+#   detect_scenes.sh        -> scenedetect CLI
+#   detect_scenes_multi.sh  -> scenedetect CLI + ffmpeg
+#                              + python3 -m pipeline.scenes.extract_segments
+#
+# extract_segments imports pipeline.scenes.roi -> pipeline.common.timecode, and
+# roi.py can lazily import pipeline.config (PyYAML) when asked to resolve from
+# config. numpy arrives via opencv-headless.
+
+scenedetect[opencv-headless]
+PyYAML

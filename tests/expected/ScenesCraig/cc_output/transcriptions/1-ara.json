@@ -1,0 +1,521 @@
+{
+  "segments": [
+    {
+      "start": 6.515,
+      "end": 6.935,
+      "text": " Coms.",
+      "words": [
+        {
+          "word": "Coms.",
+          "start": 6.515,
+          "end": 6.935,
+          "score": 0.717,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.5414663644937369,
+      "speaker": "Monk"
+    },
+    {
+      "start": 12.099,
+      "end": 12.999,
+      "text": "We're back.",
+      "words": [
+        {
+          "word": "We're",
+          "start": 12.099,
+          "end": 12.239,
+          "score": 0.143,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "back.",
+          "start": 12.279,
+          "end": 12.999,
+          "score": 0.872,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.5414663644937369,
+      "speaker": "Monk"
+    },
+    {
+      "start": 18.703,
+      "end": 19.043,
+      "text": "Okey-doke.",
+      "words": [
+        {
+          "word": "Okey-doke.",
+          "start": 18.703,
+          "end": 19.043,
+          "score": 0.376,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.5414663644937369,
+      "speaker": "Monk"
+    },
+    {
+      "start": 321.202,
+      "end": 328.73,
+      "text": " They wouldn't answer the call.",
+      "words": [
+        {
+          "word": "They",
+          "start": 321.202,
+          "end": 321.322,
+          "score": 0.85,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "wouldn't",
+          "start": 321.362,
+          "end": 321.643,
+          "score": 0.84,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "answer",
+          "start": 321.703,
+          "end": 322.023,
+          "score": 0.75,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 322.043,
+          "end": 322.123,
+          "score": 0.219,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "call.",
+          "start": 322.163,
+          "end": 328.73,
+          "score": 0.988,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.22842262472425187,
+      "speaker": "Monk"
+    },
+    {
+      "start": 328.93,
+      "end": 330.332,
+      "text": "They wouldn't answer the call.",
+      "words": [
+        {
+          "word": "They",
+          "start": 328.93,
+          "end": 329.09,
+          "score": 0.816,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "wouldn't",
+          "start": 329.13,
+          "end": 329.391,
+          "score": 0.828,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "answer",
+          "start": 329.571,
+          "end": 329.851,
+          "score": 0.786,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 329.911,
+          "end": 329.991,
+          "score": 0.995,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "call.",
+          "start": 330.031,
+          "end": 330.332,
+          "score": 0.989,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.22842262472425187,
+      "speaker": "Monk"
+    },
+    {
+      "start": 336.138,
+      "end": 337.94,
+      "text": "They wouldn't answer the call",
+      "words": [
+        {
+          "word": "They",
+          "start": 336.138,
+          "end": 336.318,
+          "score": 0.71,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "wouldn't",
+          "start": 336.398,
+          "end": 336.778,
+          "score": 0.8,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "answer",
+          "start": 337.039,
+          "end": 337.359,
+          "score": 0.8,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "the",
+          "start": 337.439,
+          "end": 337.539,
+          "score": 0.996,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "call",
+          "start": 337.619,
+          "end": 337.94,
+          "score": 0.998,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.22842262472425187,
+      "speaker": "Monk"
+    },
+    {
+      "start": 353.673,
+      "end": 354.535,
+      "text": " It's my answer.",
+      "words": [
+        {
+          "word": "It's",
+          "start": 353.673,
+          "end": 353.894,
+          "score": 0.92,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "my",
+          "start": 353.934,
+          "end": 354.114,
+          "score": 0.895,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "answer.",
+          "start": 354.214,
+          "end": 354.535,
+          "score": 0.845,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.228097103536129,
+      "speaker": "Monk"
+    },
+    {
+      "start": 361.388,
+      "end": 362.891,
+      "text": "Can we take your re-breaker?",
+      "words": [
+        {
+          "word": "Can",
+          "start": 361.388,
+          "end": 361.568,
+          "score": 0.976,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "we",
+          "start": 361.608,
+          "end": 361.709,
+          "score": 0.834,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "take",
+          "start": 361.769,
+          "end": 361.989,
+          "score": 0.788,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "your",
+          "start": 362.069,
+          "end": 362.29,
+          "score": 0.876,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "re-breaker?",
+          "start": 362.39,
+          "end": 362.891,
+          "score": 0.615,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.228097103536129,
+      "speaker": "Monk"
+    },
+    {
+      "start": 487.347,
+      "end": 487.729,
+      "text": " Bora.",
+      "words": [
+        {
+          "word": "Bora.",
+          "start": 487.347,
+          "end": 487.729,
+          "score": 0.892,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.4482421875,
+      "speaker": "Monk"
+    },
+    {
+      "start": 886.773,
+      "end": 886.939,
+      "text": " Yes.",
+      "words": [
+        {
+          "word": "Yes.",
+          "start": 886.773,
+          "end": 886.939,
+          "score": 0.309,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.023701985677083332,
+      "speaker": "Monk"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "Coms.",
+      "start": 6.515,
+      "end": 6.935,
+      "score": 0.717,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "We're",
+      "start": 12.099,
+      "end": 12.239,
+      "score": 0.143,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "back.",
+      "start": 12.279,
+      "end": 12.999,
+      "score": 0.872,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Okey-doke.",
+      "start": 18.703,
+      "end": 19.043,
+      "score": 0.376,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "you",
+      "start": 135.082,
+      "end": 135.143,
+      "score": 0.015
+    },
+    {
+      "word": "Thank",
+      "start": 244.055,
+      "end": 244.219,
+      "score": 0.242
+    },
+    {
+      "word": "you.",
+      "start": 244.26,
+      "end": 244.466,
+      "score": 0.435
+    },
+    {
+      "word": "They",
+      "start": 321.202,
+      "end": 321.322,
+      "score": 0.85,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "wouldn't",
+      "start": 321.362,
+      "end": 321.643,
+      "score": 0.84,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "answer",
+      "start": 321.703,
+      "end": 322.023,
+      "score": 0.75,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 322.043,
+      "end": 322.123,
+      "score": 0.219,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "call.",
+      "start": 322.163,
+      "end": 328.73,
+      "score": 0.988,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "They",
+      "start": 328.93,
+      "end": 329.09,
+      "score": 0.816,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "wouldn't",
+      "start": 329.13,
+      "end": 329.391,
+      "score": 0.828,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "answer",
+      "start": 329.571,
+      "end": 329.851,
+      "score": 0.786,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 329.911,
+      "end": 329.991,
+      "score": 0.995,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "call.",
+      "start": 330.031,
+      "end": 330.332,
+      "score": 0.989,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "They",
+      "start": 336.138,
+      "end": 336.318,
+      "score": 0.71,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "wouldn't",
+      "start": 336.398,
+      "end": 336.778,
+      "score": 0.8,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "answer",
+      "start": 337.039,
+      "end": 337.359,
+      "score": 0.8,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 337.439,
+      "end": 337.539,
+      "score": 0.996,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "call",
+      "start": 337.619,
+      "end": 337.94,
+      "score": 0.998,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "It's",
+      "start": 353.673,
+      "end": 353.894,
+      "score": 0.92,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "my",
+      "start": 353.934,
+      "end": 354.114,
+      "score": 0.895,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "answer.",
+      "start": 354.214,
+      "end": 354.535,
+      "score": 0.845,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Can",
+      "start": 361.388,
+      "end": 361.568,
+      "score": 0.976,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "we",
+      "start": 361.608,
+      "end": 361.709,
+      "score": 0.834,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "take",
+      "start": 361.769,
+      "end": 361.989,
+      "score": 0.788,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "your",
+      "start": 362.069,
+      "end": 362.29,
+      "score": 0.876,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "re-breaker?",
+      "start": 362.39,
+      "end": 362.891,
+      "score": 0.615,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Bora.",
+      "start": 487.347,
+      "end": 487.729,
+      "score": 0.892,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Yes.",
+      "start": 886.773,
+      "end": 886.939,
+      "score": 0.309,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "language": "en"
+}

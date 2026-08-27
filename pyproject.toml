@@ -1,0 +1,56 @@
+[project]
+name = "campaign-chronicle"
+version = "0.1.0"
+description = "WhisperX transcription + PySceneDetect scene pipeline for session recordings."
+requires-python = ">=3.11"
+
+# Host-side deps: what orchestrate.py and the pipeline.* steps need OUTSIDE
+# Docker. Transcription and scene detection themselves run in the containers —
+# their deps live in docker/*/requirements-docker.txt.
+# (Migrated from the former config/requirements.txt.)
+dependencies = [
+    "PyYAML",      # pipeline.config (config.yaml loader)
+    "pandas",      # pipeline.merge.combine_scenes, pipeline.merge.storyboard
+    "python-docx", # pipeline.merge.storyboard (Word output) -- NOT the "docx" package
+]
+
+# Dev-only tooling. `uv sync` installs the `dev` group by default, so pytest is
+# present after a plain sync but never ships to the containers or a consumer.
+[dependency-groups]
+dev = [
+    "pytest>=8",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+# Two import roots, both installed so every module resolves from anywhere —
+# this is what replaces the sys.path.insert() hacks that used to sit atop every
+# stage module:
+#   src/pipeline       -> `pipeline`    (library code)
+#   scripts/cc_stages  -> `cc_stages`   (the individually-runnable pipeline steps)
+#
+# cc_stages stays under scripts/ rather than moving into pipeline/ because the
+# stages are executable steps, not library internals. It still ships in the
+# wheel so `import cc_stages.merge_scenes` works under pytest, unittest, plain
+# python, and inside the containers alike.
+#
+# The `cc_` prefix is deliberate: `phases`, `steps`, `tools` and `workflow` are
+# all existing PyPI projects, and a generic top-level name is a live collision
+# risk (exactly the problem that motivated moving config.py into pipeline/).
+[tool.hatch.build.targets.wheel]
+sources = ["src", "scripts"]
+include = ["src/pipeline", "scripts/cc_stages"]
+
+[tool.uv]
+# `uv sync` installs the project itself in editable mode, so edits under src/
+# take effect without reinstalling.
+package = true
+
+[tool.pytest.ini_options]
+# The suite is unittest-style; pytest is only the runner, so
+# `python -m unittest` works equally well. Both `pipeline` and `cc_stages` come
+# from the installed project — no conftest.py path manipulation needed.
+testpaths = ["tests/unit", "tests/integration"]
+python_files = ["test_*.py"]

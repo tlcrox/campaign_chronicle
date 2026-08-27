@@ -1,0 +1,83 @@
+# WhisperX and PySceneDetect Pipeline Configuration
+# Schema matches scripts/config.py (sections: whisper, scenes, orchestration,
+# merge, speakers). Values below are the integration test-rig values.
+# Environment variables may override these 
+
+# ============================================================================
+# WHISPER TRANSCRIPTION  (was: transcription:)
+# ============================================================================
+whisper:
+  model: large-v3-turbo
+  language: "en"          # empty = auto-detect
+  # Torch device: cuda (default) or cpu.
+  # MUST be paired with a compatible compute_type — CTranslate2 has no efficient
+  # float16 path on CPU, so device: cpu needs compute_type int8 or float32.
+  # Note the container still requests a GPU (compose deploy.resources), so cpu
+  # here selects CPU inference; it does not make the image runnable GPU-free.
+  compute_type: "float16"
+  device: "cuda"
+
+  batch_size: 8
+  output_format: json
+  diarize: true
+  # hf_token loaded from environment (HF_TOKEN) when diarize is enabled
+
+# ============================================================================
+# SCENE DETECTION  (was: scene_detection:)
+# ============================================================================
+scenes:
+  threshold: 5.0
+  min_length: "1s"
+  num_images: 1
+  image_format: jpg
+  # Single-ROI crop: "x1 y1 x2 y2" (top-left & bottom-right corners, pixels). Empty/omitted = full frame.
+  # typically maximum sizes are 1920×1080
+  roi: "400 445 925 745"
+  # Multi-ROI definition file (resolved per RoiFile loader)
+  roi_file: roi_history.json
+  # Manual scene override: if this folder exists in a session, merge_scenes uses
+  # the user-captured scenes there (one per-video subdir, each with a
+  # <manual_csv_name> CSV) instead of the auto-detected scenes_output.
+  manual_source: screens
+  manual_csv_name: Scenes.csv
+
+# ============================================================================
+# ORCHESTRATION
+# ============================================================================
+orchestration:
+  source_dir: <<project-root>>\tests\test_source
+
+  # Explicit test directories (week-based discovery is bypassed when present)
+  session_dirs:
+    - MultiROI
+    - MultiCraig
+    - MultiVideo
+    - ScenesCraig
+    - SingleCraig
+    - SingleVideo
+    - SingleROI
+    - "Weeks/Week 13"
+    - "Weeks/Week 14"
+  parallel_workers: 1
+
+
+# ============================================================================
+# MERGE / STORYBOARD  
+# ============================================================================
+merge:
+  auto_merge: true      
+  csv:
+    scene_number_column: "Scene Number"
+    start_time_column: "Start Time (seconds)"
+    end_time_column: "End Time (seconds)"
+  images:
+    width: 6.0            
+  document:
+    title: "Session Storyboard"   
+
+# ============================================================================
+# SPEAKER RECOGNITION & MAPPING
+# ============================================================================
+speakers:
+  config_file: speaker_config.json
+

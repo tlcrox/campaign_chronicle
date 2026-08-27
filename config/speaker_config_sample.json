@@ -1,0 +1,41 @@
+{
+  "comment": "Speaker mapping configuration for WhisperX transcripts. Edit this file to map Speaker IDs to player/character names.",
+  "global_mapping": {
+    "comment": "Global mappings apply to all sessions. Example: SPEAKER_01 is always Alice",
+    "SPEAKER_01": "Jhin",
+    "SPEAKER_02": "Miss Fortune",
+    "SPEAKER_06": "Lux",
+    "SPEAKER_03": "Garen",
+    "SPEAKER_05": "Sylas",
+    "SPEAKER_04": "Akali",
+    "SPEAKER_07": "Fiora",
+    "SPEAKER_00": "Kayn"
+  },
+  "session_mappings": {
+    "comment": "Session-specific overrides. Only applies to specified sessions. ",
+    "Week 12/Week12": {
+      "SPEAKER_01": "Jhin",
+      "SPEAKER_02": "Lux",
+      "SPEAKER_06": "Akali",
+      "SPEAKER_03": "Brand",
+      "SPEAKER_05": "Kayn",
+      "SPEAKER_04": "Fiora",
+      "SPEAKER_07": "Garen"
+    }
+  },
+  "filename_mapping": {
+    "comment": "Workflow A (Craig/Audacity): per-speaker filename token -> character name",
+    "blackcow": "Lux",
+    "capabara": "Akali",
+    "eiseldore": "Miss Fortune",
+    "duranduran": "Kayn",
+    "marqzau": "Fiora",
+    "taki": "Liliana",
+    "kuza": "Sylas",
+    "waterloo": "Jhin"
+  },
+  "filler_phrases": ["thank you", "thanks", "hmm", "mm", "mmm", "you","Bye"],
+  "use_embeddings": false,
+  "confidence_threshold": 0.75,
+  "notes": "Fill in the mapping arrays with your actual player names. Speaker IDs come from WhisperX diarization output."
+}

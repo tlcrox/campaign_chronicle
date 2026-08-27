@@ -1,0 +1,54 @@
+# PySceneDetect services: single-ROI (`scenes`) and multi-ROI (`scenes_multi`).
+#
+# These were previously ALSO defined in compose/whisperx/docker-compose.yml with
+# identical container_name values, so whichever file you used, the other was
+# dead — and running both concurrently was impossible. They live here only now.
+#
+# PATHS ARE RELATIVE TO THIS FILE — compose resolves relative paths against the
+# compose file's own directory, hence the ../../ prefixes back to the repo root.
+#
+# Invoked as:  docker compose -f compose/pyscenedetect/docker-compose.yml run --rm scenes
+# with per-run  -v <session>:/session_input:ro  -v <out>:/session_output
+# and           -e VIDEO_DIR=/session_input -e SCENES_DIR=/session_output
+# supplied by the host stages (see pipeline.common.mounts.session_mounts).
+
+x-scenes-common: &scenes-common
+  build:
+    # Build context is the IMAGE dir (holds the Dockerfile and the
+    # requirements-docker.txt it COPYs) — not this directory.
+    context: ../../docker/pyscenedetect
+    dockerfile: Dockerfile
+  image: pyscenedetect:local
+  # No container_name: fixed names block concurrent runs.
+  environment:
+    # Names only, no values. config.yaml owns these and the host stages pass
+    # them with `-e`; listing the keys keeps a bare
+    # `SCENE_THRESHOLD=10 docker compose run scenes` working. A default here
+    # would be a second copy of a config.yaml value, which is how the shell's
+    # own fallbacks drifted to 27.0 and 2s.
+    SCENE_THRESHOLD:
+    SCENE_MIN_LEN:
+    SCENE_NUM_IMAGES:
+    SCENE_IMAGE_FORMAT:
+    SCENE_ROI:
+    ROI_FILE:
+    # detect_scenes_multi.sh runs `python3 -m pipeline.scenes.extract_segments`,
+    # so the importable root must be src/, not the shell-script mount.
+    PYTHONPATH: /usr/local/bin/pylib
+    WHISPERX_CONFIG: /usr/local/bin/config.yaml
+  volumes:
+    - ../../docker/pyscenedetect:/usr/local/bin/scripts:ro
+    - ../../src:/usr/local/bin/pylib:ro
+    - ../../config/config.yaml:/usr/local/bin/config.yaml:ro
+    # No ./video or ./output: input/output are per-session bind mounts passed
+    # at run time (/session_input, /session_output).
+  tty: true
+
+services:
+  scenes:
+    <<: *scenes-common
+    entrypoint: ["/usr/local/bin/scripts/detect_scenes.sh"]
+
+  scenes_multi:
+    <<: *scenes-common
+    entrypoint: ["/usr/local/bin/scripts/detect_scenes_multi.sh"]

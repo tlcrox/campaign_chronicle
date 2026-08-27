@@ -1,0 +1,65 @@
+{
+  "segments": [
+    {
+      "start": 5.591,
+      "end": 5.819,
+      "text": " Yes.",
+      "words": [
+        {
+          "word": "Yes.",
+          "start": 5.591,
+          "end": 5.819,
+          "score": 0.993,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.10888671875,
+      "speaker": "Monk"
+    },
+    {
+      "start": 217.232,
+      "end": 217.42,
+      "text": " eyes.",
+      "words": [
+        {
+          "word": "eyes.",
+          "start": 217.232,
+          "end": 217.42,
+          "score": 0.574,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.9322916666666666,
+      "speaker": "Monk"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "Yes.",
+      "start": 5.591,
+      "end": 5.819,
+      "score": 0.993,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "eyes.",
+      "start": 217.232,
+      "end": 217.42,
+      "score": 0.574,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Thank",
+      "start": 340.045,
+      "end": 340.195,
+      "score": 0.21
+    },
+    {
+      "word": "you.",
+      "start": 340.28,
+      "end": 340.366,
+      "score": 0.0
+    }
+  ],
+  "language": "en"
+}

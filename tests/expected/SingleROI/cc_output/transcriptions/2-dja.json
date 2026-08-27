@@ -1,0 +1,393 @@
+{
+  "segments": [
+    {
+      "start": 5.591,
+      "end": 5.842,
+      "text": " Yes.",
+      "words": [
+        {
+          "word": "Yes.",
+          "start": 5.591,
+          "end": 5.842,
+          "score": 0.966,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.16389973958333334,
+      "speaker": "Mystro"
+    },
+    {
+      "start": 244.548,
+      "end": 244.96,
+      "text": " Okay.",
+      "words": [
+        {
+          "word": "Okay.",
+          "start": 244.548,
+          "end": 244.96,
+          "score": 0.71,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.10115559895833333,
+      "speaker": "Mystro"
+    },
+    {
+      "start": 276.123,
+      "end": 276.476,
+      "text": " Mm-hmm.",
+      "words": [
+        {
+          "word": "Mm-hmm.",
+          "start": 276.123,
+          "end": 276.476,
+          "score": 0.415,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.67890625,
+      "speaker": "Mystro"
+    },
+    {
+      "start": 344.777,
+      "end": 352.261,
+      "text": " Now, did the zap towers only work on what's in the courtyard, or could they also be used to attack incoming threats?",
+      "words": [
+        {
+          "word": "Now,",
+          "start": 344.777,
+          "end": 344.918,
+          "score": 0.75,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "did",
+          "start": 344.938,
+          "end": 345.058,
+          "score": 0.682,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 345.098,
+          "end": 345.158,
+          "score": 0.981,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "zap",
+          "start": 345.198,
+          "end": 345.399,
+          "score": 0.992,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "towers",
+          "start": 345.419,
+          "end": 345.72,
+          "score": 0.716,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "only",
+          "start": 345.78,
+          "end": 345.961,
+          "score": 0.814,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "work",
+          "start": 346.001,
+          "end": 346.182,
+          "score": 0.957,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "on",
+          "start": 346.242,
+          "end": 346.302,
+          "score": 0.853,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "what's",
+          "start": 346.322,
+          "end": 346.523,
+          "score": 0.942,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "in",
+          "start": 346.583,
+          "end": 346.683,
+          "score": 0.978,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 346.924,
+          "end": 347.245,
+          "score": 0.988,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "courtyard,",
+          "start": 348.248,
+          "end": 348.77,
+          "score": 0.837,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "or",
+          "start": 348.83,
+          "end": 348.91,
+          "score": 0.708,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "could",
+          "start": 349.351,
+          "end": 349.492,
+          "score": 0.994,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "they",
+          "start": 349.532,
+          "end": 349.652,
+          "score": 0.762,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "also",
+          "start": 349.693,
+          "end": 349.953,
+          "score": 0.859,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "be",
+          "start": 350.014,
+          "end": 350.114,
+          "score": 0.882,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "used",
+          "start": 350.234,
+          "end": 350.375,
+          "score": 0.888,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "to",
+          "start": 350.395,
+          "end": 350.495,
+          "score": 0.578,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "attack",
+          "start": 350.535,
+          "end": 350.816,
+          "score": 0.945,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "incoming",
+          "start": 350.896,
+          "end": 351.418,
+          "score": 0.841,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "threats?",
+          "start": 351.94,
+          "end": 352.261,
+          "score": 0.851,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "avg_logprob": -0.10756654871834649,
+      "speaker": "Mystro"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "Yes.",
+      "start": 5.591,
+      "end": 5.842,
+      "score": 0.966,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Okay.",
+      "start": 244.548,
+      "end": 244.96,
+      "score": 0.71,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Mm-hmm.",
+      "start": 276.123,
+      "end": 276.476,
+      "score": 0.415,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Now,",
+      "start": 344.777,
+      "end": 344.918,
+      "score": 0.75,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "did",
+      "start": 344.938,
+      "end": 345.058,
+      "score": 0.682,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 345.098,
+      "end": 345.158,
+      "score": 0.981,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "zap",
+      "start": 345.198,
+      "end": 345.399,
+      "score": 0.992,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "towers",
+      "start": 345.419,
+      "end": 345.72,
+      "score": 0.716,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "only",
+      "start": 345.78,
+      "end": 345.961,
+      "score": 0.814,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "work",
+      "start": 346.001,
+      "end": 346.182,
+      "score": 0.957,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "on",
+      "start": 346.242,
+      "end": 346.302,
+      "score": 0.853,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "what's",
+      "start": 346.322,
+      "end": 346.523,
+      "score": 0.942,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "in",
+      "start": 346.583,
+      "end": 346.683,
+      "score": 0.978,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 346.924,
+      "end": 347.245,
+      "score": 0.988,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "courtyard,",
+      "start": 348.248,
+      "end": 348.77,
+      "score": 0.837,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "or",
+      "start": 348.83,
+      "end": 348.91,
+      "score": 0.708,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "could",
+      "start": 349.351,
+      "end": 349.492,
+      "score": 0.994,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "they",
+      "start": 349.532,
+      "end": 349.652,
+      "score": 0.762,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "also",
+      "start": 349.693,
+      "end": 349.953,
+      "score": 0.859,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "be",
+      "start": 350.014,
+      "end": 350.114,
+      "score": 0.882,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "used",
+      "start": 350.234,
+      "end": 350.375,
+      "score": 0.888,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "to",
+      "start": 350.395,
+      "end": 350.495,
+      "score": 0.578,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "attack",
+      "start": 350.535,
+      "end": 350.816,
+      "score": 0.945,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "incoming",
+      "start": 350.896,
+      "end": 351.418,
+      "score": 0.841,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "threats?",
+      "start": 351.94,
+      "end": 352.261,
+      "score": 0.851,
+      "speaker": "SPEAKER_01"
+    }
+  ],
+  "language": "en"
+}

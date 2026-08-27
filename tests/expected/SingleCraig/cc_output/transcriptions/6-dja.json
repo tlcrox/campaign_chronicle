@@ -1,0 +1,109 @@
+{
+  "segments": [
+    {
+      "start": 85.337,
+      "end": 87.425,
+      "text": " DCV 12 doesn't hit her.",
+      "words": [
+        {
+          "word": "DCV",
+          "start": 85.337,
+          "end": 86.02,
+          "score": 0.722,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "12",
+          "start": 86.321,
+          "end": 86.582,
+          "score": 0.621,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "doesn't",
+          "start": 86.662,
+          "end": 87.003,
+          "score": 0.856,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "hit",
+          "start": 87.063,
+          "end": 87.264,
+          "score": 0.857,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "her.",
+          "start": 87.304,
+          "end": 87.425,
+          "score": 0.998,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.22833807901902634,
+      "speaker": "Mystro"
+    },
+    {
+      "start": 87.445,
+      "end": 87.505,
+      "text": "Oh.",
+      "words": [
+        {
+          "word": "Oh.",
+          "start": 87.445,
+          "end": 87.505,
+          "score": 0.329,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.22833807901902634,
+      "speaker": "Mystro"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "DCV",
+      "start": 85.337,
+      "end": 86.02,
+      "score": 0.722,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "12",
+      "start": 86.321,
+      "end": 86.582,
+      "score": 0.621,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "doesn't",
+      "start": 86.662,
+      "end": 87.003,
+      "score": 0.856,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "hit",
+      "start": 87.063,
+      "end": 87.264,
+      "score": 0.857,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "her.",
+      "start": 87.304,
+      "end": 87.425,
+      "score": 0.998,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Oh.",
+      "start": 87.445,
+      "end": 87.505,
+      "score": 0.329,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "language": "en"
+}

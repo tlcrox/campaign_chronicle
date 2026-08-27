@@ -1,0 +1,3893 @@
+{
+  "segments": [
+    {
+      "start": 0.833,
+      "end": 0.973,
+      "text": " Yep.",
+      "words": [
+        {
+          "word": "Yep.",
+          "start": 0.833,
+          "end": 0.973,
+          "score": 0.303,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.08288043305493784,
+      "speaker": "Vail"
+    },
+    {
+      "start": 1.573,
+      "end": 5.876,
+      "text": "Believe it or not, the only thing you'll find that we're missing is just a few pieces of material.",
+      "words": [
+        {
+          "word": "Believe",
+          "start": 1.573,
+          "end": 1.894,
+          "score": 0.858,
+          "speaker": "Vail"
+        },
+        {
+          "word": "it",
+          "start": 1.914,
+          "end": 1.954,
+          "score": 0.978,
+          "speaker": "Vail"
+        },
+        {
+          "word": "or",
+          "start": 2.014,
+          "end": 2.094,
+          "score": 0.662,
+          "speaker": "Vail"
+        },
+        {
+          "word": "not,",
+          "start": 2.134,
+          "end": 2.334,
+          "score": 0.912,
+          "speaker": "Vail"
+        },
+        {
+          "word": "the",
+          "start": 2.354,
+          "end": 2.414,
+          "score": 0.002,
+          "speaker": "Vail"
+        },
+        {
+          "word": "only",
+          "start": 2.974,
+          "end": 3.134,
+          "score": 0.956,
+          "speaker": "Vail"
+        },
+        {
+          "word": "thing",
+          "start": 3.174,
+          "end": 3.295,
+          "score": 0.873,
+          "speaker": "Vail"
+        },
+        {
+          "word": "you'll",
+          "start": 3.315,
+          "end": 3.475,
+          "score": 0.894,
+          "speaker": "Vail"
+        },
+        {
+          "word": "find",
+          "start": 3.515,
+          "end": 3.615,
+          "score": 0.961,
+          "speaker": "Vail"
+        },
+        {
+          "word": "that",
+          "start": 3.635,
+          "end": 3.715,
+          "score": 0.007,
+          "speaker": "Vail"
+        },
+        {
+          "word": "we're",
+          "start": 3.735,
+          "end": 3.875,
+          "score": 0.331,
+          "speaker": "Vail"
+        },
+        {
+          "word": "missing",
+          "start": 3.915,
+          "end": 4.155,
+          "score": 0.939,
+          "speaker": "Vail"
+        },
+        {
+          "word": "is",
+          "start": 4.215,
+          "end": 4.295,
+          "score": 0.658,
+          "speaker": "Vail"
+        },
+        {
+          "word": "just",
+          "start": 4.355,
+          "end": 4.515,
+          "score": 0.949,
+          "speaker": "Vail"
+        },
+        {
+          "word": "a",
+          "start": 4.655,
+          "end": 4.695,
+          "score": 0.661,
+          "speaker": "Vail"
+        },
+        {
+          "word": "few",
+          "start": 4.755,
+          "end": 4.916,
+          "score": 0.906,
+          "speaker": "Vail"
+        },
+        {
+          "word": "pieces",
+          "start": 4.936,
+          "end": 5.236,
+          "score": 0.664,
+          "speaker": "Vail"
+        },
+        {
+          "word": "of",
+          "start": 5.256,
+          "end": 5.296,
+          "score": 0.854,
+          "speaker": "Vail"
+        },
+        {
+          "word": "material.",
+          "start": 5.336,
+          "end": 5.876,
+          "score": 0.857,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.08288043305493784,
+      "speaker": "Vail"
+    },
+    {
+      "start": 6.236,
+      "end": 10.399,
+      "text": "Again, it's pretty clear what they came here for.",
+      "words": [
+        {
+          "word": "Again,",
+          "start": 6.236,
+          "end": 8.078,
+          "score": 0.865,
+          "speaker": "SPEAKER_02"
+        },
+        {
+          "word": "it's",
+          "start": 8.698,
+          "end": 8.838,
+          "score": 0.795,
+          "speaker": "Vail"
+        },
+        {
+          "word": "pretty",
+          "start": 8.898,
+          "end": 9.118,
+          "score": 0.909,
+          "speaker": "Vail"
+        },
+        {
+          "word": "clear",
+          "start": 9.178,
+          "end": 9.378,
+          "score": 0.908,
+          "speaker": "Vail"
+        },
+        {
+          "word": "what",
+          "start": 9.418,
+          "end": 9.538,
+          "score": 0.883,
+          "speaker": "Vail"
+        },
+        {
+          "word": "they",
+          "start": 9.578,
+          "end": 9.719,
+          "score": 0.864,
+          "speaker": "Vail"
+        },
+        {
+          "word": "came",
+          "start": 9.759,
+          "end": 9.979,
+          "score": 0.843,
+          "speaker": "Vail"
+        },
+        {
+          "word": "here",
+          "start": 10.019,
+          "end": 10.159,
+          "score": 0.76,
+          "speaker": "Vail"
+        },
+        {
+          "word": "for.",
+          "start": 10.199,
+          "end": 10.399,
+          "score": 0.915,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.08288043305493784,
+      "speaker": "Vail"
+    },
+    {
+      "start": 16.002,
+      "end": 19.645,
+      "text": "I need everybody to please make a perception roll.",
+      "words": [
+        {
+          "word": "I",
+          "start": 16.002,
+          "end": 16.083,
+          "score": 0.812,
+          "speaker": "Vail"
+        },
+        {
+          "word": "need",
+          "start": 16.223,
+          "end": 16.583,
+          "score": 0.871,
+          "speaker": "Vail"
+        },
+        {
+          "word": "everybody",
+          "start": 17.163,
+          "end": 17.884,
+          "score": 0.966,
+          "speaker": "Vail"
+        },
+        {
+          "word": "to",
+          "start": 17.964,
+          "end": 18.084,
+          "score": 0.883,
+          "speaker": "Vail"
+        },
+        {
+          "word": "please",
+          "start": 18.164,
+          "end": 18.444,
+          "score": 0.915,
+          "speaker": "Vail"
+        },
+        {
+          "word": "make",
+          "start": 18.504,
+          "end": 18.704,
+          "score": 0.74,
+          "speaker": "Vail"
+        },
+        {
+          "word": "a",
+          "start": 18.744,
+          "end": 18.784,
+          "score": 0.494,
+          "speaker": "Vail"
+        },
+        {
+          "word": "perception",
+          "start": 18.844,
+          "end": 19.425,
+          "score": 0.91,
+          "speaker": "Vail"
+        },
+        {
+          "word": "roll.",
+          "start": 19.485,
+          "end": 19.645,
+          "score": 0.677,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.08288043305493784,
+      "speaker": "Vail"
+    },
+    {
+      "start": 19.665,
+      "end": 24.328,
+      "text": "It's not a big deal, but let's see who's... Did they leave any traps behind?",
+      "words": [
+        {
+          "word": "It's",
+          "start": 19.665,
+          "end": 19.765,
+          "score": 0.598,
+          "speaker": "Vail"
+        },
+        {
+          "word": "not",
+          "start": 19.805,
+          "end": 19.945,
+          "score": 0.854,
+          "speaker": "Vail"
+        },
+        {
+          "word": "a",
+          "start": 19.965,
+          "end": 20.005,
+          "score": 0.497,
+          "speaker": "Vail"
+        },
+        {
+          "word": "big",
+          "start": 20.045,
+          "end": 20.205,
+          "score": 0.969,
+          "speaker": "Vail"
+        },
+        {
+          "word": "deal,",
+          "start": 20.265,
+          "end": 20.525,
+          "score": 0.937,
+          "speaker": "Vail"
+        },
+        {
+          "word": "but",
+          "start": 20.565,
+          "end": 20.685,
+          "score": 0.907,
+          "speaker": "Vail"
+        },
+        {
+          "word": "let's",
+          "start": 20.845,
+          "end": 21.046,
+          "score": 0.775,
+          "speaker": "Vail"
+        },
+        {
+          "word": "see",
+          "start": 21.086,
+          "end": 21.246,
+          "score": 0.982,
+          "speaker": "Vail"
+        },
+        {
+          "word": "who's...",
+          "start": 21.286,
+          "end": 22.046,
+          "score": 0.594,
+          "speaker": "Vail"
+        },
+        {
+          "word": "Did",
+          "start": 22.066,
+          "end": 22.186,
+          "score": 0.377,
+          "speaker": "Vail"
+        },
+        {
+          "word": "they",
+          "start": 22.206,
+          "end": 22.747,
+          "score": 0.68,
+          "speaker": "SPEAKER_02"
+        },
+        {
+          "word": "leave",
+          "start": 23.127,
+          "end": 23.287,
+          "score": 0.905,
+          "speaker": "SPEAKER_02"
+        },
+        {
+          "word": "any",
+          "start": 23.327,
+          "end": 23.507,
+          "score": 0.699,
+          "speaker": "SPEAKER_02"
+        },
+        {
+          "word": "traps",
+          "start": 23.527,
+          "end": 23.847,
+          "score": 0.781,
+          "speaker": "SPEAKER_02"
+        },
+        {
+          "word": "behind?",
+          "start": 23.867,
+          "end": 24.328,
+          "score": 0.671,
+          "speaker": "SPEAKER_02"
+        }
+      ],
+      "avg_logprob": -0.08288043305493784,
+      "speaker": "Vail"
+    },
+    {
+      "start": 26.278,
+      "end": 28.719,
+      "text": " You're good at what you do, Mysterio.",
+      "words": [
+        {
+          "word": "You're",
+          "start": 26.278,
+          "end": 26.438,
+          "score": 0.876,
+          "speaker": "Vail"
+        },
+        {
+          "word": "good",
+          "start": 26.478,
+          "end": 26.678,
+          "score": 0.67,
+          "speaker": "Vail"
+        },
+        {
+          "word": "at",
+          "start": 26.698,
+          "end": 26.758,
+          "score": 0.462,
+          "speaker": "Vail"
+        },
+        {
+          "word": "what",
+          "start": 26.798,
+          "end": 27.359,
+          "score": 0.632,
+          "speaker": "Vail"
+        },
+        {
+          "word": "you",
+          "start": 27.379,
+          "end": 27.579,
+          "score": 0.562,
+          "speaker": "Vail"
+        },
+        {
+          "word": "do,",
+          "start": 27.599,
+          "end": 27.819,
+          "score": 0.89,
+          "speaker": "Vail"
+        },
+        {
+          "word": "Mysterio.",
+          "start": 28.159,
+          "end": 28.719,
+          "score": 0.836,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05938288983371523,
+      "speaker": "Vail"
+    },
+    {
+      "start": 28.759,
+      "end": 29.86,
+      "text": "I'm not worried about you.",
+      "words": [
+        {
+          "word": "I'm",
+          "start": 28.759,
+          "end": 28.88,
+          "score": 0.871,
+          "speaker": "Vail"
+        },
+        {
+          "word": "not",
+          "start": 28.92,
+          "end": 29.06,
+          "score": 0.877,
+          "speaker": "Vail"
+        },
+        {
+          "word": "worried",
+          "start": 29.12,
+          "end": 29.38,
+          "score": 0.921,
+          "speaker": "Vail"
+        },
+        {
+          "word": "about",
+          "start": 29.42,
+          "end": 29.62,
+          "score": 0.974,
+          "speaker": "Vail"
+        },
+        {
+          "word": "you.",
+          "start": 29.68,
+          "end": 29.86,
+          "score": 0.794,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05938288983371523,
+      "speaker": "Vail"
+    },
+    {
+      "start": 29.92,
+      "end": 31.881,
+      "text": "There's so much disruption in that lab.",
+      "words": [
+        {
+          "word": "There's",
+          "start": 29.92,
+          "end": 30.14,
+          "score": 0.793,
+          "speaker": "Vail"
+        },
+        {
+          "word": "so",
+          "start": 30.2,
+          "end": 30.34,
+          "score": 0.992,
+          "speaker": "Vail"
+        },
+        {
+          "word": "much",
+          "start": 30.38,
+          "end": 30.54,
+          "score": 0.783,
+          "speaker": "Vail"
+        },
+        {
+          "word": "disruption",
+          "start": 30.601,
+          "end": 31.181,
+          "score": 0.803,
+          "speaker": "Vail"
+        },
+        {
+          "word": "in",
+          "start": 31.221,
+          "end": 31.281,
+          "score": 0.735,
+          "speaker": "Vail"
+        },
+        {
+          "word": "that",
+          "start": 31.341,
+          "end": 31.461,
+          "score": 0.975,
+          "speaker": "Vail"
+        },
+        {
+          "word": "lab.",
+          "start": 31.541,
+          "end": 31.881,
+          "score": 0.807,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05938288983371523,
+      "speaker": "Vail"
+    },
+    {
+      "start": 32.201,
+      "end": 35.543,
+      "text": "You could probably march a marching band through it and nobody would figure it out.",
+      "words": [
+        {
+          "word": "You",
+          "start": 32.201,
+          "end": 32.301,
+          "score": 0.964,
+          "speaker": "Vail"
+        },
+        {
+          "word": "could",
+          "start": 32.322,
+          "end": 32.462,
+          "score": 0.596,
+          "speaker": "Vail"
+        },
+        {
+          "word": "probably",
+          "start": 32.482,
+          "end": 32.902,
+          "score": 0.54,
+          "speaker": "Vail"
+        },
+        {
+          "word": "march",
+          "start": 33.242,
+          "end": 33.582,
+          "score": 0.759,
+          "speaker": "Vail"
+        },
+        {
+          "word": "a",
+          "start": 33.602,
+          "end": 33.622,
+          "score": 0.003,
+          "speaker": "Vail"
+        },
+        {
+          "word": "marching",
+          "start": 33.662,
+          "end": 34.002,
+          "score": 0.815,
+          "speaker": "Vail"
+        },
+        {
+          "word": "band",
+          "start": 34.042,
+          "end": 34.223,
+          "score": 0.831,
+          "speaker": "Vail"
+        },
+        {
+          "word": "through",
+          "start": 34.263,
+          "end": 34.463,
+          "score": 0.799,
+          "speaker": "Vail"
+        },
+        {
+          "word": "it",
+          "start": 34.483,
+          "end": 34.523,
+          "score": 0.643,
+          "speaker": "Vail"
+        },
+        {
+          "word": "and",
+          "start": 34.543,
+          "end": 34.603,
+          "score": 0.0,
+          "speaker": "Vail"
+        },
+        {
+          "word": "nobody",
+          "start": 34.623,
+          "end": 34.843,
+          "score": 0.965,
+          "speaker": "Vail"
+        },
+        {
+          "word": "would",
+          "start": 34.883,
+          "end": 35.003,
+          "score": 0.354,
+          "speaker": "Vail"
+        },
+        {
+          "word": "figure",
+          "start": 35.043,
+          "end": 35.283,
+          "score": 0.894,
+          "speaker": "Vail"
+        },
+        {
+          "word": "it",
+          "start": 35.303,
+          "end": 35.363,
+          "score": 0.821,
+          "speaker": "Vail"
+        },
+        {
+          "word": "out.",
+          "start": 35.423,
+          "end": 35.543,
+          "score": 0.985,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05938288983371523,
+      "speaker": "Vail"
+    },
+    {
+      "start": 36.084,
+      "end": 36.884,
+      "text": "I made it by four.",
+      "words": [
+        {
+          "word": "I",
+          "start": 36.084,
+          "end": 36.104,
+          "score": 0.004,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "made",
+          "start": 36.124,
+          "end": 36.324,
+          "score": 0.878,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "it",
+          "start": 36.344,
+          "end": 36.384,
+          "score": 0.955,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "by",
+          "start": 36.424,
+          "end": 36.544,
+          "score": 0.954,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "four.",
+          "start": 36.604,
+          "end": 36.884,
+          "score": 0.825,
+          "speaker": "Riviera"
+        }
+      ],
+      "avg_logprob": -0.05938288983371523,
+      "speaker": "Riviera"
+    },
+    {
+      "start": 37.344,
+      "end": 38.505,
+      "text": "Yes, it doesn't matter.",
+      "words": [
+        {
+          "word": "Yes,",
+          "start": 37.344,
+          "end": 37.745,
+          "score": 0.925,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "it",
+          "start": 37.825,
+          "end": 37.885,
+          "score": 0.957,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "doesn't",
+          "start": 37.925,
+          "end": 38.205,
+          "score": 0.533,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "matter.",
+          "start": 38.245,
+          "end": 38.505,
+          "score": 0.9,
+          "speaker": "Riviera"
+        }
+      ],
+      "avg_logprob": -0.05938288983371523,
+      "speaker": "Riviera"
+    },
+    {
+      "start": 38.545,
+      "end": 39.386,
+      "text": "I made it by a lot.",
+      "words": [
+        {
+          "word": "I",
+          "start": 38.545,
+          "end": 38.605,
+          "score": 0.64,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "made",
+          "start": 38.625,
+          "end": 38.785,
+          "score": 0.766,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "it",
+          "start": 38.825,
+          "end": 38.865,
+          "score": 0.976,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "by",
+          "start": 38.905,
+          "end": 39.025,
+          "score": 0.83,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "a",
+          "start": 39.065,
+          "end": 39.085,
+          "score": 0.978,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "lot.",
+          "start": 39.145,
+          "end": 39.386,
+          "score": 0.963,
+          "speaker": "Riviera"
+        }
+      ],
+      "avg_logprob": -0.05938288983371523,
+      "speaker": "Riviera"
+    },
+    {
+      "start": 40.206,
+      "end": 41.267,
+      "text": "I made it by one.",
+      "words": [
+        {
+          "word": "I",
+          "start": 40.206,
+          "end": 40.446,
+          "score": 0.4,
+          "speaker": "Vail"
+        },
+        {
+          "word": "made",
+          "start": 40.486,
+          "end": 40.626,
+          "score": 0.322,
+          "speaker": "Vail"
+        },
+        {
+          "word": "it",
+          "start": 40.646,
+          "end": 40.706,
+          "score": 0.416,
+          "speaker": "Vail"
+        },
+        {
+          "word": "by",
+          "start": 40.746,
+          "end": 40.886,
+          "score": 0.635,
+          "speaker": "Vail"
+        },
+        {
+          "word": "one.",
+          "start": 41.067,
+          "end": 41.267,
+          "score": 0.741,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05938288983371523,
+      "speaker": "Vail"
+    },
+    {
+      "start": 41.787,
+      "end": 42.507,
+      "text": "I made it by four.",
+      "words": [
+        {
+          "word": "I",
+          "start": 41.787,
+          "end": 41.887,
+          "score": 0.68,
+          "speaker": "Racy"
+        },
+        {
+          "word": "made",
+          "start": 41.907,
+          "end": 42.027,
+          "score": 0.401,
+          "speaker": "Racy"
+        },
+        {
+          "word": "it",
+          "start": 42.047,
+          "end": 42.087,
+          "score": 0.221,
+          "speaker": "Racy"
+        },
+        {
+          "word": "by",
+          "start": 42.127,
+          "end": 42.247,
+          "score": 0.635,
+          "speaker": "Racy"
+        },
+        {
+          "word": "four.",
+          "start": 42.287,
+          "end": 42.507,
+          "score": 0.655,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.05938288983371523,
+      "speaker": "Racy"
+    },
+    {
+      "start": 43.508,
+      "end": 45.969,
+      "text": "Lots of short people.",
+      "words": [
+        {
+          "word": "Lots",
+          "start": 43.508,
+          "end": 43.708,
+          "score": 0.858,
+          "speaker": "Vail"
+        },
+        {
+          "word": "of",
+          "start": 43.748,
+          "end": 43.788,
+          "score": 0.984,
+          "speaker": "Vail"
+        },
+        {
+          "word": "short",
+          "start": 43.828,
+          "end": 44.108,
+          "score": 0.486,
+          "speaker": "Vail"
+        },
+        {
+          "word": "people.",
+          "start": 44.148,
+          "end": 45.969,
+          "score": 0.757,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05938288983371523,
+      "speaker": "Vail"
+    },
+    {
+      "start": 46.53,
+      "end": 51.913,
+      "text": "I'm going to admin you back out to the CNC Center.",
+      "words": [
+        {
+          "word": "I'm",
+          "start": 46.53,
+          "end": 46.65,
+          "score": 0.912,
+          "speaker": "Vail"
+        },
+        {
+          "word": "going",
+          "start": 46.69,
+          "end": 46.89,
+          "score": 0.699,
+          "speaker": "Vail"
+        },
+        {
+          "word": "to",
+          "start": 46.91,
+          "end": 46.97,
+          "score": 0.928,
+          "speaker": "Vail"
+        },
+        {
+          "word": "admin",
+          "start": 47.23,
+          "end": 47.63,
+          "score": 0.899,
+          "speaker": "Vail"
+        },
+        {
+          "word": "you",
+          "start": 47.67,
+          "end": 47.83,
+          "score": 0.973,
+          "speaker": "Vail"
+        },
+        {
+          "word": "back",
+          "start": 47.91,
+          "end": 48.211,
+          "score": 0.986,
+          "speaker": "Vail"
+        },
+        {
+          "word": "out",
+          "start": 48.511,
+          "end": 48.651,
+          "score": 0.888,
+          "speaker": "Vail"
+        },
+        {
+          "word": "to",
+          "start": 49.411,
+          "end": 49.752,
+          "score": 0.81,
+          "speaker": "Vail"
+        },
+        {
+          "word": "the",
+          "start": 50.052,
+          "end": 50.172,
+          "score": 0.856,
+          "speaker": "Vail"
+        },
+        {
+          "word": "CNC",
+          "start": 50.212,
+          "end": 51.012,
+          "score": 0.795,
+          "speaker": "Vail"
+        },
+        {
+          "word": "Center.",
+          "start": 51.072,
+          "end": 51.913,
+          "score": 0.8,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05938288983371523,
+      "speaker": "Vail"
+    },
+    {
+      "start": 52.553,
+      "end": 53.854,
+      "text": "On your way out...",
+      "words": [
+        {
+          "word": "On",
+          "start": 52.553,
+          "end": 52.653,
+          "score": 0.736,
+          "speaker": "Vail"
+        },
+        {
+          "word": "your",
+          "start": 52.733,
+          "end": 52.973,
+          "score": 0.718,
+          "speaker": "Vail"
+        },
+        {
+          "word": "way",
+          "start": 53.053,
+          "end": 53.334,
+          "score": 0.822,
+          "speaker": "Vail"
+        },
+        {
+          "word": "out...",
+          "start": 53.674,
+          "end": 53.854,
+          "score": 0.893,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05938288983371523,
+      "speaker": "Vail"
+    },
+    {
+      "start": 56.143,
+      "end": 58.805,
+      "text": " You'll notice some more.",
+      "words": [
+        {
+          "word": "You'll",
+          "start": 56.143,
+          "end": 56.383,
+          "score": 0.858,
+          "speaker": "Vail"
+        },
+        {
+          "word": "notice",
+          "start": 56.443,
+          "end": 56.824,
+          "score": 0.788,
+          "speaker": "Vail"
+        },
+        {
+          "word": "some",
+          "start": 58.205,
+          "end": 58.385,
+          "score": 0.906,
+          "speaker": "Vail"
+        },
+        {
+          "word": "more.",
+          "start": 58.445,
+          "end": 58.805,
+          "score": 0.814,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Vail"
+    },
+    {
+      "start": 59.826,
+      "end": 64.47,
+      "text": "I'll say some of these guys have shown up now.",
+      "words": [
+        {
+          "word": "I'll",
+          "start": 59.826,
+          "end": 59.986,
+          "score": 0.928,
+          "speaker": "Vail"
+        },
+        {
+          "word": "say",
+          "start": 60.046,
+          "end": 60.247,
+          "score": 0.918,
+          "speaker": "Vail"
+        },
+        {
+          "word": "some",
+          "start": 60.287,
+          "end": 62.989,
+          "score": 0.927,
+          "speaker": "Vail"
+        },
+        {
+          "word": "of",
+          "start": 63.009,
+          "end": 63.069,
+          "score": 0.799,
+          "speaker": "Vail"
+        },
+        {
+          "word": "these",
+          "start": 63.089,
+          "end": 63.289,
+          "score": 0.778,
+          "speaker": "Vail"
+        },
+        {
+          "word": "guys",
+          "start": 63.349,
+          "end": 63.61,
+          "score": 0.828,
+          "speaker": "Vail"
+        },
+        {
+          "word": "have",
+          "start": 63.65,
+          "end": 63.77,
+          "score": 0.902,
+          "speaker": "Vail"
+        },
+        {
+          "word": "shown",
+          "start": 63.81,
+          "end": 64.03,
+          "score": 0.836,
+          "speaker": "Vail"
+        },
+        {
+          "word": "up",
+          "start": 64.11,
+          "end": 64.19,
+          "score": 0.782,
+          "speaker": "Vail"
+        },
+        {
+          "word": "now.",
+          "start": 64.25,
+          "end": 64.47,
+          "score": 0.791,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Vail"
+    },
+    {
+      "start": 65.511,
+      "end": 66.012,
+      "text": "What guys?",
+      "words": [
+        {
+          "word": "What",
+          "start": 65.511,
+          "end": 65.692,
+          "score": 0.594,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "guys?",
+          "start": 65.712,
+          "end": 66.012,
+          "score": 0.846,
+          "speaker": "Riviera"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Riviera"
+    },
+    {
+      "start": 66.732,
+      "end": 67.393,
+      "text": "You're not sharing.",
+      "words": [
+        {
+          "word": "You're",
+          "start": 66.732,
+          "end": 66.893,
+          "score": 0.953,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "not",
+          "start": 66.933,
+          "end": 67.033,
+          "score": 0.85,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "sharing.",
+          "start": 67.073,
+          "end": 67.393,
+          "score": 0.884,
+          "speaker": "Riviera"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Riviera"
+    },
+    {
+      "start": 67.633,
+      "end": 68.354,
+      "text": "Oh, I'm not sharing.",
+      "words": [
+        {
+          "word": "Oh,",
+          "start": 67.633,
+          "end": 67.713,
+          "score": 0.922,
+          "speaker": "Vail"
+        },
+        {
+          "word": "I'm",
+          "start": 67.733,
+          "end": 67.833,
+          "score": 0.736,
+          "speaker": "Vail"
+        },
+        {
+          "word": "not",
+          "start": 67.873,
+          "end": 67.994,
+          "score": 0.86,
+          "speaker": "Vail"
+        },
+        {
+          "word": "sharing.",
+          "start": 68.054,
+          "end": 68.354,
+          "score": 0.94,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Vail"
+    },
+    {
+      "start": 68.514,
+      "end": 68.754,
+      "text": "Sorry.",
+      "words": [
+        {
+          "word": "Sorry.",
+          "start": 68.514,
+          "end": 68.754,
+          "score": 0.858,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Vail"
+    },
+    {
+      "start": 69.155,
+      "end": 73.358,
+      "text": "The big heavy armor.",
+      "words": [
+        {
+          "word": "The",
+          "start": 69.155,
+          "end": 69.255,
+          "score": 0.825,
+          "speaker": "Vail"
+        },
+        {
+          "word": "big",
+          "start": 69.275,
+          "end": 69.435,
+          "score": 0.797,
+          "speaker": "Vail"
+        },
+        {
+          "word": "heavy",
+          "start": 69.495,
+          "end": 69.695,
+          "score": 0.905,
+          "speaker": "Vail"
+        },
+        {
+          "word": "armor.",
+          "start": 69.775,
+          "end": 73.358,
+          "score": 0.86,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Vail"
+    },
+    {
+      "start": 74.219,
+      "end": 74.88,
+      "text": "Some of these guys.",
+      "words": [
+        {
+          "word": "Some",
+          "start": 74.219,
+          "end": 74.359,
+          "score": 0.827,
+          "speaker": "Vail"
+        },
+        {
+          "word": "of",
+          "start": 74.379,
+          "end": 74.439,
+          "score": 0.716,
+          "speaker": "Vail"
+        },
+        {
+          "word": "these",
+          "start": 74.459,
+          "end": 74.599,
+          "score": 0.898,
+          "speaker": "Vail"
+        },
+        {
+          "word": "guys.",
+          "start": 74.659,
+          "end": 74.88,
+          "score": 0.811,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Vail"
+    },
+    {
+      "start": 75.48,
+      "end": 75.76,
+      "text": "Darn it.",
+      "words": [
+        {
+          "word": "Darn",
+          "start": 75.48,
+          "end": 75.68,
+          "score": 0.626,
+          "speaker": "Vail"
+        },
+        {
+          "word": "it.",
+          "start": 75.7,
+          "end": 75.76,
+          "score": 0.982,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Vail"
+    },
+    {
+      "start": 77.002,
+      "end": 77.462,
+      "text": "Desktop.",
+      "words": [
+        {
+          "word": "Desktop.",
+          "start": 77.002,
+          "end": 77.462,
+          "score": 0.642,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Vail"
+    },
+    {
+      "start": 77.742,
+      "end": 78.563,
+      "text": "Some of these guys.",
+      "words": [
+        {
+          "word": "Some",
+          "start": 77.742,
+          "end": 77.962,
+          "score": 0.279,
+          "speaker": "Vail"
+        },
+        {
+          "word": "of",
+          "start": 77.982,
+          "end": 78.022,
+          "score": 0.823,
+          "speaker": "Vail"
+        },
+        {
+          "word": "these",
+          "start": 78.042,
+          "end": 78.263,
+          "score": 0.732,
+          "speaker": "Vail"
+        },
+        {
+          "word": "guys.",
+          "start": 78.303,
+          "end": 78.563,
+          "score": 0.783,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Vail"
+    },
+    {
+      "start": 79.003,
+      "end": 79.944,
+      "text": "The mechs or the Halo guys?",
+      "words": [
+        {
+          "word": "The",
+          "start": 79.003,
+          "end": 79.083,
+          "score": 0.961,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "mechs",
+          "start": 79.103,
+          "end": 79.284,
+          "score": 0.502,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "or",
+          "start": 79.324,
+          "end": 79.384,
+          "score": 0.558,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "the",
+          "start": 79.404,
+          "end": 79.464,
+          "score": 0.881,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "Halo",
+          "start": 79.504,
+          "end": 79.704,
+          "score": 0.818,
+          "speaker": "Riviera"
+        },
+        {
+          "word": "guys?",
+          "start": 79.744,
+          "end": 79.944,
+          "score": 0.789,
+          "speaker": "Riviera"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Riviera"
+    },
+    {
+      "start": 80.084,
+      "end": 80.365,
+      "text": "Okay.",
+      "words": [
+        {
+          "word": "Okay.",
+          "start": 80.084,
+          "end": 80.365,
+          "score": 0.514,
+          "speaker": "Riviera"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Riviera"
+    },
+    {
+      "start": 80.565,
+      "end": 81.025,
+      "text": "The mechs.",
+      "words": [
+        {
+          "word": "The",
+          "start": 80.565,
+          "end": 80.685,
+          "score": 0.617,
+          "speaker": "Vail"
+        },
+        {
+          "word": "mechs.",
+          "start": 80.745,
+          "end": 81.025,
+          "score": 0.438,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Vail"
+    },
+    {
+      "start": 81.065,
+      "end": 81.486,
+      "text": "The mech guys.",
+      "words": [
+        {
+          "word": "The",
+          "start": 81.065,
+          "end": 81.125,
+          "score": 0.982,
+          "speaker": "Vail"
+        },
+        {
+          "word": "mech",
+          "start": 81.165,
+          "end": 81.305,
+          "score": 0.456,
+          "speaker": "Vail"
+        },
+        {
+          "word": "guys.",
+          "start": 81.345,
+          "end": 81.486,
+          "score": 0.692,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Vail"
+    },
+    {
+      "start": 81.506,
+      "end": 82.987,
+      "text": "You'll see some of these guys have shown up.",
+      "words": [
+        {
+          "word": "You'll",
+          "start": 81.506,
+          "end": 81.646,
+          "score": 0.92,
+          "speaker": "Vail"
+        },
+        {
+          "word": "see",
+          "start": 81.666,
+          "end": 81.766,
+          "score": 0.859,
+          "speaker": "Vail"
+        },
+        {
+          "word": "some",
+          "start": 81.806,
+          "end": 81.946,
+          "score": 0.749,
+          "speaker": "Vail"
+        },
+        {
+          "word": "of",
+          "start": 81.966,
+          "end": 82.006,
+          "score": 0.938,
+          "speaker": "Vail"
+        },
+        {
+          "word": "these",
+          "start": 82.046,
+          "end": 82.186,
+          "score": 0.859,
+          "speaker": "Vail"
+        },
+        {
+          "word": "guys",
+          "start": 82.246,
+          "end": 82.426,
+          "score": 0.838,
+          "speaker": "Vail"
+        },
+        {
+          "word": "have",
+          "start": 82.466,
+          "end": 82.587,
+          "score": 0.884,
+          "speaker": "Vail"
+        },
+        {
+          "word": "shown",
+          "start": 82.627,
+          "end": 82.847,
+          "score": 0.865,
+          "speaker": "Vail"
+        },
+        {
+          "word": "up.",
+          "start": 82.907,
+          "end": 82.987,
+          "score": 0.991,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.05289152427308861,
+      "speaker": "Vail"
+    },
+    {
+      "start": 85.261,
+      "end": 89.444,
+      "text": " And you'll see that the troops, you know, there's troops with them.",
+      "words": [
+        {
+          "word": "And",
+          "start": 85.261,
+          "end": 85.421,
+          "score": 0.73,
+          "speaker": "Vail"
+        },
+        {
+          "word": "you'll",
+          "start": 85.761,
+          "end": 86.022,
+          "score": 0.786,
+          "speaker": "Vail"
+        },
+        {
+          "word": "see",
+          "start": 86.102,
+          "end": 86.402,
+          "score": 0.779,
+          "speaker": "Vail"
+        },
+        {
+          "word": "that",
+          "start": 87.062,
+          "end": 87.242,
+          "score": 0.848,
+          "speaker": "Vail"
+        },
+        {
+          "word": "the",
+          "start": 87.282,
+          "end": 87.382,
+          "score": 0.831,
+          "speaker": "Vail"
+        },
+        {
+          "word": "troops,",
+          "start": 87.422,
+          "end": 87.783,
+          "score": 0.801,
+          "speaker": "Vail"
+        },
+        {
+          "word": "you",
+          "start": 87.823,
+          "end": 87.923,
+          "score": 0.279,
+          "speaker": "Vail"
+        },
+        {
+          "word": "know,",
+          "start": 87.943,
+          "end": 88.203,
+          "score": 0.224,
+          "speaker": "Vail"
+        },
+        {
+          "word": "there's",
+          "start": 88.263,
+          "end": 88.523,
+          "score": 0.754,
+          "speaker": "Vail"
+        },
+        {
+          "word": "troops",
+          "start": 88.683,
+          "end": 88.983,
+          "score": 0.836,
+          "speaker": "Vail"
+        },
+        {
+          "word": "with",
+          "start": 89.063,
+          "end": 89.264,
+          "score": 0.711,
+          "speaker": "Vail"
+        },
+        {
+          "word": "them.",
+          "start": 89.284,
+          "end": 89.444,
+          "score": 0.777,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.07441406088570754,
+      "speaker": "Vail"
+    },
+    {
+      "start": 90.044,
+      "end": 92.385,
+      "text": "And they have a different insignia on them.",
+      "words": [
+        {
+          "word": "And",
+          "start": 90.044,
+          "end": 90.184,
+          "score": 0.698,
+          "speaker": "Vail"
+        },
+        {
+          "word": "they",
+          "start": 90.264,
+          "end": 90.544,
+          "score": 0.854,
+          "speaker": "Vail"
+        },
+        {
+          "word": "have",
+          "start": 90.604,
+          "end": 90.864,
+          "score": 0.842,
+          "speaker": "Vail"
+        },
+        {
+          "word": "a",
+          "start": 91.005,
+          "end": 91.045,
+          "score": 0.847,
+          "speaker": "Vail"
+        },
+        {
+          "word": "different",
+          "start": 91.105,
+          "end": 91.445,
+          "score": 0.916,
+          "speaker": "Vail"
+        },
+        {
+          "word": "insignia",
+          "start": 91.485,
+          "end": 92.105,
+          "score": 0.967,
+          "speaker": "Vail"
+        },
+        {
+          "word": "on",
+          "start": 92.205,
+          "end": 92.265,
+          "score": 0.582,
+          "speaker": "Vail"
+        },
+        {
+          "word": "them.",
+          "start": 92.285,
+          "end": 92.385,
+          "score": 0.359,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.07441406088570754,
+      "speaker": "Vail"
+    },
+    {
+      "start": 92.405,
+      "end": 93.186,
+      "text": "It looks like this.",
+      "words": [
+        {
+          "word": "It",
+          "start": 92.405,
+          "end": 92.465,
+          "score": 0.595,
+          "speaker": "Vail"
+        },
+        {
+          "word": "looks",
+          "start": 92.485,
+          "end": 92.666,
+          "score": 0.948,
+          "speaker": "Vail"
+        },
+        {
+          "word": "like",
+          "start": 92.706,
+          "end": 92.866,
+          "score": 0.802,
+          "speaker": "Vail"
+        },
+        {
+          "word": "this.",
+          "start": 92.926,
+          "end": 93.186,
+          "score": 0.932,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.07441406088570754,
+      "speaker": "Vail"
+    },
+    {
+      "start": 98.989,
+      "end": 100.05,
+      "text": "Okay.",
+      "words": [
+        {
+          "word": "Okay.",
+          "start": 98.989,
+          "end": 100.05,
+          "score": 0.746,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.07441406088570754,
+      "speaker": "Racy"
+    },
+    {
+      "start": 100.63,
+      "end": 100.971,
+      "text": "Told you.",
+      "words": [
+        {
+          "word": "Told",
+          "start": 100.63,
+          "end": 100.81,
+          "score": 0.928,
+          "speaker": "Racy"
+        },
+        {
+          "word": "you.",
+          "start": 100.85,
+          "end": 100.971,
+          "score": 0.917,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.07441406088570754,
+      "speaker": "Racy"
+    },
+    {
+      "start": 100.991,
+      "end": 102.171,
+      "text": "I told you.",
+      "words": [
+        {
+          "word": "I",
+          "start": 100.991,
+          "end": 101.011,
+          "score": 0.002,
+          "speaker": "Racy"
+        },
+        {
+          "word": "told",
+          "start": 101.731,
+          "end": 101.991,
+          "score": 0.807,
+          "speaker": "Racy"
+        },
+        {
+          "word": "you.",
+          "start": 102.051,
+          "end": 102.171,
+          "score": 0.928,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.07441406088570754,
+      "speaker": "Racy"
+    },
+    {
+      "start": 102.191,
+      "end": 105.153,
+      "text": "We're being invaded by aliens.",
+      "words": [
+        {
+          "word": "We're",
+          "start": 102.191,
+          "end": 103.832,
+          "score": 0.464,
+          "speaker": "Racy"
+        },
+        {
+          "word": "being",
+          "start": 103.852,
+          "end": 104.072,
+          "score": 0.68,
+          "speaker": "Racy"
+        },
+        {
+          "word": "invaded",
+          "start": 104.092,
+          "end": 104.513,
+          "score": 0.829,
+          "speaker": "Racy"
+        },
+        {
+          "word": "by",
+          "start": 104.553,
+          "end": 104.673,
+          "score": 0.92,
+          "speaker": "Racy"
+        },
+        {
+          "word": "aliens.",
+          "start": 104.793,
+          "end": 105.153,
+          "score": 0.957,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.07441406088570754,
+      "speaker": "Racy"
+    },
+    {
+      "start": 105.914,
+      "end": 107.474,
+      "text": "I've seen those people before.",
+      "words": [
+        {
+          "word": "I've",
+          "start": 105.914,
+          "end": 106.094,
+          "score": 0.623,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "seen",
+          "start": 106.154,
+          "end": 106.394,
+          "score": 0.726,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "those",
+          "start": 106.474,
+          "end": 106.694,
+          "score": 0.892,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "people",
+          "start": 106.714,
+          "end": 107.054,
+          "score": 0.849,
+          "speaker": "Racy"
+        },
+        {
+          "word": "before.",
+          "start": 107.114,
+          "end": 107.474,
+          "score": 0.829,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.07441406088570754,
+      "speaker": "Racy"
+    },
+    {
+      "start": 107.494,
+      "end": 108.315,
+      "text": "No, yeah.",
+      "words": [
+        {
+          "word": "No,",
+          "start": 107.494,
+          "end": 107.555,
+          "score": 0.331,
+          "speaker": "Racy"
+        },
+        {
+          "word": "yeah.",
+          "start": 107.955,
+          "end": 108.315,
+          "score": 0.601,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.07441406088570754,
+      "speaker": "Racy"
+    },
+    {
+      "start": 111.081,
+      "end": 113.149,
+      "text": " They come to my grove and steal my people.",
+      "words": [
+        {
+          "word": "They",
+          "start": 111.081,
+          "end": 111.242,
+          "score": 0.976,
+          "speaker": "Vail"
+        },
+        {
+          "word": "come",
+          "start": 111.282,
+          "end": 111.443,
+          "score": 0.758,
+          "speaker": "Vail"
+        },
+        {
+          "word": "to",
+          "start": 111.483,
+          "end": 111.583,
+          "score": 0.826,
+          "speaker": "Vail"
+        },
+        {
+          "word": "my",
+          "start": 111.603,
+          "end": 111.744,
+          "score": 0.854,
+          "speaker": "Vail"
+        },
+        {
+          "word": "grove",
+          "start": 111.804,
+          "end": 112.105,
+          "score": 0.99,
+          "speaker": "Vail"
+        },
+        {
+          "word": "and",
+          "start": 112.145,
+          "end": 112.246,
+          "score": 0.796,
+          "speaker": "Vail"
+        },
+        {
+          "word": "steal",
+          "start": 112.306,
+          "end": 112.567,
+          "score": 0.921,
+          "speaker": "Vail"
+        },
+        {
+          "word": "my",
+          "start": 112.607,
+          "end": 112.767,
+          "score": 0.874,
+          "speaker": "Vail"
+        },
+        {
+          "word": "people.",
+          "start": 112.808,
+          "end": 113.149,
+          "score": 0.873,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.11393229166666667,
+      "speaker": "Vail"
+    },
+    {
+      "start": 113.229,
+      "end": 113.47,
+      "text": "What?",
+      "words": [
+        {
+          "word": "What?",
+          "start": 113.229,
+          "end": 113.47,
+          "score": 0.799,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.11393229166666667,
+      "speaker": "Vail"
+    },
+    {
+      "start": 114.233,
+      "end": 115.718,
+      "text": "They probe my people.",
+      "words": [
+        {
+          "word": "They",
+          "start": 114.233,
+          "end": 114.434,
+          "score": 0.954,
+          "speaker": "Vail"
+        },
+        {
+          "word": "probe",
+          "start": 114.554,
+          "end": 114.935,
+          "score": 0.744,
+          "speaker": "Vail"
+        },
+        {
+          "word": "my",
+          "start": 115.036,
+          "end": 115.257,
+          "score": 0.994,
+          "speaker": "Vail"
+        },
+        {
+          "word": "people.",
+          "start": 115.337,
+          "end": 115.718,
+          "score": 0.911,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.11393229166666667,
+      "speaker": "Vail"
+    },
+    {
+      "start": 115.738,
+      "end": 115.799,
+      "text": "No.",
+      "words": [
+        {
+          "word": "No.",
+          "start": 115.738,
+          "end": 115.799,
+          "score": 0.105,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.11393229166666667,
+      "speaker": "Vail"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "Yep.",
+      "start": 0.833,
+      "end": 0.973,
+      "score": 0.303,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Believe",
+      "start": 1.573,
+      "end": 1.894,
+      "score": 0.858,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "it",
+      "start": 1.914,
+      "end": 1.954,
+      "score": 0.978,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "or",
+      "start": 2.014,
+      "end": 2.094,
+      "score": 0.662,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "not,",
+      "start": 2.134,
+      "end": 2.334,
+      "score": 0.912,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 2.354,
+      "end": 2.414,
+      "score": 0.002,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "only",
+      "start": 2.974,
+      "end": 3.134,
+      "score": 0.956,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "thing",
+      "start": 3.174,
+      "end": 3.295,
+      "score": 0.873,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "you'll",
+      "start": 3.315,
+      "end": 3.475,
+      "score": 0.894,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "find",
+      "start": 3.515,
+      "end": 3.615,
+      "score": 0.961,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "that",
+      "start": 3.635,
+      "end": 3.715,
+      "score": 0.007,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "we're",
+      "start": 3.735,
+      "end": 3.875,
+      "score": 0.331,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "missing",
+      "start": 3.915,
+      "end": 4.155,
+      "score": 0.939,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "is",
+      "start": 4.215,
+      "end": 4.295,
+      "score": 0.658,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "just",
+      "start": 4.355,
+      "end": 4.515,
+      "score": 0.949,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "a",
+      "start": 4.655,
+      "end": 4.695,
+      "score": 0.661,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "few",
+      "start": 4.755,
+      "end": 4.916,
+      "score": 0.906,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "pieces",
+      "start": 4.936,
+      "end": 5.236,
+      "score": 0.664,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "of",
+      "start": 5.256,
+      "end": 5.296,
+      "score": 0.854,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "material.",
+      "start": 5.336,
+      "end": 5.876,
+      "score": 0.857,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Again,",
+      "start": 6.236,
+      "end": 8.078,
+      "score": 0.865,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "it's",
+      "start": 8.698,
+      "end": 8.838,
+      "score": 0.795,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "pretty",
+      "start": 8.898,
+      "end": 9.118,
+      "score": 0.909,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "clear",
+      "start": 9.178,
+      "end": 9.378,
+      "score": 0.908,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "what",
+      "start": 9.418,
+      "end": 9.538,
+      "score": 0.883,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "they",
+      "start": 9.578,
+      "end": 9.719,
+      "score": 0.864,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "came",
+      "start": 9.759,
+      "end": 9.979,
+      "score": 0.843,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "here",
+      "start": 10.019,
+      "end": 10.159,
+      "score": 0.76,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "for.",
+      "start": 10.199,
+      "end": 10.399,
+      "score": 0.915,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "I",
+      "start": 16.002,
+      "end": 16.083,
+      "score": 0.812,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "need",
+      "start": 16.223,
+      "end": 16.583,
+      "score": 0.871,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "everybody",
+      "start": 17.163,
+      "end": 17.884,
+      "score": 0.966,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "to",
+      "start": 17.964,
+      "end": 18.084,
+      "score": 0.883,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "please",
+      "start": 18.164,
+      "end": 18.444,
+      "score": 0.915,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "make",
+      "start": 18.504,
+      "end": 18.704,
+      "score": 0.74,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "a",
+      "start": 18.744,
+      "end": 18.784,
+      "score": 0.494,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "perception",
+      "start": 18.844,
+      "end": 19.425,
+      "score": 0.91,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "roll.",
+      "start": 19.485,
+      "end": 19.645,
+      "score": 0.677,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "It's",
+      "start": 19.665,
+      "end": 19.765,
+      "score": 0.598,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "not",
+      "start": 19.805,
+      "end": 19.945,
+      "score": 0.854,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "a",
+      "start": 19.965,
+      "end": 20.005,
+      "score": 0.497,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "big",
+      "start": 20.045,
+      "end": 20.205,
+      "score": 0.969,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "deal,",
+      "start": 20.265,
+      "end": 20.525,
+      "score": 0.937,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "but",
+      "start": 20.565,
+      "end": 20.685,
+      "score": 0.907,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "let's",
+      "start": 20.845,
+      "end": 21.046,
+      "score": 0.775,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "see",
+      "start": 21.086,
+      "end": 21.246,
+      "score": 0.982,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "who's...",
+      "start": 21.286,
+      "end": 22.046,
+      "score": 0.594,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Did",
+      "start": 22.066,
+      "end": 22.186,
+      "score": 0.377,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "they",
+      "start": 22.206,
+      "end": 22.747,
+      "score": 0.68,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "leave",
+      "start": 23.127,
+      "end": 23.287,
+      "score": 0.905,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "any",
+      "start": 23.327,
+      "end": 23.507,
+      "score": 0.699,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "traps",
+      "start": 23.527,
+      "end": 23.847,
+      "score": 0.781,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "behind?",
+      "start": 23.867,
+      "end": 24.328,
+      "score": 0.671,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "You're",
+      "start": 26.278,
+      "end": 26.438,
+      "score": 0.876,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "good",
+      "start": 26.478,
+      "end": 26.678,
+      "score": 0.67,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "at",
+      "start": 26.698,
+      "end": 26.758,
+      "score": 0.462,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "what",
+      "start": 26.798,
+      "end": 27.359,
+      "score": 0.632,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "you",
+      "start": 27.379,
+      "end": 27.579,
+      "score": 0.562,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "do,",
+      "start": 27.599,
+      "end": 27.819,
+      "score": 0.89,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Mysterio.",
+      "start": 28.159,
+      "end": 28.719,
+      "score": 0.836,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "I'm",
+      "start": 28.759,
+      "end": 28.88,
+      "score": 0.871,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "not",
+      "start": 28.92,
+      "end": 29.06,
+      "score": 0.877,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "worried",
+      "start": 29.12,
+      "end": 29.38,
+      "score": 0.921,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "about",
+      "start": 29.42,
+      "end": 29.62,
+      "score": 0.974,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "you.",
+      "start": 29.68,
+      "end": 29.86,
+      "score": 0.794,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "There's",
+      "start": 29.92,
+      "end": 30.14,
+      "score": 0.793,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "so",
+      "start": 30.2,
+      "end": 30.34,
+      "score": 0.992,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "much",
+      "start": 30.38,
+      "end": 30.54,
+      "score": 0.783,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "disruption",
+      "start": 30.601,
+      "end": 31.181,
+      "score": 0.803,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "in",
+      "start": 31.221,
+      "end": 31.281,
+      "score": 0.735,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "that",
+      "start": 31.341,
+      "end": 31.461,
+      "score": 0.975,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "lab.",
+      "start": 31.541,
+      "end": 31.881,
+      "score": 0.807,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "You",
+      "start": 32.201,
+      "end": 32.301,
+      "score": 0.964,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "could",
+      "start": 32.322,
+      "end": 32.462,
+      "score": 0.596,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "probably",
+      "start": 32.482,
+      "end": 32.902,
+      "score": 0.54,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "march",
+      "start": 33.242,
+      "end": 33.582,
+      "score": 0.759,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "a",
+      "start": 33.602,
+      "end": 33.622,
+      "score": 0.003,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "marching",
+      "start": 33.662,
+      "end": 34.002,
+      "score": 0.815,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "band",
+      "start": 34.042,
+      "end": 34.223,
+      "score": 0.831,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "through",
+      "start": 34.263,
+      "end": 34.463,
+      "score": 0.799,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "it",
+      "start": 34.483,
+      "end": 34.523,
+      "score": 0.643,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 34.543,
+      "end": 34.603,
+      "score": 0.0,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "nobody",
+      "start": 34.623,
+      "end": 34.843,
+      "score": 0.965,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "would",
+      "start": 34.883,
+      "end": 35.003,
+      "score": 0.354,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "figure",
+      "start": 35.043,
+      "end": 35.283,
+      "score": 0.894,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "it",
+      "start": 35.303,
+      "end": 35.363,
+      "score": 0.821,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "out.",
+      "start": 35.423,
+      "end": 35.543,
+      "score": 0.985,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "I",
+      "start": 36.084,
+      "end": 36.104,
+      "score": 0.004,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "made",
+      "start": 36.124,
+      "end": 36.324,
+      "score": 0.878,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "it",
+      "start": 36.344,
+      "end": 36.384,
+      "score": 0.955,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "by",
+      "start": 36.424,
+      "end": 36.544,
+      "score": 0.954,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "four.",
+      "start": 36.604,
+      "end": 36.884,
+      "score": 0.825,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "Yes,",
+      "start": 37.344,
+      "end": 37.745,
+      "score": 0.925,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "it",
+      "start": 37.825,
+      "end": 37.885,
+      "score": 0.957,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "doesn't",
+      "start": 37.925,
+      "end": 38.205,
+      "score": 0.533,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "matter.",
+      "start": 38.245,
+      "end": 38.505,
+      "score": 0.9,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "I",
+      "start": 38.545,
+      "end": 38.605,
+      "score": 0.64,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "made",
+      "start": 38.625,
+      "end": 38.785,
+      "score": 0.766,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "it",
+      "start": 38.825,
+      "end": 38.865,
+      "score": 0.976,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "by",
+      "start": 38.905,
+      "end": 39.025,
+      "score": 0.83,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "a",
+      "start": 39.065,
+      "end": 39.085,
+      "score": 0.978,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "lot.",
+      "start": 39.145,
+      "end": 39.386,
+      "score": 0.963,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "I",
+      "start": 40.206,
+      "end": 40.446,
+      "score": 0.4,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "made",
+      "start": 40.486,
+      "end": 40.626,
+      "score": 0.322,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "it",
+      "start": 40.646,
+      "end": 40.706,
+      "score": 0.416,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "by",
+      "start": 40.746,
+      "end": 40.886,
+      "score": 0.635,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "one.",
+      "start": 41.067,
+      "end": 41.267,
+      "score": 0.741,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "I",
+      "start": 41.787,
+      "end": 41.887,
+      "score": 0.68,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "made",
+      "start": 41.907,
+      "end": 42.027,
+      "score": 0.401,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "it",
+      "start": 42.047,
+      "end": 42.087,
+      "score": 0.221,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "by",
+      "start": 42.127,
+      "end": 42.247,
+      "score": 0.635,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "four.",
+      "start": 42.287,
+      "end": 42.507,
+      "score": 0.655,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Lots",
+      "start": 43.508,
+      "end": 43.708,
+      "score": 0.858,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "of",
+      "start": 43.748,
+      "end": 43.788,
+      "score": 0.984,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "short",
+      "start": 43.828,
+      "end": 44.108,
+      "score": 0.486,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "people.",
+      "start": 44.148,
+      "end": 45.969,
+      "score": 0.757,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "I'm",
+      "start": 46.53,
+      "end": 46.65,
+      "score": 0.912,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "going",
+      "start": 46.69,
+      "end": 46.89,
+      "score": 0.699,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "to",
+      "start": 46.91,
+      "end": 46.97,
+      "score": 0.928,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "admin",
+      "start": 47.23,
+      "end": 47.63,
+      "score": 0.899,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "you",
+      "start": 47.67,
+      "end": 47.83,
+      "score": 0.973,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "back",
+      "start": 47.91,
+      "end": 48.211,
+      "score": 0.986,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "out",
+      "start": 48.511,
+      "end": 48.651,
+      "score": 0.888,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "to",
+      "start": 49.411,
+      "end": 49.752,
+      "score": 0.81,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 50.052,
+      "end": 50.172,
+      "score": 0.856,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "CNC",
+      "start": 50.212,
+      "end": 51.012,
+      "score": 0.795,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Center.",
+      "start": 51.072,
+      "end": 51.913,
+      "score": 0.8,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "On",
+      "start": 52.553,
+      "end": 52.653,
+      "score": 0.736,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "your",
+      "start": 52.733,
+      "end": 52.973,
+      "score": 0.718,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "way",
+      "start": 53.053,
+      "end": 53.334,
+      "score": 0.822,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "out...",
+      "start": 53.674,
+      "end": 53.854,
+      "score": 0.893,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "You'll",
+      "start": 56.143,
+      "end": 56.383,
+      "score": 0.858,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "notice",
+      "start": 56.443,
+      "end": 56.824,
+      "score": 0.788,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "some",
+      "start": 58.205,
+      "end": 58.385,
+      "score": 0.906,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "more.",
+      "start": 58.445,
+      "end": 58.805,
+      "score": 0.814,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "I'll",
+      "start": 59.826,
+      "end": 59.986,
+      "score": 0.928,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "say",
+      "start": 60.046,
+      "end": 60.247,
+      "score": 0.918,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "some",
+      "start": 60.287,
+      "end": 62.989,
+      "score": 0.927,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "of",
+      "start": 63.009,
+      "end": 63.069,
+      "score": 0.799,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "these",
+      "start": 63.089,
+      "end": 63.289,
+      "score": 0.778,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "guys",
+      "start": 63.349,
+      "end": 63.61,
+      "score": 0.828,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "have",
+      "start": 63.65,
+      "end": 63.77,
+      "score": 0.902,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "shown",
+      "start": 63.81,
+      "end": 64.03,
+      "score": 0.836,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "up",
+      "start": 64.11,
+      "end": 64.19,
+      "score": 0.782,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "now.",
+      "start": 64.25,
+      "end": 64.47,
+      "score": 0.791,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "What",
+      "start": 65.511,
+      "end": 65.692,
+      "score": 0.594,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "guys?",
+      "start": 65.712,
+      "end": 66.012,
+      "score": 0.846,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "You're",
+      "start": 66.732,
+      "end": 66.893,
+      "score": 0.953,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "not",
+      "start": 66.933,
+      "end": 67.033,
+      "score": 0.85,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "sharing.",
+      "start": 67.073,
+      "end": 67.393,
+      "score": 0.884,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "Oh,",
+      "start": 67.633,
+      "end": 67.713,
+      "score": 0.922,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "I'm",
+      "start": 67.733,
+      "end": 67.833,
+      "score": 0.736,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "not",
+      "start": 67.873,
+      "end": 67.994,
+      "score": 0.86,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "sharing.",
+      "start": 68.054,
+      "end": 68.354,
+      "score": 0.94,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Sorry.",
+      "start": 68.514,
+      "end": 68.754,
+      "score": 0.858,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "The",
+      "start": 69.155,
+      "end": 69.255,
+      "score": 0.825,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "big",
+      "start": 69.275,
+      "end": 69.435,
+      "score": 0.797,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "heavy",
+      "start": 69.495,
+      "end": 69.695,
+      "score": 0.905,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "armor.",
+      "start": 69.775,
+      "end": 73.358,
+      "score": 0.86,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Some",
+      "start": 74.219,
+      "end": 74.359,
+      "score": 0.827,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "of",
+      "start": 74.379,
+      "end": 74.439,
+      "score": 0.716,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "these",
+      "start": 74.459,
+      "end": 74.599,
+      "score": 0.898,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "guys.",
+      "start": 74.659,
+      "end": 74.88,
+      "score": 0.811,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Darn",
+      "start": 75.48,
+      "end": 75.68,
+      "score": 0.626,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "it.",
+      "start": 75.7,
+      "end": 75.76,
+      "score": 0.982,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Desktop.",
+      "start": 77.002,
+      "end": 77.462,
+      "score": 0.642,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Some",
+      "start": 77.742,
+      "end": 77.962,
+      "score": 0.279,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "of",
+      "start": 77.982,
+      "end": 78.022,
+      "score": 0.823,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "these",
+      "start": 78.042,
+      "end": 78.263,
+      "score": 0.732,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "guys.",
+      "start": 78.303,
+      "end": 78.563,
+      "score": 0.783,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "The",
+      "start": 79.003,
+      "end": 79.083,
+      "score": 0.961,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "mechs",
+      "start": 79.103,
+      "end": 79.284,
+      "score": 0.502,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "or",
+      "start": 79.324,
+      "end": 79.384,
+      "score": 0.558,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "the",
+      "start": 79.404,
+      "end": 79.464,
+      "score": 0.881,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "Halo",
+      "start": 79.504,
+      "end": 79.704,
+      "score": 0.818,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "guys?",
+      "start": 79.744,
+      "end": 79.944,
+      "score": 0.789,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "Okay.",
+      "start": 80.084,
+      "end": 80.365,
+      "score": 0.514,
+      "speaker": "SPEAKER_02"
+    },
+    {
+      "word": "The",
+      "start": 80.565,
+      "end": 80.685,
+      "score": 0.617,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "mechs.",
+      "start": 80.745,
+      "end": 81.025,
+      "score": 0.438,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "The",
+      "start": 81.065,
+      "end": 81.125,
+      "score": 0.982,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "mech",
+      "start": 81.165,
+      "end": 81.305,
+      "score": 0.456,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "guys.",
+      "start": 81.345,
+      "end": 81.486,
+      "score": 0.692,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "You'll",
+      "start": 81.506,
+      "end": 81.646,
+      "score": 0.92,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "see",
+      "start": 81.666,
+      "end": 81.766,
+      "score": 0.859,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "some",
+      "start": 81.806,
+      "end": 81.946,
+      "score": 0.749,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "of",
+      "start": 81.966,
+      "end": 82.006,
+      "score": 0.938,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "these",
+      "start": 82.046,
+      "end": 82.186,
+      "score": 0.859,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "guys",
+      "start": 82.246,
+      "end": 82.426,
+      "score": 0.838,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "have",
+      "start": 82.466,
+      "end": 82.587,
+      "score": 0.884,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "shown",
+      "start": 82.627,
+      "end": 82.847,
+      "score": 0.865,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "up.",
+      "start": 82.907,
+      "end": 82.987,
+      "score": 0.991,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "And",
+      "start": 85.261,
+      "end": 85.421,
+      "score": 0.73,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "you'll",
+      "start": 85.761,
+      "end": 86.022,
+      "score": 0.786,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "see",
+      "start": 86.102,
+      "end": 86.402,
+      "score": 0.779,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "that",
+      "start": 87.062,
+      "end": 87.242,
+      "score": 0.848,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "the",
+      "start": 87.282,
+      "end": 87.382,
+      "score": 0.831,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "troops,",
+      "start": 87.422,
+      "end": 87.783,
+      "score": 0.801,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "you",
+      "start": 87.823,
+      "end": 87.923,
+      "score": 0.279,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "know,",
+      "start": 87.943,
+      "end": 88.203,
+      "score": 0.224,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "there's",
+      "start": 88.263,
+      "end": 88.523,
+      "score": 0.754,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "troops",
+      "start": 88.683,
+      "end": 88.983,
+      "score": 0.836,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "with",
+      "start": 89.063,
+      "end": 89.264,
+      "score": 0.711,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "them.",
+      "start": 89.284,
+      "end": 89.444,
+      "score": 0.777,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "And",
+      "start": 90.044,
+      "end": 90.184,
+      "score": 0.698,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "they",
+      "start": 90.264,
+      "end": 90.544,
+      "score": 0.854,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "have",
+      "start": 90.604,
+      "end": 90.864,
+      "score": 0.842,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "a",
+      "start": 91.005,
+      "end": 91.045,
+      "score": 0.847,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "different",
+      "start": 91.105,
+      "end": 91.445,
+      "score": 0.916,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "insignia",
+      "start": 91.485,
+      "end": 92.105,
+      "score": 0.967,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "on",
+      "start": 92.205,
+      "end": 92.265,
+      "score": 0.582,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "them.",
+      "start": 92.285,
+      "end": 92.385,
+      "score": 0.359,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "It",
+      "start": 92.405,
+      "end": 92.465,
+      "score": 0.595,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "looks",
+      "start": 92.485,
+      "end": 92.666,
+      "score": 0.948,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "like",
+      "start": 92.706,
+      "end": 92.866,
+      "score": 0.802,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "this.",
+      "start": 92.926,
+      "end": 93.186,
+      "score": 0.932,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Okay.",
+      "start": 98.989,
+      "end": 100.05,
+      "score": 0.746,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Told",
+      "start": 100.63,
+      "end": 100.81,
+      "score": 0.928,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "you.",
+      "start": 100.85,
+      "end": 100.971,
+      "score": 0.917,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "I",
+      "start": 100.991,
+      "end": 101.011,
+      "score": 0.002,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "told",
+      "start": 101.731,
+      "end": 101.991,
+      "score": 0.807,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "you.",
+      "start": 102.051,
+      "end": 102.171,
+      "score": 0.928,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "We're",
+      "start": 102.191,
+      "end": 103.832,
+      "score": 0.464,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "being",
+      "start": 103.852,
+      "end": 104.072,
+      "score": 0.68,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "invaded",
+      "start": 104.092,
+      "end": 104.513,
+      "score": 0.829,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "by",
+      "start": 104.553,
+      "end": 104.673,
+      "score": 0.92,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "aliens.",
+      "start": 104.793,
+      "end": 105.153,
+      "score": 0.957,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "I've",
+      "start": 105.914,
+      "end": 106.094,
+      "score": 0.623,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "seen",
+      "start": 106.154,
+      "end": 106.394,
+      "score": 0.726,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "those",
+      "start": 106.474,
+      "end": 106.694,
+      "score": 0.892,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "people",
+      "start": 106.714,
+      "end": 107.054,
+      "score": 0.849,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "before.",
+      "start": 107.114,
+      "end": 107.474,
+      "score": 0.829,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "No,",
+      "start": 107.494,
+      "end": 107.555,
+      "score": 0.331,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "yeah.",
+      "start": 107.955,
+      "end": 108.315,
+      "score": 0.601,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "They",
+      "start": 111.081,
+      "end": 111.242,
+      "score": 0.976,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "come",
+      "start": 111.282,
+      "end": 111.443,
+      "score": 0.758,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "to",
+      "start": 111.483,
+      "end": 111.583,
+      "score": 0.826,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "my",
+      "start": 111.603,
+      "end": 111.744,
+      "score": 0.854,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "grove",
+      "start": 111.804,
+      "end": 112.105,
+      "score": 0.99,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 112.145,
+      "end": 112.246,
+      "score": 0.796,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "steal",
+      "start": 112.306,
+      "end": 112.567,
+      "score": 0.921,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "my",
+      "start": 112.607,
+      "end": 112.767,
+      "score": 0.874,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "people.",
+      "start": 112.808,
+      "end": 113.149,
+      "score": 0.873,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "What?",
+      "start": 113.229,
+      "end": 113.47,
+      "score": 0.799,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "They",
+      "start": 114.233,
+      "end": 114.434,
+      "score": 0.954,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "probe",
+      "start": 114.554,
+      "end": 114.935,
+      "score": 0.744,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "my",
+      "start": 115.036,
+      "end": 115.257,
+      "score": 0.994,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "people.",
+      "start": 115.337,
+      "end": 115.718,
+      "score": 0.911,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "No.",
+      "start": 115.738,
+      "end": 115.799,
+      "score": 0.105,
+      "speaker": "SPEAKER_01"
+    }
+  ],
+  "language": "en"
+}

@@ -1,0 +1,65 @@
+{
+  "segments": [
+    {
+      "start": 7.23,
+      "end": 7.539,
+      "text": " I'm here.",
+      "words": [
+        {
+          "word": "I'm",
+          "start": 7.23,
+          "end": 7.292,
+          "score": 0.003,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here.",
+          "start": 7.312,
+          "end": 7.539,
+          "score": 0.704,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.11025390625,
+      "speaker": "Bourbon"
+    },
+    {
+      "start": 49.559,
+      "end": 49.859,
+      "text": " Okay.",
+      "words": [
+        {
+          "word": "Okay.",
+          "start": 49.559,
+          "end": 49.859,
+          "score": 0.299
+        }
+      ],
+      "avg_logprob": -0.77734375,
+      "speaker": "Bourbon"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "I'm",
+      "start": 7.23,
+      "end": 7.292,
+      "score": 0.003,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here.",
+      "start": 7.312,
+      "end": 7.539,
+      "score": 0.704,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Okay.",
+      "start": 49.559,
+      "end": 49.859,
+      "score": 0.299
+    }
+  ],
+  "language": "en"
+}

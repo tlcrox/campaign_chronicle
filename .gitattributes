@@ -1,0 +1,69 @@
+# Line-ending policy: Windows development host, Linux Docker runtime.
+#
+# THE KEY CONSTRAINT: the containers do not COPY these files, they BIND-MOUNT
+# the working tree (see compose/*/docker-compose.yml -> ./scripts:/usr/local/bin/scripts).
+# So the bytes sitting in the Windows working tree are the exact bytes Linux
+# executes. A CRLF entrypoint.sh fails in-container with the classic
+#   /usr/local/bin/scripts/entrypoint.sh: /bin/bash^M: bad interpreter
+# That rules out the usual Windows setup (`eol=crlf` on checkout): we need LF in
+# the working tree itself, not just inside the repo.
+# Hence: LF everywhere, on checkout as well as in the object store. Git handles
+# it; Windows editors (VS Code, modern Notepad) all read and write LF fine.
+# The only CRLF exceptions are Windows-native scripts, which never enter a
+# container.
+# After changing this file, renormalize the existing working tree once:
+#   git add --renormalize .
+#   git commit -m "Normalize line endings to LF"
+# ---------------------------------------------------------------------------
+# Default: auto-detect text vs binary, and store/check out all text as LF.
+# text=auto is deliberate — it protects undeclared binaries (and the UTF-16
+# requirements file noted below) from being mangled by normalization.
+*                   text=auto eol=lf
+# Executed or parsed inside the Linux container — LF is mandatory, not cosmetic.
+# Declared explicitly so detection can never get it wrong.
+*.sh                text eol=lf
+*.py                text eol=lf
+*.yaml              text eol=lf
+*.yml               text eol=lf
+Dockerfile          text eol=lf
+*.dockerfile        text eol=lf
+.dockerignore       text eol=lf
+.env.example        text eol=lf
+# Data and docs. Read by Python on both sides; LF keeps diffs honest.
+# NOTE: *.txt is intentionally NOT forced to `text` — docker/pyscenedetect/
+# requirements-docker.txt is currently UTF-16LE (see REORG_REPAIR_PLAN.md §11).
+# Forcing `text` would corrupt it; text=auto detects it as binary and leaves it
+# alone. Once that file is regenerated as UTF-8, `*.txt text eol=lf` can be added.
+*.json              text eol=lf
+*.csv               text eol=lf
+*.md                text eol=lf
+*.gitattributes     text eol=lf
+*.gitignore         text eol=lf
+Makefile            text eol=lf
+# Windows-native scripts — never mounted into a container, must stay CRLF or
+# cmd.exe/PowerShell misbehave.
+*.bat               text eol=crlf
+*.cmd               text eol=crlf
+*.ps1               text eol=crlf
+# Binary — never normalize, never diff. Test fixtures live in tests/expected/.
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.mp3               binary
+*.flac              binary
+*.wav               binary
+*.jpg               binary
+*.jpeg              binary
+*.png               binary
+*.pdf               binary
+*.docx              binary
+*.zip               binary
+*.aup3              binary
+*.dat               binary
+*.exe               binary
+*.dll               binary
+*.pyd               binary
+*.pyc               binary
+
+*.flac filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.docx filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text

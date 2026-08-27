@@ -1,0 +1,493 @@
+{
+  "segments": [
+    {
+      "start": 11.34,
+      "end": 12.321,
+      "text": " This will be interesting.",
+      "words": [
+        {
+          "word": "This",
+          "start": 11.34,
+          "end": 11.46,
+          "score": 0.891,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "will",
+          "start": 11.5,
+          "end": 11.64,
+          "score": 0.871,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "be",
+          "start": 11.66,
+          "end": 11.74,
+          "score": 0.7,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "interesting.",
+          "start": 11.801,
+          "end": 12.321,
+          "score": 0.934,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "avg_logprob": -0.069580078125,
+      "speaker": "DM"
+    },
+    {
+      "start": 41.921,
+      "end": 42.221,
+      "text": " Bye-bye.",
+      "words": [
+        {
+          "word": "Bye-bye.",
+          "start": 41.921,
+          "end": 42.221,
+          "score": 0.46
+        }
+      ],
+      "avg_logprob": -0.52421875,
+      "speaker": "DM"
+    },
+    {
+      "start": 75.373,
+      "end": 75.754,
+      "text": " You miss her.",
+      "words": [
+        {
+          "word": "You",
+          "start": 75.373,
+          "end": 75.453,
+          "score": 0.61,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "miss",
+          "start": 75.473,
+          "end": 75.594,
+          "score": 0.578,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "her.",
+          "start": 75.634,
+          "end": 75.754,
+          "score": 0.746,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.1166449621733692,
+      "speaker": "DM"
+    },
+    {
+      "start": 76.796,
+      "end": 80.321,
+      "text": "You swing at her, and it's like a normal person trying to hit a fly.",
+      "words": [
+        {
+          "word": "You",
+          "start": 76.796,
+          "end": 76.976,
+          "score": 0.94,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "swing",
+          "start": 77.036,
+          "end": 77.276,
+          "score": 0.843,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "at",
+          "start": 77.316,
+          "end": 77.397,
+          "score": 0.956,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "her,",
+          "start": 77.417,
+          "end": 77.537,
+          "score": 0.744,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 77.577,
+          "end": 77.677,
+          "score": 0.058,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "it's",
+          "start": 77.797,
+          "end": 78.298,
+          "score": 0.225,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "like",
+          "start": 78.378,
+          "end": 78.538,
+          "score": 0.907,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 78.558,
+          "end": 78.578,
+          "score": 0.01,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "normal",
+          "start": 78.599,
+          "end": 79.079,
+          "score": 0.807,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "person",
+          "start": 79.119,
+          "end": 79.42,
+          "score": 0.893,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "trying",
+          "start": 79.46,
+          "end": 79.68,
+          "score": 0.548,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 79.7,
+          "end": 79.74,
+          "score": 0.844,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "hit",
+          "start": 79.76,
+          "end": 79.881,
+          "score": 0.775,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a",
+          "start": 79.901,
+          "end": 79.921,
+          "score": 0.984,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "fly.",
+          "start": 79.961,
+          "end": 80.321,
+          "score": 0.901,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.1166449621733692,
+      "speaker": "DM"
+    },
+    {
+      "start": 80.381,
+      "end": 88.375,
+      "text": "You swoosh, and she's a... Nope.",
+      "words": [
+        {
+          "word": "You",
+          "start": 80.381,
+          "end": 80.562,
+          "score": 0.97,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "swoosh,",
+          "start": 80.642,
+          "end": 80.882,
+          "score": 0.491,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "and",
+          "start": 81.103,
+          "end": 81.183,
+          "score": 0.959,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "she's",
+          "start": 81.243,
+          "end": 81.423,
+          "score": 0.746,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "a...",
+          "start": 81.463,
+          "end": 81.924,
+          "score": 0.73,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Nope.",
+          "start": 88.154,
+          "end": 88.375,
+          "score": 0.713,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "avg_logprob": -0.1166449621733692,
+      "speaker": "DM"
+    },
+    {
+      "start": 99.754,
+      "end": 99.914,
+      "text": "I saw",
+      "words": [
+        {
+          "word": "I",
+          "start": 99.754,
+          "end": 99.814,
+          "score": 0.148,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "saw",
+          "start": 99.834,
+          "end": 99.914,
+          "score": 0.063,
+          "speaker": "SPEAKER_01"
+        }
+      ],
+      "avg_logprob": -0.1166449621733692,
+      "speaker": "DM"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "This",
+      "start": 11.34,
+      "end": 11.46,
+      "score": 0.891,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "will",
+      "start": 11.5,
+      "end": 11.64,
+      "score": 0.871,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "be",
+      "start": 11.66,
+      "end": 11.74,
+      "score": 0.7,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "interesting.",
+      "start": 11.801,
+      "end": 12.321,
+      "score": 0.934,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Bye-bye.",
+      "start": 41.921,
+      "end": 42.221,
+      "score": 0.46
+    },
+    {
+      "word": "You",
+      "start": 75.373,
+      "end": 75.453,
+      "score": 0.61,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "miss",
+      "start": 75.473,
+      "end": 75.594,
+      "score": 0.578,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "her.",
+      "start": 75.634,
+      "end": 75.754,
+      "score": 0.746,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "You",
+      "start": 76.796,
+      "end": 76.976,
+      "score": 0.94,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "swing",
+      "start": 77.036,
+      "end": 77.276,
+      "score": 0.843,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "at",
+      "start": 77.316,
+      "end": 77.397,
+      "score": 0.956,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "her,",
+      "start": 77.417,
+      "end": 77.537,
+      "score": 0.744,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "and",
+      "start": 77.577,
+      "end": 77.677,
+      "score": 0.058,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "it's",
+      "start": 77.797,
+      "end": 78.298,
+      "score": 0.225,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "like",
+      "start": 78.378,
+      "end": 78.538,
+      "score": 0.907,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "a",
+      "start": 78.558,
+      "end": 78.578,
+      "score": 0.01,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "normal",
+      "start": 78.599,
+      "end": 79.079,
+      "score": 0.807,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "person",
+      "start": 79.119,
+      "end": 79.42,
+      "score": 0.893,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "trying",
+      "start": 79.46,
+      "end": 79.68,
+      "score": 0.548,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "to",
+      "start": 79.7,
+      "end": 79.74,
+      "score": 0.844,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "hit",
+      "start": 79.76,
+      "end": 79.881,
+      "score": 0.775,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "a",
+      "start": 79.901,
+      "end": 79.921,
+      "score": 0.984,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "fly.",
+      "start": 79.961,
+      "end": 80.321,
+      "score": 0.901,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "You",
+      "start": 80.381,
+      "end": 80.562,
+      "score": 0.97,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "swoosh,",
+      "start": 80.642,
+      "end": 80.882,
+      "score": 0.491,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "and",
+      "start": 81.103,
+      "end": 81.183,
+      "score": 0.959,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "she's",
+      "start": 81.243,
+      "end": 81.423,
+      "score": 0.746,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "a...",
+      "start": 81.463,
+      "end": 81.924,
+      "score": 0.73,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Nope.",
+      "start": 88.154,
+      "end": 88.375,
+      "score": 0.713,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "I",
+      "start": 99.754,
+      "end": 99.814,
+      "score": 0.148,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "saw",
+      "start": 99.834,
+      "end": 99.914,
+      "score": 0.063,
+      "speaker": "SPEAKER_01"
+    }
+  ],
+  "language": "en"
+}

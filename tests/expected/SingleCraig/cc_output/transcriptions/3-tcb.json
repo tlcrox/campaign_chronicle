@@ -1,0 +1,72 @@
+{
+  "segments": [
+    {
+      "start": 93.967,
+      "end": 96.206,
+      "text": " Hey Louise, hey Louise.",
+      "words": [
+        {
+          "word": "Hey",
+          "start": 93.967,
+          "end": 94.129,
+          "score": 0.387,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Louise,",
+          "start": 94.209,
+          "end": 95.056,
+          "score": 0.81,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "hey",
+          "start": 95.318,
+          "end": 95.581,
+          "score": 0.554,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Louise.",
+          "start": 95.621,
+          "end": 96.206,
+          "score": 0.721,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.6752232313156128,
+      "speaker": "Moria"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "Hey",
+      "start": 93.967,
+      "end": 94.129,
+      "score": 0.387,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Louise,",
+      "start": 94.209,
+      "end": 95.056,
+      "score": 0.81,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "hey",
+      "start": 95.318,
+      "end": 95.581,
+      "score": 0.554,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Louise.",
+      "start": 95.621,
+      "end": 96.206,
+      "score": 0.721,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "language": "en"
+}

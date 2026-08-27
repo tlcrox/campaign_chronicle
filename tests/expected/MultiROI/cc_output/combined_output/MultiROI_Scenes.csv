@@ -1,0 +1,5 @@
+Scene Number,Start Timecode,Start Time (seconds),End Time (seconds),Duration (seconds),Length (frames),Video
+1,00:00:00.000,0.0,23.0,23.0,690,1
+2,00:00:23.000,23.0,30.0,7.0,210,1
+1,00:00:30.000,30.0,50.132999999999996,20.133,604,2
+1,00:00:50.133,50.133333,80.133333,30.0,900,3

@@ -1,0 +1,379 @@
+{
+  "segments": [
+    {
+      "start": 10.868,
+      "end": 11.172,
+      "text": " I'm here.",
+      "words": [
+        {
+          "word": "I'm",
+          "start": 10.868,
+          "end": 10.99,
+          "score": 0.947,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here.",
+          "start": 11.03,
+          "end": 11.172,
+          "score": 0.776,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.0308837890625,
+      "speaker": "Moria"
+    },
+    {
+      "start": 201.812,
+      "end": 204.417,
+      "text": " Yeah, Mirage isn't expecting to be able to go through walls here.",
+      "words": [
+        {
+          "word": "Yeah,",
+          "start": 201.812,
+          "end": 202.173,
+          "score": 0.664,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "Mirage",
+          "start": 202.193,
+          "end": 202.553,
+          "score": 0.63,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "isn't",
+          "start": 202.573,
+          "end": 202.774,
+          "score": 0.432,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "expecting",
+          "start": 202.834,
+          "end": 203.255,
+          "score": 0.927,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 203.275,
+          "end": 203.335,
+          "score": 0.75,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "be",
+          "start": 203.355,
+          "end": 203.415,
+          "score": 0.756,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "able",
+          "start": 203.455,
+          "end": 203.575,
+          "score": 0.758,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "to",
+          "start": 203.595,
+          "end": 203.635,
+          "score": 1.0,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "go",
+          "start": 203.676,
+          "end": 203.756,
+          "score": 0.953,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "through",
+          "start": 203.776,
+          "end": 203.956,
+          "score": 0.902,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "walls",
+          "start": 203.976,
+          "end": 204.196,
+          "score": 0.816,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "here.",
+          "start": 204.237,
+          "end": 204.417,
+          "score": 0.866,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.04595762310606061,
+      "speaker": "Moria"
+    },
+    {
+      "start": 209.166,
+      "end": 209.526,
+      "text": "No.",
+      "words": [
+        {
+          "word": "No.",
+          "start": 209.166,
+          "end": 209.526,
+          "score": 0.884,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.04595762310606061,
+      "speaker": "Moria"
+    },
+    {
+      "start": 212.351,
+      "end": 214.696,
+      "text": "Been there, done that, did not feel good.",
+      "words": [
+        {
+          "word": "Been",
+          "start": 212.351,
+          "end": 212.552,
+          "score": 0.859,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "there,",
+          "start": 212.592,
+          "end": 212.892,
+          "score": 0.673,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "done",
+          "start": 212.953,
+          "end": 213.173,
+          "score": 0.848,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "that,",
+          "start": 213.233,
+          "end": 213.534,
+          "score": 0.524,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "did",
+          "start": 213.614,
+          "end": 213.834,
+          "score": 0.905,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "not",
+          "start": 213.894,
+          "end": 214.055,
+          "score": 0.879,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "feel",
+          "start": 214.135,
+          "end": 214.355,
+          "score": 0.865,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "good.",
+          "start": 214.415,
+          "end": 214.696,
+          "score": 0.933,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.04595762310606061,
+      "speaker": "Moria"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "I'm",
+      "start": 10.868,
+      "end": 10.99,
+      "score": 0.947,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here.",
+      "start": 11.03,
+      "end": 11.172,
+      "score": 0.776,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Yeah,",
+      "start": 201.812,
+      "end": 202.173,
+      "score": 0.664,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Mirage",
+      "start": 202.193,
+      "end": 202.553,
+      "score": 0.63,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "isn't",
+      "start": 202.573,
+      "end": 202.774,
+      "score": 0.432,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "expecting",
+      "start": 202.834,
+      "end": 203.255,
+      "score": 0.927,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "to",
+      "start": 203.275,
+      "end": 203.335,
+      "score": 0.75,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "be",
+      "start": 203.355,
+      "end": 203.415,
+      "score": 0.756,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "able",
+      "start": 203.455,
+      "end": 203.575,
+      "score": 0.758,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "to",
+      "start": 203.595,
+      "end": 203.635,
+      "score": 1.0,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "go",
+      "start": 203.676,
+      "end": 203.756,
+      "score": 0.953,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "through",
+      "start": 203.776,
+      "end": 203.956,
+      "score": 0.902,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "walls",
+      "start": 203.976,
+      "end": 204.196,
+      "score": 0.816,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "here.",
+      "start": 204.237,
+      "end": 204.417,
+      "score": 0.866,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Thank",
+      "start": 208.464,
+      "end": 208.725,
+      "score": 0.955,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "you.",
+      "start": 208.785,
+      "end": 209.025,
+      "score": 0.936,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "No.",
+      "start": 209.166,
+      "end": 209.526,
+      "score": 0.884,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Been",
+      "start": 212.351,
+      "end": 212.552,
+      "score": 0.859,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "there,",
+      "start": 212.592,
+      "end": 212.892,
+      "score": 0.673,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "done",
+      "start": 212.953,
+      "end": 213.173,
+      "score": 0.848,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "that,",
+      "start": 213.233,
+      "end": 213.534,
+      "score": 0.524,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "did",
+      "start": 213.614,
+      "end": 213.834,
+      "score": 0.905,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "not",
+      "start": 213.894,
+      "end": 214.055,
+      "score": 0.879,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "feel",
+      "start": 214.135,
+      "end": 214.355,
+      "score": 0.865,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "good.",
+      "start": 214.415,
+      "end": 214.696,
+      "score": 0.933,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "language": "en"
+}

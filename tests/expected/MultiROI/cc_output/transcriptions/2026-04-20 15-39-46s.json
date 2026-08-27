@@ -1,0 +1,716 @@
+{
+  "segments": [
+    {
+      "start": 0.672,
+      "end": 19.926,
+      "text": " brian hasn't joined yet but you know he's late so too bad i didn't particularly enjoy your little ditty friday all right with my ditty what was that uh now friday we had we were having our friday game group over and so it was cleaning in the afternoon going",
+      "words": [
+        {
+          "word": "brian",
+          "start": 0.672,
+          "end": 0.913,
+          "score": 0.632,
+          "speaker": "Racy"
+        },
+        {
+          "word": "hasn't",
+          "start": 0.933,
+          "end": 1.153,
+          "score": 0.844,
+          "speaker": "Racy"
+        },
+        {
+          "word": "joined",
+          "start": 1.193,
+          "end": 1.433,
+          "score": 0.79,
+          "speaker": "Racy"
+        },
+        {
+          "word": "yet",
+          "start": 1.453,
+          "end": 1.654,
+          "score": 0.998,
+          "speaker": "Racy"
+        },
+        {
+          "word": "but",
+          "start": 1.734,
+          "end": 1.874,
+          "score": 0.888,
+          "speaker": "Racy"
+        },
+        {
+          "word": "you",
+          "start": 1.954,
+          "end": 2.055,
+          "score": 0.927,
+          "speaker": "Racy"
+        },
+        {
+          "word": "know",
+          "start": 2.095,
+          "end": 2.215,
+          "score": 0.907,
+          "speaker": "Racy"
+        },
+        {
+          "word": "he's",
+          "start": 2.255,
+          "end": 2.395,
+          "score": 0.888,
+          "speaker": "Racy"
+        },
+        {
+          "word": "late",
+          "start": 2.455,
+          "end": 2.656,
+          "score": 0.736,
+          "speaker": "Racy"
+        },
+        {
+          "word": "so",
+          "start": 2.716,
+          "end": 2.916,
+          "score": 0.96,
+          "speaker": "Racy"
+        },
+        {
+          "word": "too",
+          "start": 2.976,
+          "end": 3.076,
+          "score": 0.997,
+          "speaker": "Racy"
+        },
+        {
+          "word": "bad",
+          "start": 3.096,
+          "end": 3.257,
+          "score": 0.865,
+          "speaker": "Racy"
+        },
+        {
+          "word": "i",
+          "start": 4.158,
+          "end": 4.238,
+          "score": 0.304,
+          "speaker": "Racy"
+        },
+        {
+          "word": "didn't",
+          "start": 4.258,
+          "end": 4.519,
+          "score": 0.874,
+          "speaker": "Racy"
+        },
+        {
+          "word": "particularly",
+          "start": 4.639,
+          "end": 5.3,
+          "score": 0.896,
+          "speaker": "Racy"
+        },
+        {
+          "word": "enjoy",
+          "start": 5.36,
+          "end": 5.601,
+          "score": 0.994,
+          "speaker": "Racy"
+        },
+        {
+          "word": "your",
+          "start": 5.641,
+          "end": 5.761,
+          "score": 0.868,
+          "speaker": "Racy"
+        },
+        {
+          "word": "little",
+          "start": 5.781,
+          "end": 5.981,
+          "score": 0.852,
+          "speaker": "Racy"
+        },
+        {
+          "word": "ditty",
+          "start": 6.001,
+          "end": 6.222,
+          "score": 0.907,
+          "speaker": "Racy"
+        },
+        {
+          "word": "friday",
+          "start": 6.262,
+          "end": 6.542,
+          "score": 0.882,
+          "speaker": "Racy"
+        },
+        {
+          "word": "all",
+          "start": 6.562,
+          "end": 6.903,
+          "score": 0.398,
+          "speaker": "Racy"
+        },
+        {
+          "word": "right",
+          "start": 6.923,
+          "end": 7.123,
+          "score": 0.344,
+          "speaker": "Racy"
+        },
+        {
+          "word": "with",
+          "start": 8.085,
+          "end": 8.265,
+          "score": 0.474,
+          "speaker": "Racy"
+        },
+        {
+          "word": "my",
+          "start": 8.305,
+          "end": 8.426,
+          "score": 0.849,
+          "speaker": "Racy"
+        },
+        {
+          "word": "ditty",
+          "start": 8.446,
+          "end": 8.686,
+          "score": 0.908,
+          "speaker": "Racy"
+        },
+        {
+          "word": "what",
+          "start": 8.746,
+          "end": 8.906,
+          "score": 0.59,
+          "speaker": "Racy"
+        },
+        {
+          "word": "was",
+          "start": 9.127,
+          "end": 9.207,
+          "score": 0.907,
+          "speaker": "Racy"
+        },
+        {
+          "word": "that",
+          "start": 9.227,
+          "end": 9.467,
+          "score": 0.348,
+          "speaker": "Racy"
+        },
+        {
+          "word": "uh",
+          "start": 12.953,
+          "end": 13.054,
+          "score": 0.454,
+          "speaker": "Racy"
+        },
+        {
+          "word": "now",
+          "start": 13.334,
+          "end": 13.555,
+          "score": 0.914,
+          "speaker": "Racy"
+        },
+        {
+          "word": "friday",
+          "start": 13.955,
+          "end": 14.356,
+          "score": 0.681,
+          "speaker": "Racy"
+        },
+        {
+          "word": "we",
+          "start": 14.476,
+          "end": 14.596,
+          "score": 0.988,
+          "speaker": "Racy"
+        },
+        {
+          "word": "had",
+          "start": 14.636,
+          "end": 14.817,
+          "score": 0.942,
+          "speaker": "Racy"
+        },
+        {
+          "word": "we",
+          "start": 15.478,
+          "end": 15.578,
+          "score": 0.986,
+          "speaker": "Racy"
+        },
+        {
+          "word": "were",
+          "start": 15.598,
+          "end": 15.698,
+          "score": 0.789,
+          "speaker": "Racy"
+        },
+        {
+          "word": "having",
+          "start": 15.718,
+          "end": 15.919,
+          "score": 0.456,
+          "speaker": "Racy"
+        },
+        {
+          "word": "our",
+          "start": 15.999,
+          "end": 16.139,
+          "score": 0.871,
+          "speaker": "Racy"
+        },
+        {
+          "word": "friday",
+          "start": 16.48,
+          "end": 16.74,
+          "score": 0.892,
+          "speaker": "Racy"
+        },
+        {
+          "word": "game",
+          "start": 16.78,
+          "end": 17.001,
+          "score": 0.859,
+          "speaker": "Racy"
+        },
+        {
+          "word": "group",
+          "start": 17.021,
+          "end": 17.241,
+          "score": 0.829,
+          "speaker": "Racy"
+        },
+        {
+          "word": "over",
+          "start": 17.361,
+          "end": 17.662,
+          "score": 0.722,
+          "speaker": "Racy"
+        },
+        {
+          "word": "and",
+          "start": 18.002,
+          "end": 18.143,
+          "score": 0.602,
+          "speaker": "Racy"
+        },
+        {
+          "word": "so",
+          "start": 18.203,
+          "end": 18.423,
+          "score": 0.904,
+          "speaker": "Racy"
+        },
+        {
+          "word": "it",
+          "start": 18.443,
+          "end": 18.483,
+          "score": 0.028,
+          "speaker": "Racy"
+        },
+        {
+          "word": "was",
+          "start": 18.503,
+          "end": 18.703,
+          "score": 0.775,
+          "speaker": "Racy"
+        },
+        {
+          "word": "cleaning",
+          "start": 18.844,
+          "end": 19.144,
+          "score": 0.928,
+          "speaker": "Racy"
+        },
+        {
+          "word": "in",
+          "start": 19.164,
+          "end": 19.224,
+          "score": 0.743,
+          "speaker": "Racy"
+        },
+        {
+          "word": "the",
+          "start": 19.244,
+          "end": 19.305,
+          "score": 0.995,
+          "speaker": "Racy"
+        },
+        {
+          "word": "afternoon",
+          "start": 19.365,
+          "end": 19.805,
+          "score": 0.824,
+          "speaker": "Racy"
+        },
+        {
+          "word": "going",
+          "start": 19.825,
+          "end": 19.926,
+          "score": 0.024,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.06725260329743227,
+      "speaker": "Racy"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "brian",
+      "start": 0.672,
+      "end": 0.913,
+      "score": 0.632,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "hasn't",
+      "start": 0.933,
+      "end": 1.153,
+      "score": 0.844,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "joined",
+      "start": 1.193,
+      "end": 1.433,
+      "score": 0.79,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "yet",
+      "start": 1.453,
+      "end": 1.654,
+      "score": 0.998,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "but",
+      "start": 1.734,
+      "end": 1.874,
+      "score": 0.888,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "you",
+      "start": 1.954,
+      "end": 2.055,
+      "score": 0.927,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "know",
+      "start": 2.095,
+      "end": 2.215,
+      "score": 0.907,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "he's",
+      "start": 2.255,
+      "end": 2.395,
+      "score": 0.888,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "late",
+      "start": 2.455,
+      "end": 2.656,
+      "score": 0.736,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "so",
+      "start": 2.716,
+      "end": 2.916,
+      "score": 0.96,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "too",
+      "start": 2.976,
+      "end": 3.076,
+      "score": 0.997,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "bad",
+      "start": 3.096,
+      "end": 3.257,
+      "score": 0.865,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "i",
+      "start": 4.158,
+      "end": 4.238,
+      "score": 0.304,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "didn't",
+      "start": 4.258,
+      "end": 4.519,
+      "score": 0.874,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "particularly",
+      "start": 4.639,
+      "end": 5.3,
+      "score": 0.896,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "enjoy",
+      "start": 5.36,
+      "end": 5.601,
+      "score": 0.994,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "your",
+      "start": 5.641,
+      "end": 5.761,
+      "score": 0.868,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "little",
+      "start": 5.781,
+      "end": 5.981,
+      "score": 0.852,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "ditty",
+      "start": 6.001,
+      "end": 6.222,
+      "score": 0.907,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "friday",
+      "start": 6.262,
+      "end": 6.542,
+      "score": 0.882,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "all",
+      "start": 6.562,
+      "end": 6.903,
+      "score": 0.398,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "right",
+      "start": 6.923,
+      "end": 7.123,
+      "score": 0.344,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "with",
+      "start": 8.085,
+      "end": 8.265,
+      "score": 0.474,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "my",
+      "start": 8.305,
+      "end": 8.426,
+      "score": 0.849,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "ditty",
+      "start": 8.446,
+      "end": 8.686,
+      "score": 0.908,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "what",
+      "start": 8.746,
+      "end": 8.906,
+      "score": 0.59,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "was",
+      "start": 9.127,
+      "end": 9.207,
+      "score": 0.907,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "that",
+      "start": 9.227,
+      "end": 9.467,
+      "score": 0.348,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "uh",
+      "start": 12.953,
+      "end": 13.054,
+      "score": 0.454,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "now",
+      "start": 13.334,
+      "end": 13.555,
+      "score": 0.914,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "friday",
+      "start": 13.955,
+      "end": 14.356,
+      "score": 0.681,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "we",
+      "start": 14.476,
+      "end": 14.596,
+      "score": 0.988,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "had",
+      "start": 14.636,
+      "end": 14.817,
+      "score": 0.942,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "we",
+      "start": 15.478,
+      "end": 15.578,
+      "score": 0.986,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "were",
+      "start": 15.598,
+      "end": 15.698,
+      "score": 0.789,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "having",
+      "start": 15.718,
+      "end": 15.919,
+      "score": 0.456,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "our",
+      "start": 15.999,
+      "end": 16.139,
+      "score": 0.871,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "friday",
+      "start": 16.48,
+      "end": 16.74,
+      "score": 0.892,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "game",
+      "start": 16.78,
+      "end": 17.001,
+      "score": 0.859,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "group",
+      "start": 17.021,
+      "end": 17.241,
+      "score": 0.829,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "over",
+      "start": 17.361,
+      "end": 17.662,
+      "score": 0.722,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "and",
+      "start": 18.002,
+      "end": 18.143,
+      "score": 0.602,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "so",
+      "start": 18.203,
+      "end": 18.423,
+      "score": 0.904,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "it",
+      "start": 18.443,
+      "end": 18.483,
+      "score": 0.028,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "was",
+      "start": 18.503,
+      "end": 18.703,
+      "score": 0.775,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "cleaning",
+      "start": 18.844,
+      "end": 19.144,
+      "score": 0.928,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "in",
+      "start": 19.164,
+      "end": 19.224,
+      "score": 0.743,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 19.244,
+      "end": 19.305,
+      "score": 0.995,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "afternoon",
+      "start": 19.365,
+      "end": 19.805,
+      "score": 0.824,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "going",
+      "start": 19.825,
+      "end": 19.926,
+      "score": 0.024,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "language": "en"
+}

@@ -1,0 +1,5034 @@
+{
+  "segments": [
+    {
+      "start": 0.291,
+      "end": 3.415,
+      "text": " Moving over to Liliana and her assistant Mirage.",
+      "words": [
+        {
+          "word": "Moving",
+          "start": 0.291,
+          "end": 0.552,
+          "score": 0.879,
+          "speaker": "Disco"
+        },
+        {
+          "word": "over",
+          "start": 0.592,
+          "end": 0.712,
+          "score": 0.875,
+          "speaker": "Disco"
+        },
+        {
+          "word": "to",
+          "start": 0.752,
+          "end": 0.832,
+          "score": 0.949,
+          "speaker": "Disco"
+        },
+        {
+          "word": "Liliana",
+          "start": 0.892,
+          "end": 1.893,
+          "score": 0.653,
+          "speaker": "Disco"
+        },
+        {
+          "word": "and",
+          "start": 1.913,
+          "end": 1.973,
+          "score": 0.0,
+          "speaker": "Disco"
+        },
+        {
+          "word": "her",
+          "start": 2.193,
+          "end": 2.333,
+          "score": 0.93,
+          "speaker": "Disco"
+        },
+        {
+          "word": "assistant",
+          "start": 2.373,
+          "end": 2.814,
+          "score": 0.889,
+          "speaker": "Disco"
+        },
+        {
+          "word": "Mirage.",
+          "start": 2.854,
+          "end": 3.415,
+          "score": 0.945,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.0800520799557368,
+      "speaker": "Disco"
+    },
+    {
+      "start": 4.456,
+      "end": 8.9,
+      "text": "Any discussions, any prep you wish to do from 3 to 5.30?",
+      "words": [
+        {
+          "word": "Any",
+          "start": 4.456,
+          "end": 4.616,
+          "score": 0.823,
+          "speaker": "Disco"
+        },
+        {
+          "word": "discussions,",
+          "start": 4.656,
+          "end": 5.236,
+          "score": 0.933,
+          "speaker": "Disco"
+        },
+        {
+          "word": "any",
+          "start": 5.297,
+          "end": 5.897,
+          "score": 0.882,
+          "speaker": "Disco"
+        },
+        {
+          "word": "prep",
+          "start": 5.997,
+          "end": 6.218,
+          "score": 0.569,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you",
+          "start": 6.258,
+          "end": 6.358,
+          "score": 0.553,
+          "speaker": "Disco"
+        },
+        {
+          "word": "wish",
+          "start": 6.378,
+          "end": 6.558,
+          "score": 0.888,
+          "speaker": "Disco"
+        },
+        {
+          "word": "to",
+          "start": 6.578,
+          "end": 6.658,
+          "score": 0.75,
+          "speaker": "Disco"
+        },
+        {
+          "word": "do",
+          "start": 6.698,
+          "end": 7.199,
+          "score": 0.778,
+          "speaker": "Disco"
+        },
+        {
+          "word": "from",
+          "start": 7.419,
+          "end": 7.619,
+          "score": 0.615,
+          "speaker": "Disco"
+        },
+        {
+          "word": "3",
+          "start": 7.899,
+          "end": 8.059,
+          "score": 0.754,
+          "speaker": "Disco"
+        },
+        {
+          "word": "to",
+          "start": 8.28,
+          "end": 8.38,
+          "score": 0.68,
+          "speaker": "Disco"
+        },
+        {
+          "word": "5.30?",
+          "start": 8.48,
+          "end": 8.9,
+          "score": 0.738,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.0800520799557368,
+      "speaker": "Disco"
+    },
+    {
+      "start": 9.421,
+      "end": 11.483,
+      "text": "We're just primping and then we'll pick it up at 5.30.",
+      "words": [
+        {
+          "word": "We're",
+          "start": 9.421,
+          "end": 9.541,
+          "score": 0.27,
+          "speaker": "Disco"
+        },
+        {
+          "word": "just",
+          "start": 9.561,
+          "end": 9.681,
+          "score": 0.789,
+          "speaker": "Disco"
+        },
+        {
+          "word": "primping",
+          "start": 9.721,
+          "end": 10.082,
+          "score": 0.876,
+          "speaker": "Disco"
+        },
+        {
+          "word": "and",
+          "start": 10.122,
+          "end": 10.182,
+          "score": 0.994,
+          "speaker": "Disco"
+        },
+        {
+          "word": "then",
+          "start": 10.202,
+          "end": 10.362,
+          "score": 0.83,
+          "speaker": "Disco"
+        },
+        {
+          "word": "we'll",
+          "start": 10.422,
+          "end": 10.582,
+          "score": 0.891,
+          "speaker": "Disco"
+        },
+        {
+          "word": "pick",
+          "start": 10.622,
+          "end": 10.722,
+          "score": 0.995,
+          "speaker": "Disco"
+        },
+        {
+          "word": "it",
+          "start": 10.762,
+          "end": 10.822,
+          "score": 0.744,
+          "speaker": "Disco"
+        },
+        {
+          "word": "up",
+          "start": 10.862,
+          "end": 10.922,
+          "score": 0.8,
+          "speaker": "Disco"
+        },
+        {
+          "word": "at",
+          "start": 10.963,
+          "end": 11.023,
+          "score": 0.604,
+          "speaker": "Disco"
+        },
+        {
+          "word": "5.30.",
+          "start": 11.143,
+          "end": 11.483,
+          "score": 0.781,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.0800520799557368,
+      "speaker": "Disco"
+    },
+    {
+      "start": 11.503,
+      "end": 19.011,
+      "text": "I don't really think we're all set unless you had something specific you wanted to do, Brigitta.",
+      "words": [
+        {
+          "word": "I",
+          "start": 11.503,
+          "end": 11.523,
+          "score": 0.001,
+          "speaker": "SPEAKER_03"
+        },
+        {
+          "word": "don't",
+          "start": 14.146,
+          "end": 14.306,
+          "score": 0.232,
+          "speaker": "Racy"
+        },
+        {
+          "word": "really",
+          "start": 14.346,
+          "end": 14.586,
+          "score": 0.83,
+          "speaker": "Racy"
+        },
+        {
+          "word": "think",
+          "start": 14.626,
+          "end": 14.767,
+          "score": 0.911,
+          "speaker": "Racy"
+        },
+        {
+          "word": "we're",
+          "start": 14.807,
+          "end": 15.007,
+          "score": 0.527,
+          "speaker": "Racy"
+        },
+        {
+          "word": "all",
+          "start": 15.027,
+          "end": 15.227,
+          "score": 0.569,
+          "speaker": "Racy"
+        },
+        {
+          "word": "set",
+          "start": 15.287,
+          "end": 15.467,
+          "score": 0.767,
+          "speaker": "Racy"
+        },
+        {
+          "word": "unless",
+          "start": 15.487,
+          "end": 15.728,
+          "score": 0.817,
+          "speaker": "Racy"
+        },
+        {
+          "word": "you",
+          "start": 15.748,
+          "end": 15.908,
+          "score": 0.976,
+          "speaker": "Racy"
+        },
+        {
+          "word": "had",
+          "start": 16.168,
+          "end": 16.308,
+          "score": 0.504,
+          "speaker": "Racy"
+        },
+        {
+          "word": "something",
+          "start": 16.328,
+          "end": 16.568,
+          "score": 0.297,
+          "speaker": "Racy"
+        },
+        {
+          "word": "specific",
+          "start": 16.588,
+          "end": 16.989,
+          "score": 0.95,
+          "speaker": "Racy"
+        },
+        {
+          "word": "you",
+          "start": 17.029,
+          "end": 17.109,
+          "score": 0.97,
+          "speaker": "Racy"
+        },
+        {
+          "word": "wanted",
+          "start": 17.129,
+          "end": 17.349,
+          "score": 0.549,
+          "speaker": "Racy"
+        },
+        {
+          "word": "to",
+          "start": 17.389,
+          "end": 17.469,
+          "score": 0.798,
+          "speaker": "Racy"
+        },
+        {
+          "word": "do,",
+          "start": 17.509,
+          "end": 17.69,
+          "score": 0.896,
+          "speaker": "Racy"
+        },
+        {
+          "word": "Brigitta.",
+          "start": 18.45,
+          "end": 19.011,
+          "score": 0.834,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.0800520799557368,
+      "speaker": "Racy"
+    },
+    {
+      "start": 19.992,
+      "end": 22.615,
+      "text": "No, just here to help you.",
+      "words": [
+        {
+          "word": "No,",
+          "start": 19.992,
+          "end": 20.272,
+          "score": 0.974,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "just",
+          "start": 21.554,
+          "end": 21.814,
+          "score": 0.726,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "here",
+          "start": 21.914,
+          "end": 22.114,
+          "score": 0.771,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "to",
+          "start": 22.134,
+          "end": 22.194,
+          "score": 0.72,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "help",
+          "start": 22.234,
+          "end": 22.415,
+          "score": 0.906,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "you.",
+          "start": 22.475,
+          "end": 22.615,
+          "score": 0.951,
+          "speaker": "MarkFive"
+        }
+      ],
+      "avg_logprob": -0.0800520799557368,
+      "speaker": "MarkFive"
+    },
+    {
+      "start": 28.043,
+      "end": 38.188,
+      "text": " Unless you have another plan, you are sitting in the VTOL with trash can, and you guys are just going to kind of be flying nearby.",
+      "words": [
+        {
+          "word": "Unless",
+          "start": 28.043,
+          "end": 28.403,
+          "score": 0.688,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you",
+          "start": 28.423,
+          "end": 28.543,
+          "score": 0.99,
+          "speaker": "Disco"
+        },
+        {
+          "word": "have",
+          "start": 28.583,
+          "end": 28.723,
+          "score": 0.864,
+          "speaker": "Disco"
+        },
+        {
+          "word": "another",
+          "start": 28.763,
+          "end": 29.023,
+          "score": 0.767,
+          "speaker": "Disco"
+        },
+        {
+          "word": "plan,",
+          "start": 29.084,
+          "end": 29.384,
+          "score": 0.774,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you",
+          "start": 31.345,
+          "end": 31.665,
+          "score": 0.858,
+          "speaker": "Disco"
+        },
+        {
+          "word": "are",
+          "start": 32.045,
+          "end": 32.165,
+          "score": 0.588,
+          "speaker": "Disco"
+        },
+        {
+          "word": "sitting",
+          "start": 32.305,
+          "end": 32.605,
+          "score": 0.9,
+          "speaker": "Disco"
+        },
+        {
+          "word": "in",
+          "start": 32.725,
+          "end": 32.846,
+          "score": 0.882,
+          "speaker": "Disco"
+        },
+        {
+          "word": "the",
+          "start": 32.866,
+          "end": 32.926,
+          "score": 0.686,
+          "speaker": "Disco"
+        },
+        {
+          "word": "VTOL",
+          "start": 33.026,
+          "end": 33.626,
+          "score": 0.808,
+          "speaker": "Disco"
+        },
+        {
+          "word": "with",
+          "start": 33.686,
+          "end": 33.906,
+          "score": 0.842,
+          "speaker": "Disco"
+        },
+        {
+          "word": "trash",
+          "start": 34.226,
+          "end": 34.627,
+          "score": 0.833,
+          "speaker": "Disco"
+        },
+        {
+          "word": "can,",
+          "start": 34.647,
+          "end": 34.907,
+          "score": 0.795,
+          "speaker": "Disco"
+        },
+        {
+          "word": "and",
+          "start": 34.927,
+          "end": 34.987,
+          "score": 0.722,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you",
+          "start": 35.007,
+          "end": 35.067,
+          "score": 0.149,
+          "speaker": "Disco"
+        },
+        {
+          "word": "guys",
+          "start": 35.107,
+          "end": 35.267,
+          "score": 0.396,
+          "speaker": "Disco"
+        },
+        {
+          "word": "are",
+          "start": 35.327,
+          "end": 35.407,
+          "score": 0.127,
+          "speaker": "Disco"
+        },
+        {
+          "word": "just",
+          "start": 35.427,
+          "end": 35.547,
+          "score": 0.415,
+          "speaker": "Disco"
+        },
+        {
+          "word": "going",
+          "start": 35.567,
+          "end": 35.667,
+          "score": 0.086,
+          "speaker": "Disco"
+        },
+        {
+          "word": "to",
+          "start": 35.687,
+          "end": 35.747,
+          "score": 0.172,
+          "speaker": "Disco"
+        },
+        {
+          "word": "kind",
+          "start": 35.787,
+          "end": 35.967,
+          "score": 0.963,
+          "speaker": "Disco"
+        },
+        {
+          "word": "of",
+          "start": 36.007,
+          "end": 36.047,
+          "score": 0.917,
+          "speaker": "Disco"
+        },
+        {
+          "word": "be",
+          "start": 36.067,
+          "end": 36.187,
+          "score": 0.516,
+          "speaker": "Disco"
+        },
+        {
+          "word": "flying",
+          "start": 37.008,
+          "end": 37.468,
+          "score": 0.857,
+          "speaker": "Disco"
+        },
+        {
+          "word": "nearby.",
+          "start": 37.548,
+          "end": 38.188,
+          "score": 0.862,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.07914806281526883,
+      "speaker": "Disco"
+    },
+    {
+      "start": 38.729,
+      "end": 42.691,
+      "text": "We're telling trash and tree jokes to each other right now.",
+      "words": [
+        {
+          "word": "We're",
+          "start": 38.729,
+          "end": 38.929,
+          "score": 0.842,
+          "speaker": "Zig"
+        },
+        {
+          "word": "telling",
+          "start": 38.949,
+          "end": 39.589,
+          "score": 0.895,
+          "speaker": "Zig"
+        },
+        {
+          "word": "trash",
+          "start": 40.77,
+          "end": 41.13,
+          "score": 0.882,
+          "speaker": "Zig"
+        },
+        {
+          "word": "and",
+          "start": 41.19,
+          "end": 41.29,
+          "score": 0.721,
+          "speaker": "Zig"
+        },
+        {
+          "word": "tree",
+          "start": 41.33,
+          "end": 41.55,
+          "score": 0.825,
+          "speaker": "Zig"
+        },
+        {
+          "word": "jokes",
+          "start": 41.59,
+          "end": 41.85,
+          "score": 0.919,
+          "speaker": "Zig"
+        },
+        {
+          "word": "to",
+          "start": 41.87,
+          "end": 41.971,
+          "score": 0.836,
+          "speaker": "Zig"
+        },
+        {
+          "word": "each",
+          "start": 41.991,
+          "end": 42.111,
+          "score": 0.9,
+          "speaker": "Zig"
+        },
+        {
+          "word": "other",
+          "start": 42.151,
+          "end": 42.291,
+          "score": 0.945,
+          "speaker": "Zig"
+        },
+        {
+          "word": "right",
+          "start": 42.331,
+          "end": 42.451,
+          "score": 0.331,
+          "speaker": "Zig"
+        },
+        {
+          "word": "now.",
+          "start": 42.491,
+          "end": 42.691,
+          "score": 0.688,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.07914806281526883,
+      "speaker": "Zig"
+    },
+    {
+      "start": 45.372,
+      "end": 46.413,
+      "text": "Oh, that's got to be exciting.",
+      "words": [
+        {
+          "word": "Oh,",
+          "start": 45.372,
+          "end": 45.472,
+          "score": 0.792,
+          "speaker": "Disco"
+        },
+        {
+          "word": "that's",
+          "start": 45.492,
+          "end": 45.653,
+          "score": 0.919,
+          "speaker": "Disco"
+        },
+        {
+          "word": "got",
+          "start": 45.693,
+          "end": 45.793,
+          "score": 0.607,
+          "speaker": "Disco"
+        },
+        {
+          "word": "to",
+          "start": 45.813,
+          "end": 45.853,
+          "score": 0.704,
+          "speaker": "Disco"
+        },
+        {
+          "word": "be",
+          "start": 45.893,
+          "end": 45.973,
+          "score": 0.484,
+          "speaker": "Disco"
+        },
+        {
+          "word": "exciting.",
+          "start": 46.013,
+          "end": 46.413,
+          "score": 0.737,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.07914806281526883,
+      "speaker": "Disco"
+    },
+    {
+      "start": 47.233,
+      "end": 49.655,
+      "text": "So when do you guys in the plane want to lift off?",
+      "words": [
+        {
+          "word": "So",
+          "start": 47.233,
+          "end": 47.353,
+          "score": 0.878,
+          "speaker": "Disco"
+        },
+        {
+          "word": "when",
+          "start": 47.373,
+          "end": 47.514,
+          "score": 0.555,
+          "speaker": "Disco"
+        },
+        {
+          "word": "do",
+          "start": 47.534,
+          "end": 47.854,
+          "score": 0.262,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you",
+          "start": 47.874,
+          "end": 48.234,
+          "score": 0.29,
+          "speaker": "Disco"
+        },
+        {
+          "word": "guys",
+          "start": 48.254,
+          "end": 48.454,
+          "score": 0.721,
+          "speaker": "Disco"
+        },
+        {
+          "word": "in",
+          "start": 48.494,
+          "end": 48.534,
+          "score": 0.024,
+          "speaker": "Disco"
+        },
+        {
+          "word": "the",
+          "start": 48.574,
+          "end": 48.634,
+          "score": 0.985,
+          "speaker": "Disco"
+        },
+        {
+          "word": "plane",
+          "start": 48.674,
+          "end": 48.894,
+          "score": 0.772,
+          "speaker": "Disco"
+        },
+        {
+          "word": "want",
+          "start": 48.914,
+          "end": 49.054,
+          "score": 0.401,
+          "speaker": "Disco"
+        },
+        {
+          "word": "to",
+          "start": 49.074,
+          "end": 49.154,
+          "score": 0.468,
+          "speaker": "Disco"
+        },
+        {
+          "word": "lift",
+          "start": 49.174,
+          "end": 49.395,
+          "score": 0.725,
+          "speaker": "Disco"
+        },
+        {
+          "word": "off?",
+          "start": 49.535,
+          "end": 49.655,
+          "score": 0.9,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.07914806281526883,
+      "speaker": "Disco"
+    },
+    {
+      "start": 49.935,
+      "end": 51.416,
+      "text": "I mean, the event starts at 6.30.",
+      "words": [
+        {
+          "word": "I",
+          "start": 49.935,
+          "end": 49.975,
+          "score": 0.987,
+          "speaker": "Disco"
+        },
+        {
+          "word": "mean,",
+          "start": 50.015,
+          "end": 50.155,
+          "score": 0.987,
+          "speaker": "Disco"
+        },
+        {
+          "word": "the",
+          "start": 50.175,
+          "end": 50.235,
+          "score": 0.939,
+          "speaker": "Disco"
+        },
+        {
+          "word": "event",
+          "start": 50.295,
+          "end": 50.575,
+          "score": 0.863,
+          "speaker": "Disco"
+        },
+        {
+          "word": "starts",
+          "start": 50.615,
+          "end": 50.915,
+          "score": 0.902,
+          "speaker": "Disco"
+        },
+        {
+          "word": "at",
+          "start": 50.995,
+          "end": 51.055,
+          "score": 0.992,
+          "speaker": "Disco"
+        },
+        {
+          "word": "6.30.",
+          "start": 51.075,
+          "end": 51.416,
+          "score": 0.968,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.07914806281526883,
+      "speaker": "Disco"
+    },
+    {
+      "start": 51.596,
+      "end": 53.657,
+      "text": "It's up to you.",
+      "words": [
+        {
+          "word": "It's",
+          "start": 51.596,
+          "end": 51.896,
+          "score": 0.342,
+          "speaker": "Disco"
+        },
+        {
+          "word": "up",
+          "start": 53.177,
+          "end": 53.297,
+          "score": 0.828,
+          "speaker": "Disco"
+        },
+        {
+          "word": "to",
+          "start": 53.337,
+          "end": 53.417,
+          "score": 0.893,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you.",
+          "start": 53.477,
+          "end": 53.657,
+          "score": 0.973,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.07914806281526883,
+      "speaker": "Disco"
+    },
+    {
+      "start": 56.332,
+      "end": 65.733,
+      "text": " My thought is we sit wherever far away we can and wait in case of emergency extraction or something.",
+      "words": [
+        {
+          "word": "My",
+          "start": 56.332,
+          "end": 56.492,
+          "score": 0.915,
+          "speaker": "Valient"
+        },
+        {
+          "word": "thought",
+          "start": 56.553,
+          "end": 56.813,
+          "score": 0.863,
+          "speaker": "Valient"
+        },
+        {
+          "word": "is",
+          "start": 56.913,
+          "end": 57.014,
+          "score": 0.742,
+          "speaker": "Valient"
+        },
+        {
+          "word": "we",
+          "start": 57.114,
+          "end": 57.595,
+          "score": 0.816,
+          "speaker": "Valient"
+        },
+        {
+          "word": "sit",
+          "start": 58.617,
+          "end": 58.858,
+          "score": 0.842,
+          "speaker": "Valient"
+        },
+        {
+          "word": "wherever",
+          "start": 59.158,
+          "end": 59.559,
+          "score": 0.75,
+          "speaker": "Valient"
+        },
+        {
+          "word": "far",
+          "start": 59.64,
+          "end": 59.86,
+          "score": 0.773,
+          "speaker": "Valient"
+        },
+        {
+          "word": "away",
+          "start": 59.9,
+          "end": 60.141,
+          "score": 0.878,
+          "speaker": "Valient"
+        },
+        {
+          "word": "we",
+          "start": 60.201,
+          "end": 60.361,
+          "score": 0.998,
+          "speaker": "Valient"
+        },
+        {
+          "word": "can",
+          "start": 60.441,
+          "end": 60.802,
+          "score": 0.493,
+          "speaker": "Valient"
+        },
+        {
+          "word": "and",
+          "start": 61.945,
+          "end": 62.165,
+          "score": 0.419,
+          "speaker": "Valient"
+        },
+        {
+          "word": "wait",
+          "start": 62.506,
+          "end": 62.746,
+          "score": 0.929,
+          "speaker": "Valient"
+        },
+        {
+          "word": "in",
+          "start": 63.408,
+          "end": 63.468,
+          "score": 0.998,
+          "speaker": "Valient"
+        },
+        {
+          "word": "case",
+          "start": 63.528,
+          "end": 63.789,
+          "score": 0.899,
+          "speaker": "Valient"
+        },
+        {
+          "word": "of",
+          "start": 63.829,
+          "end": 63.889,
+          "score": 0.75,
+          "speaker": "Valient"
+        },
+        {
+          "word": "emergency",
+          "start": 64.11,
+          "end": 64.631,
+          "score": 0.853,
+          "speaker": "Valient"
+        },
+        {
+          "word": "extraction",
+          "start": 64.691,
+          "end": 65.212,
+          "score": 0.88,
+          "speaker": "Valient"
+        },
+        {
+          "word": "or",
+          "start": 65.252,
+          "end": 65.352,
+          "score": 0.732,
+          "speaker": "Valient"
+        },
+        {
+          "word": "something.",
+          "start": 65.392,
+          "end": 65.733,
+          "score": 0.96,
+          "speaker": "Valient"
+        }
+      ],
+      "avg_logprob": -0.05561755881423042,
+      "speaker": "Valient"
+    },
+    {
+      "start": 68.027,
+      "end": 74.271,
+      "text": " Well, when you say sit, do you mean you want to park the plane on the ground someplace or a rooftop several blocks away or hover?",
+      "words": [
+        {
+          "word": "Well,",
+          "start": 68.027,
+          "end": 68.267,
+          "score": 0.838,
+          "speaker": "Disco"
+        },
+        {
+          "word": "when",
+          "start": 68.327,
+          "end": 68.467,
+          "score": 0.494,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you",
+          "start": 68.507,
+          "end": 68.607,
+          "score": 0.817,
+          "speaker": "Disco"
+        },
+        {
+          "word": "say",
+          "start": 68.627,
+          "end": 68.828,
+          "score": 0.948,
+          "speaker": "Disco"
+        },
+        {
+          "word": "sit,",
+          "start": 68.968,
+          "end": 69.228,
+          "score": 0.764,
+          "speaker": "Disco"
+        },
+        {
+          "word": "do",
+          "start": 69.248,
+          "end": 69.288,
+          "score": 0.102,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you",
+          "start": 69.308,
+          "end": 69.388,
+          "score": 0.282,
+          "speaker": "Disco"
+        },
+        {
+          "word": "mean",
+          "start": 69.408,
+          "end": 69.548,
+          "score": 0.413,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you",
+          "start": 69.568,
+          "end": 69.628,
+          "score": 0.899,
+          "speaker": "Disco"
+        },
+        {
+          "word": "want",
+          "start": 69.648,
+          "end": 69.768,
+          "score": 0.428,
+          "speaker": "Disco"
+        },
+        {
+          "word": "to",
+          "start": 69.788,
+          "end": 69.828,
+          "score": 0.002,
+          "speaker": "Disco"
+        },
+        {
+          "word": "park",
+          "start": 69.868,
+          "end": 70.109,
+          "score": 0.88,
+          "speaker": "Disco"
+        },
+        {
+          "word": "the",
+          "start": 70.129,
+          "end": 70.189,
+          "score": 0.003,
+          "speaker": "Disco"
+        },
+        {
+          "word": "plane",
+          "start": 70.269,
+          "end": 70.509,
+          "score": 0.709,
+          "speaker": "Disco"
+        },
+        {
+          "word": "on",
+          "start": 70.549,
+          "end": 70.629,
+          "score": 0.847,
+          "speaker": "Disco"
+        },
+        {
+          "word": "the",
+          "start": 70.669,
+          "end": 70.729,
+          "score": 0.987,
+          "speaker": "Disco"
+        },
+        {
+          "word": "ground",
+          "start": 70.789,
+          "end": 71.129,
+          "score": 0.794,
+          "speaker": "Disco"
+        },
+        {
+          "word": "someplace",
+          "start": 71.189,
+          "end": 71.69,
+          "score": 0.906,
+          "speaker": "Disco"
+        },
+        {
+          "word": "or",
+          "start": 71.75,
+          "end": 71.87,
+          "score": 0.662,
+          "speaker": "Disco"
+        },
+        {
+          "word": "a",
+          "start": 71.89,
+          "end": 71.91,
+          "score": 0.11,
+          "speaker": "Disco"
+        },
+        {
+          "word": "rooftop",
+          "start": 71.95,
+          "end": 72.45,
+          "score": 0.723,
+          "speaker": "Disco"
+        },
+        {
+          "word": "several",
+          "start": 72.47,
+          "end": 72.75,
+          "score": 0.264,
+          "speaker": "Disco"
+        },
+        {
+          "word": "blocks",
+          "start": 72.77,
+          "end": 73.071,
+          "score": 0.96,
+          "speaker": "Disco"
+        },
+        {
+          "word": "away",
+          "start": 73.151,
+          "end": 73.451,
+          "score": 0.993,
+          "speaker": "Disco"
+        },
+        {
+          "word": "or",
+          "start": 73.531,
+          "end": 73.671,
+          "score": 0.748,
+          "speaker": "Disco"
+        },
+        {
+          "word": "hover?",
+          "start": 73.791,
+          "end": 74.271,
+          "score": 0.885,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.06029072605439874,
+      "speaker": "Disco"
+    },
+    {
+      "start": 74.452,
+      "end": 76.113,
+      "text": "What are you defining that as?",
+      "words": [
+        {
+          "word": "What",
+          "start": 74.452,
+          "end": 74.592,
+          "score": 0.914,
+          "speaker": "Disco"
+        },
+        {
+          "word": "are",
+          "start": 74.692,
+          "end": 75.052,
+          "score": 0.217,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you",
+          "start": 75.072,
+          "end": 75.172,
+          "score": 0.629,
+          "speaker": "Disco"
+        },
+        {
+          "word": "defining",
+          "start": 75.212,
+          "end": 75.713,
+          "score": 0.79,
+          "speaker": "Disco"
+        },
+        {
+          "word": "that",
+          "start": 75.753,
+          "end": 75.933,
+          "score": 0.931,
+          "speaker": "Disco"
+        },
+        {
+          "word": "as?",
+          "start": 76.013,
+          "end": 76.113,
+          "score": 0.602,
+          "speaker": "SPEAKER_04"
+        }
+      ],
+      "avg_logprob": -0.06029072605439874,
+      "speaker": "Disco"
+    },
+    {
+      "start": 76.413,
+      "end": 79.455,
+      "text": "I was wondering, could we get enough clear air space that we could hover?",
+      "words": [
+        {
+          "word": "I",
+          "start": 76.413,
+          "end": 76.473,
+          "score": 0.752,
+          "speaker": "Zig"
+        },
+        {
+          "word": "was",
+          "start": 76.513,
+          "end": 76.633,
+          "score": 0.79,
+          "speaker": "Zig"
+        },
+        {
+          "word": "wondering,",
+          "start": 76.673,
+          "end": 76.993,
+          "score": 0.885,
+          "speaker": "Zig"
+        },
+        {
+          "word": "could",
+          "start": 77.013,
+          "end": 77.174,
+          "score": 0.867,
+          "speaker": "Zig"
+        },
+        {
+          "word": "we",
+          "start": 77.194,
+          "end": 77.294,
+          "score": 0.972,
+          "speaker": "Zig"
+        },
+        {
+          "word": "get",
+          "start": 77.314,
+          "end": 77.434,
+          "score": 0.845,
+          "speaker": "Zig"
+        },
+        {
+          "word": "enough",
+          "start": 77.494,
+          "end": 77.694,
+          "score": 0.701,
+          "speaker": "Zig"
+        },
+        {
+          "word": "clear",
+          "start": 77.754,
+          "end": 77.974,
+          "score": 0.871,
+          "speaker": "Zig"
+        },
+        {
+          "word": "air",
+          "start": 78.054,
+          "end": 78.154,
+          "score": 0.698,
+          "speaker": "Zig"
+        },
+        {
+          "word": "space",
+          "start": 78.214,
+          "end": 78.755,
+          "score": 0.526,
+          "speaker": "Zig"
+        },
+        {
+          "word": "that",
+          "start": 78.775,
+          "end": 78.875,
+          "score": 0.95,
+          "speaker": "Zig"
+        },
+        {
+          "word": "we",
+          "start": 78.895,
+          "end": 78.975,
+          "score": 0.995,
+          "speaker": "Zig"
+        },
+        {
+          "word": "could",
+          "start": 79.015,
+          "end": 79.155,
+          "score": 0.757,
+          "speaker": "Zig"
+        },
+        {
+          "word": "hover?",
+          "start": 79.175,
+          "end": 79.455,
+          "score": 0.866,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.06029072605439874,
+      "speaker": "Zig"
+    },
+    {
+      "start": 80.256,
+      "end": 81.897,
+      "text": "Or is that just too much energy waste?",
+      "words": [
+        {
+          "word": "Or",
+          "start": 80.256,
+          "end": 80.336,
+          "score": 0.754,
+          "speaker": "Zig"
+        },
+        {
+          "word": "is",
+          "start": 80.376,
+          "end": 80.436,
+          "score": 0.214,
+          "speaker": "Zig"
+        },
+        {
+          "word": "that",
+          "start": 80.476,
+          "end": 80.616,
+          "score": 0.948,
+          "speaker": "Zig"
+        },
+        {
+          "word": "just",
+          "start": 80.656,
+          "end": 80.816,
+          "score": 0.757,
+          "speaker": "Zig"
+        },
+        {
+          "word": "too",
+          "start": 80.856,
+          "end": 80.996,
+          "score": 0.941,
+          "speaker": "Zig"
+        },
+        {
+          "word": "much",
+          "start": 81.016,
+          "end": 81.176,
+          "score": 0.686,
+          "speaker": "Zig"
+        },
+        {
+          "word": "energy",
+          "start": 81.236,
+          "end": 81.537,
+          "score": 0.87,
+          "speaker": "Zig"
+        },
+        {
+          "word": "waste?",
+          "start": 81.597,
+          "end": 81.897,
+          "score": 0.794,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.06029072605439874,
+      "speaker": "Zig"
+    },
+    {
+      "start": 82.577,
+      "end": 84.979,
+      "text": "You can burn a lot of fuel, but you can do that.",
+      "words": [
+        {
+          "word": "You",
+          "start": 82.577,
+          "end": 82.818,
+          "score": 0.48,
+          "speaker": "Zig"
+        },
+        {
+          "word": "can",
+          "start": 83.438,
+          "end": 83.578,
+          "score": 0.357,
+          "speaker": "Zig"
+        },
+        {
+          "word": "burn",
+          "start": 83.598,
+          "end": 83.738,
+          "score": 0.417,
+          "speaker": "Zig"
+        },
+        {
+          "word": "a",
+          "start": 83.758,
+          "end": 83.778,
+          "score": 0.052,
+          "speaker": "Zig"
+        },
+        {
+          "word": "lot",
+          "start": 83.798,
+          "end": 83.938,
+          "score": 0.798,
+          "speaker": "Zig"
+        },
+        {
+          "word": "of",
+          "start": 83.958,
+          "end": 83.998,
+          "score": 0.346,
+          "speaker": "Zig"
+        },
+        {
+          "word": "fuel,",
+          "start": 84.018,
+          "end": 84.159,
+          "score": 0.231,
+          "speaker": "Zig"
+        },
+        {
+          "word": "but",
+          "start": 84.179,
+          "end": 84.319,
+          "score": 0.415,
+          "speaker": "Zig"
+        },
+        {
+          "word": "you",
+          "start": 84.339,
+          "end": 84.439,
+          "score": 0.937,
+          "speaker": "Zig"
+        },
+        {
+          "word": "can",
+          "start": 84.459,
+          "end": 84.599,
+          "score": 0.587,
+          "speaker": "Zig"
+        },
+        {
+          "word": "do",
+          "start": 84.639,
+          "end": 84.799,
+          "score": 0.578,
+          "speaker": "Zig"
+        },
+        {
+          "word": "that.",
+          "start": 84.819,
+          "end": 84.979,
+          "score": 0.586,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.06029072605439874,
+      "speaker": "Zig"
+    },
+    {
+      "start": 85.68,
+      "end": 87.421,
+      "text": "And we're also not invisible, right?",
+      "words": [
+        {
+          "word": "And",
+          "start": 85.68,
+          "end": 85.8,
+          "score": 0.713,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "we're",
+          "start": 85.84,
+          "end": 86.0,
+          "score": 0.71,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "also",
+          "start": 86.04,
+          "end": 86.3,
+          "score": 0.419,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "not",
+          "start": 86.34,
+          "end": 86.46,
+          "score": 0.825,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "invisible,",
+          "start": 86.64,
+          "end": 87.141,
+          "score": 0.931,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "right?",
+          "start": 87.181,
+          "end": 87.421,
+          "score": 0.864,
+          "speaker": "MarkFive"
+        }
+      ],
+      "avg_logprob": -0.06029072605439874,
+      "speaker": "MarkFive"
+    },
+    {
+      "start": 87.521,
+      "end": 90.123,
+      "text": "So it would be hovering over the top of that visibly?",
+      "words": [
+        {
+          "word": "So",
+          "start": 87.521,
+          "end": 87.821,
+          "score": 0.987,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "it",
+          "start": 88.241,
+          "end": 88.281,
+          "score": 0.092,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "would",
+          "start": 88.301,
+          "end": 88.462,
+          "score": 0.1,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "be",
+          "start": 88.482,
+          "end": 88.562,
+          "score": 0.829,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "hovering",
+          "start": 88.602,
+          "end": 88.922,
+          "score": 0.884,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "over",
+          "start": 88.962,
+          "end": 89.082,
+          "score": 0.828,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "the",
+          "start": 89.122,
+          "end": 89.182,
+          "score": 0.992,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "top",
+          "start": 89.202,
+          "end": 89.382,
+          "score": 0.889,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "of",
+          "start": 89.402,
+          "end": 89.462,
+          "score": 0.738,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "that",
+          "start": 89.502,
+          "end": 89.642,
+          "score": 0.836,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "visibly?",
+          "start": 89.682,
+          "end": 90.123,
+          "score": 0.928,
+          "speaker": "MarkFive"
+        }
+      ],
+      "avg_logprob": -0.06029072605439874,
+      "speaker": "MarkFive"
+    },
+    {
+      "start": 90.843,
+      "end": 94.066,
+      "text": "Yeah, it would be rather obvious, but yes, you can do that.",
+      "words": [
+        {
+          "word": "Yeah,",
+          "start": 90.843,
+          "end": 91.023,
+          "score": 0.566,
+          "speaker": "Zig"
+        },
+        {
+          "word": "it",
+          "start": 91.063,
+          "end": 91.404,
+          "score": 0.436,
+          "speaker": "Zig"
+        },
+        {
+          "word": "would",
+          "start": 91.584,
+          "end": 91.704,
+          "score": 0.895,
+          "speaker": "Zig"
+        },
+        {
+          "word": "be",
+          "start": 91.724,
+          "end": 91.804,
+          "score": 0.911,
+          "speaker": "Zig"
+        },
+        {
+          "word": "rather",
+          "start": 91.864,
+          "end": 92.164,
+          "score": 0.784,
+          "speaker": "Zig"
+        },
+        {
+          "word": "obvious,",
+          "start": 92.364,
+          "end": 92.805,
+          "score": 0.814,
+          "speaker": "Zig"
+        },
+        {
+          "word": "but",
+          "start": 92.905,
+          "end": 93.085,
+          "score": 0.723,
+          "speaker": "Zig"
+        },
+        {
+          "word": "yes,",
+          "start": 93.185,
+          "end": 93.385,
+          "score": 0.821,
+          "speaker": "Zig"
+        },
+        {
+          "word": "you",
+          "start": 93.425,
+          "end": 93.545,
+          "score": 0.97,
+          "speaker": "Zig"
+        },
+        {
+          "word": "can",
+          "start": 93.565,
+          "end": 93.725,
+          "score": 0.821,
+          "speaker": "Zig"
+        },
+        {
+          "word": "do",
+          "start": 93.765,
+          "end": 93.885,
+          "score": 0.557,
+          "speaker": "Zig"
+        },
+        {
+          "word": "that.",
+          "start": 93.905,
+          "end": 94.066,
+          "score": 0.43,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.06029072605439874,
+      "speaker": "Zig"
+    },
+    {
+      "start": 94.626,
+      "end": 95.967,
+      "text": "Well, I mean, we are...",
+      "words": [
+        {
+          "word": "Well,",
+          "start": 94.626,
+          "end": 94.746,
+          "score": 0.1,
+          "speaker": "Zig"
+        },
+        {
+          "word": "I",
+          "start": 94.766,
+          "end": 94.786,
+          "score": 0.001,
+          "speaker": "Zig"
+        },
+        {
+          "word": "mean,",
+          "start": 94.806,
+          "end": 94.986,
+          "score": 0.471,
+          "speaker": "Zig"
+        },
+        {
+          "word": "we",
+          "start": 95.547,
+          "end": 95.687,
+          "score": 0.878,
+          "speaker": "Zig"
+        },
+        {
+          "word": "are...",
+          "start": 95.807,
+          "end": 95.967,
+          "score": 0.891,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.06029072605439874,
+      "speaker": "Zig"
+    },
+    {
+      "start": 96.639,
+      "end": 119.802,
+      "text": " two of our favorite people are in there so it wouldn't be necessarily unheard of besides we need the commoners to have something to look at you want to hover right outside the glass yeah destroy the view oh i'd love to do that probably wouldn't go well though you're a little loud too jeez i don't know is there a building nearby i mean a higher building maybe a",
+      "words": [
+        {
+          "word": "two",
+          "start": 96.639,
+          "end": 96.799,
+          "score": 0.767,
+          "speaker": "Zig"
+        },
+        {
+          "word": "of",
+          "start": 96.819,
+          "end": 96.879,
+          "score": 0.746,
+          "speaker": "Zig"
+        },
+        {
+          "word": "our",
+          "start": 96.939,
+          "end": 97.06,
+          "score": 0.742,
+          "speaker": "Zig"
+        },
+        {
+          "word": "favorite",
+          "start": 97.26,
+          "end": 97.58,
+          "score": 0.663,
+          "speaker": "Zig"
+        },
+        {
+          "word": "people",
+          "start": 97.6,
+          "end": 97.92,
+          "score": 0.806,
+          "speaker": "Zig"
+        },
+        {
+          "word": "are",
+          "start": 97.98,
+          "end": 98.081,
+          "score": 0.855,
+          "speaker": "Zig"
+        },
+        {
+          "word": "in",
+          "start": 98.121,
+          "end": 98.221,
+          "score": 0.794,
+          "speaker": "Zig"
+        },
+        {
+          "word": "there",
+          "start": 98.241,
+          "end": 98.441,
+          "score": 0.806,
+          "speaker": "Zig"
+        },
+        {
+          "word": "so",
+          "start": 98.541,
+          "end": 98.661,
+          "score": 0.877,
+          "speaker": "Zig"
+        },
+        {
+          "word": "it",
+          "start": 98.681,
+          "end": 98.741,
+          "score": 0.749,
+          "speaker": "Zig"
+        },
+        {
+          "word": "wouldn't",
+          "start": 98.761,
+          "end": 98.961,
+          "score": 0.886,
+          "speaker": "Zig"
+        },
+        {
+          "word": "be",
+          "start": 99.001,
+          "end": 99.102,
+          "score": 0.82,
+          "speaker": "Zig"
+        },
+        {
+          "word": "necessarily",
+          "start": 99.662,
+          "end": 100.263,
+          "score": 0.861,
+          "speaker": "Zig"
+        },
+        {
+          "word": "unheard",
+          "start": 100.423,
+          "end": 101.464,
+          "score": 0.841,
+          "speaker": "Zig"
+        },
+        {
+          "word": "of",
+          "start": 101.604,
+          "end": 101.704,
+          "score": 0.868,
+          "speaker": "Zig"
+        },
+        {
+          "word": "besides",
+          "start": 101.784,
+          "end": 102.124,
+          "score": 0.872,
+          "speaker": "Zig"
+        },
+        {
+          "word": "we",
+          "start": 102.145,
+          "end": 102.245,
+          "score": 0.831,
+          "speaker": "Zig"
+        },
+        {
+          "word": "need",
+          "start": 102.265,
+          "end": 102.405,
+          "score": 0.975,
+          "speaker": "Zig"
+        },
+        {
+          "word": "the",
+          "start": 102.445,
+          "end": 102.505,
+          "score": 0.97,
+          "speaker": "Zig"
+        },
+        {
+          "word": "commoners",
+          "start": 102.545,
+          "end": 102.945,
+          "score": 0.857,
+          "speaker": "Zig"
+        },
+        {
+          "word": "to",
+          "start": 102.965,
+          "end": 103.025,
+          "score": 0.994,
+          "speaker": "Zig"
+        },
+        {
+          "word": "have",
+          "start": 103.065,
+          "end": 103.186,
+          "score": 0.843,
+          "speaker": "Zig"
+        },
+        {
+          "word": "something",
+          "start": 103.226,
+          "end": 103.486,
+          "score": 0.842,
+          "speaker": "Zig"
+        },
+        {
+          "word": "to",
+          "start": 103.526,
+          "end": 103.586,
+          "score": 0.748,
+          "speaker": "Zig"
+        },
+        {
+          "word": "look",
+          "start": 103.606,
+          "end": 103.766,
+          "score": 0.935,
+          "speaker": "Zig"
+        },
+        {
+          "word": "at",
+          "start": 103.846,
+          "end": 103.946,
+          "score": 0.826,
+          "speaker": "Zig"
+        },
+        {
+          "word": "you",
+          "start": 105.828,
+          "end": 105.928,
+          "score": 0.219,
+          "speaker": "Zig"
+        },
+        {
+          "word": "want",
+          "start": 105.948,
+          "end": 106.068,
+          "score": 0.424,
+          "speaker": "Zig"
+        },
+        {
+          "word": "to",
+          "start": 106.088,
+          "end": 106.128,
+          "score": 0.018,
+          "speaker": "Zig"
+        },
+        {
+          "word": "hover",
+          "start": 106.168,
+          "end": 106.389,
+          "score": 0.538,
+          "speaker": "Zig"
+        },
+        {
+          "word": "right",
+          "start": 106.429,
+          "end": 106.569,
+          "score": 0.436,
+          "speaker": "Zig"
+        },
+        {
+          "word": "outside",
+          "start": 106.609,
+          "end": 106.889,
+          "score": 0.946,
+          "speaker": "Zig"
+        },
+        {
+          "word": "the",
+          "start": 106.929,
+          "end": 107.009,
+          "score": 0.383,
+          "speaker": "Zig"
+        },
+        {
+          "word": "glass",
+          "start": 107.049,
+          "end": 107.39,
+          "score": 0.942,
+          "speaker": "Zig"
+        },
+        {
+          "word": "yeah",
+          "start": 108.551,
+          "end": 108.871,
+          "score": 0.634,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "destroy",
+          "start": 108.911,
+          "end": 109.412,
+          "score": 0.901,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "the",
+          "start": 109.432,
+          "end": 109.532,
+          "score": 0.892,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "view",
+          "start": 109.592,
+          "end": 109.772,
+          "score": 0.577,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "oh",
+          "start": 109.852,
+          "end": 109.932,
+          "score": 0.241,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "i'd",
+          "start": 110.593,
+          "end": 110.733,
+          "score": 0.723,
+          "speaker": "Zig"
+        },
+        {
+          "word": "love",
+          "start": 110.773,
+          "end": 110.933,
+          "score": 0.923,
+          "speaker": "Zig"
+        },
+        {
+          "word": "to",
+          "start": 110.973,
+          "end": 111.033,
+          "score": 0.768,
+          "speaker": "Zig"
+        },
+        {
+          "word": "do",
+          "start": 111.073,
+          "end": 111.193,
+          "score": 0.842,
+          "speaker": "Zig"
+        },
+        {
+          "word": "that",
+          "start": 111.233,
+          "end": 111.394,
+          "score": 0.751,
+          "speaker": "Zig"
+        },
+        {
+          "word": "probably",
+          "start": 111.494,
+          "end": 111.754,
+          "score": 0.938,
+          "speaker": "Zig"
+        },
+        {
+          "word": "wouldn't",
+          "start": 111.794,
+          "end": 111.954,
+          "score": 0.987,
+          "speaker": "Zig"
+        },
+        {
+          "word": "go",
+          "start": 111.994,
+          "end": 112.134,
+          "score": 0.996,
+          "speaker": "Zig"
+        },
+        {
+          "word": "well",
+          "start": 112.174,
+          "end": 112.375,
+          "score": 0.793,
+          "speaker": "Zig"
+        },
+        {
+          "word": "though",
+          "start": 112.415,
+          "end": 113.356,
+          "score": 0.563,
+          "speaker": "Zig"
+        },
+        {
+          "word": "you're",
+          "start": 113.776,
+          "end": 113.916,
+          "score": 0.362,
+          "speaker": "Zig"
+        },
+        {
+          "word": "a",
+          "start": 113.936,
+          "end": 113.956,
+          "score": 0.0,
+          "speaker": "Zig"
+        },
+        {
+          "word": "little",
+          "start": 113.976,
+          "end": 114.116,
+          "score": 0.122,
+          "speaker": "Zig"
+        },
+        {
+          "word": "loud",
+          "start": 114.216,
+          "end": 114.537,
+          "score": 0.753,
+          "speaker": "Zig"
+        },
+        {
+          "word": "too",
+          "start": 114.617,
+          "end": 114.957,
+          "score": 0.728,
+          "speaker": "Zig"
+        },
+        {
+          "word": "jeez",
+          "start": 114.977,
+          "end": 115.337,
+          "score": 0.729,
+          "speaker": "Zig"
+        },
+        {
+          "word": "i",
+          "start": 115.357,
+          "end": 115.377,
+          "score": 0.0,
+          "speaker": "Zig"
+        },
+        {
+          "word": "don't",
+          "start": 116.198,
+          "end": 116.338,
+          "score": 0.275,
+          "speaker": "Zig"
+        },
+        {
+          "word": "know",
+          "start": 116.358,
+          "end": 116.479,
+          "score": 0.376,
+          "speaker": "Zig"
+        },
+        {
+          "word": "is",
+          "start": 116.539,
+          "end": 116.619,
+          "score": 0.57,
+          "speaker": "Zig"
+        },
+        {
+          "word": "there",
+          "start": 116.639,
+          "end": 116.799,
+          "score": 0.668,
+          "speaker": "Zig"
+        },
+        {
+          "word": "a",
+          "start": 116.819,
+          "end": 116.839,
+          "score": 0.346,
+          "speaker": "Zig"
+        },
+        {
+          "word": "building",
+          "start": 116.879,
+          "end": 117.199,
+          "score": 0.782,
+          "speaker": "Zig"
+        },
+        {
+          "word": "nearby",
+          "start": 117.239,
+          "end": 117.7,
+          "score": 0.821,
+          "speaker": "Zig"
+        },
+        {
+          "word": "i",
+          "start": 117.76,
+          "end": 117.82,
+          "score": 0.698,
+          "speaker": "Zig"
+        },
+        {
+          "word": "mean",
+          "start": 117.84,
+          "end": 118.0,
+          "score": 0.946,
+          "speaker": "Zig"
+        },
+        {
+          "word": "a",
+          "start": 118.661,
+          "end": 118.721,
+          "score": 0.665,
+          "speaker": "Zig"
+        },
+        {
+          "word": "higher",
+          "start": 118.781,
+          "end": 119.101,
+          "score": 0.769,
+          "speaker": "Zig"
+        },
+        {
+          "word": "building",
+          "start": 119.141,
+          "end": 119.462,
+          "score": 0.78,
+          "speaker": "Zig"
+        },
+        {
+          "word": "maybe",
+          "start": 119.482,
+          "end": 119.722,
+          "score": 0.461,
+          "speaker": "Zig"
+        },
+        {
+          "word": "a",
+          "start": 119.782,
+          "end": 119.802,
+          "score": 0.963,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.0320658608327938,
+      "speaker": "Zig"
+    },
+    {
+      "start": 121.068,
+      "end": 125.251,
+      "text": " business complex or something with a helipad we can negotiate some terms for?",
+      "words": [
+        {
+          "word": "business",
+          "start": 121.068,
+          "end": 121.369,
+          "score": 0.893,
+          "speaker": "Zig"
+        },
+        {
+          "word": "complex",
+          "start": 121.389,
+          "end": 121.809,
+          "score": 0.87,
+          "speaker": "Zig"
+        },
+        {
+          "word": "or",
+          "start": 121.849,
+          "end": 121.909,
+          "score": 0.861,
+          "speaker": "Zig"
+        },
+        {
+          "word": "something",
+          "start": 121.949,
+          "end": 122.229,
+          "score": 0.79,
+          "speaker": "Zig"
+        },
+        {
+          "word": "with",
+          "start": 122.509,
+          "end": 122.629,
+          "score": 0.896,
+          "speaker": "Zig"
+        },
+        {
+          "word": "a",
+          "start": 122.669,
+          "end": 122.709,
+          "score": 0.499,
+          "speaker": "Zig"
+        },
+        {
+          "word": "helipad",
+          "start": 122.729,
+          "end": 123.21,
+          "score": 0.81,
+          "speaker": "Zig"
+        },
+        {
+          "word": "we",
+          "start": 123.25,
+          "end": 123.37,
+          "score": 0.934,
+          "speaker": "Zig"
+        },
+        {
+          "word": "can",
+          "start": 123.39,
+          "end": 123.59,
+          "score": 0.829,
+          "speaker": "Zig"
+        },
+        {
+          "word": "negotiate",
+          "start": 123.97,
+          "end": 124.41,
+          "score": 0.898,
+          "speaker": "Zig"
+        },
+        {
+          "word": "some",
+          "start": 124.43,
+          "end": 124.57,
+          "score": 0.299,
+          "speaker": "Zig"
+        },
+        {
+          "word": "terms",
+          "start": 124.61,
+          "end": 124.89,
+          "score": 0.891,
+          "speaker": "Zig"
+        },
+        {
+          "word": "for?",
+          "start": 125.05,
+          "end": 125.251,
+          "score": 0.875,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.09983648351112077,
+      "speaker": "Zig"
+    },
+    {
+      "start": 125.831,
+      "end": 132.554,
+      "text": "Nearest helipad is about three blocks away, so it's not exactly close, but it's not exactly far.",
+      "words": [
+        {
+          "word": "Nearest",
+          "start": 125.831,
+          "end": 126.211,
+          "score": 0.901,
+          "speaker": "Zig"
+        },
+        {
+          "word": "helipad",
+          "start": 126.691,
+          "end": 127.152,
+          "score": 0.737,
+          "speaker": "Zig"
+        },
+        {
+          "word": "is",
+          "start": 127.192,
+          "end": 127.252,
+          "score": 0.588,
+          "speaker": "Zig"
+        },
+        {
+          "word": "about",
+          "start": 127.292,
+          "end": 127.492,
+          "score": 0.9,
+          "speaker": "Zig"
+        },
+        {
+          "word": "three",
+          "start": 127.552,
+          "end": 127.772,
+          "score": 0.864,
+          "speaker": "Zig"
+        },
+        {
+          "word": "blocks",
+          "start": 127.832,
+          "end": 128.172,
+          "score": 0.9,
+          "speaker": "Zig"
+        },
+        {
+          "word": "away,",
+          "start": 128.252,
+          "end": 128.652,
+          "score": 0.919,
+          "speaker": "Zig"
+        },
+        {
+          "word": "so",
+          "start": 128.672,
+          "end": 128.752,
+          "score": 0.27,
+          "speaker": "Zig"
+        },
+        {
+          "word": "it's",
+          "start": 128.772,
+          "end": 128.892,
+          "score": 0.649,
+          "speaker": "Zig"
+        },
+        {
+          "word": "not",
+          "start": 128.932,
+          "end": 129.072,
+          "score": 0.866,
+          "speaker": "Zig"
+        },
+        {
+          "word": "exactly",
+          "start": 129.113,
+          "end": 129.553,
+          "score": 0.854,
+          "speaker": "Zig"
+        },
+        {
+          "word": "close,",
+          "start": 129.693,
+          "end": 130.213,
+          "score": 0.82,
+          "speaker": "Zig"
+        },
+        {
+          "word": "but",
+          "start": 130.273,
+          "end": 130.373,
+          "score": 0.939,
+          "speaker": "Zig"
+        },
+        {
+          "word": "it's",
+          "start": 130.393,
+          "end": 130.493,
+          "score": 0.842,
+          "speaker": "Zig"
+        },
+        {
+          "word": "not",
+          "start": 130.513,
+          "end": 130.633,
+          "score": 0.943,
+          "speaker": "Zig"
+        },
+        {
+          "word": "exactly",
+          "start": 130.673,
+          "end": 131.114,
+          "score": 0.809,
+          "speaker": "Zig"
+        },
+        {
+          "word": "far.",
+          "start": 131.274,
+          "end": 132.554,
+          "score": 0.74,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.09983648351112077,
+      "speaker": "Zig"
+    },
+    {
+      "start": 132.654,
+      "end": 135.576,
+      "text": "Is it high enough that we can see the building, the mansion, or wherever we're going to be?",
+      "words": [
+        {
+          "word": "Is",
+          "start": 132.654,
+          "end": 132.734,
+          "score": 0.782,
+          "speaker": "Zig"
+        },
+        {
+          "word": "it",
+          "start": 132.774,
+          "end": 132.834,
+          "score": 0.69,
+          "speaker": "Zig"
+        },
+        {
+          "word": "high",
+          "start": 132.874,
+          "end": 132.954,
+          "score": 0.417,
+          "speaker": "Zig"
+        },
+        {
+          "word": "enough",
+          "start": 132.974,
+          "end": 133.115,
+          "score": 0.811,
+          "speaker": "Zig"
+        },
+        {
+          "word": "that",
+          "start": 133.135,
+          "end": 133.235,
+          "score": 0.856,
+          "speaker": "Zig"
+        },
+        {
+          "word": "we",
+          "start": 133.255,
+          "end": 133.315,
+          "score": 0.995,
+          "speaker": "Zig"
+        },
+        {
+          "word": "can",
+          "start": 133.335,
+          "end": 133.455,
+          "score": 0.997,
+          "speaker": "Zig"
+        },
+        {
+          "word": "see",
+          "start": 133.495,
+          "end": 133.655,
+          "score": 0.795,
+          "speaker": "Zig"
+        },
+        {
+          "word": "the",
+          "start": 133.675,
+          "end": 133.775,
+          "score": 0.925,
+          "speaker": "Zig"
+        },
+        {
+          "word": "building,",
+          "start": 133.815,
+          "end": 134.175,
+          "score": 0.815,
+          "speaker": "Zig"
+        },
+        {
+          "word": "the",
+          "start": 134.235,
+          "end": 134.295,
+          "score": 0.97,
+          "speaker": "Zig"
+        },
+        {
+          "word": "mansion,",
+          "start": 134.335,
+          "end": 134.695,
+          "score": 0.895,
+          "speaker": "Zig"
+        },
+        {
+          "word": "or",
+          "start": 134.755,
+          "end": 134.815,
+          "score": 0.75,
+          "speaker": "Zig"
+        },
+        {
+          "word": "wherever",
+          "start": 134.835,
+          "end": 135.116,
+          "score": 0.926,
+          "speaker": "Zig"
+        },
+        {
+          "word": "we're",
+          "start": 135.136,
+          "end": 135.236,
+          "score": 0.231,
+          "speaker": "Zig"
+        },
+        {
+          "word": "going",
+          "start": 135.256,
+          "end": 135.356,
+          "score": 0.25,
+          "speaker": "Zig"
+        },
+        {
+          "word": "to",
+          "start": 135.376,
+          "end": 135.416,
+          "score": 0.004,
+          "speaker": "Zig"
+        },
+        {
+          "word": "be?",
+          "start": 135.436,
+          "end": 135.576,
+          "score": 0.869,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.09983648351112077,
+      "speaker": "Zig"
+    },
+    {
+      "start": 136.096,
+      "end": 137.357,
+      "text": "You can see the building.",
+      "words": [
+        {
+          "word": "You",
+          "start": 136.096,
+          "end": 136.236,
+          "score": 0.922,
+          "speaker": "Zig"
+        },
+        {
+          "word": "can",
+          "start": 136.256,
+          "end": 136.416,
+          "score": 0.903,
+          "speaker": "Zig"
+        },
+        {
+          "word": "see",
+          "start": 136.496,
+          "end": 136.676,
+          "score": 0.891,
+          "speaker": "Zig"
+        },
+        {
+          "word": "the",
+          "start": 136.696,
+          "end": 136.796,
+          "score": 0.663,
+          "speaker": "Zig"
+        },
+        {
+          "word": "building.",
+          "start": 136.876,
+          "end": 137.357,
+          "score": 0.707,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.09983648351112077,
+      "speaker": "Zig"
+    },
+    {
+      "start": 137.557,
+      "end": 139.278,
+      "text": "Can you see well?",
+      "words": [
+        {
+          "word": "Can",
+          "start": 137.557,
+          "end": 137.717,
+          "score": 0.939,
+          "speaker": "Zig"
+        },
+        {
+          "word": "you",
+          "start": 137.757,
+          "end": 137.877,
+          "score": 0.895,
+          "speaker": "Zig"
+        },
+        {
+          "word": "see",
+          "start": 137.957,
+          "end": 138.377,
+          "score": 0.755,
+          "speaker": "Zig"
+        },
+        {
+          "word": "well?",
+          "start": 138.958,
+          "end": 139.278,
+          "score": 0.906,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.09983648351112077,
+      "speaker": "Zig"
+    },
+    {
+      "start": 139.318,
+      "end": 140.298,
+      "text": "You're three blocks away.",
+      "words": [
+        {
+          "word": "You're",
+          "start": 139.318,
+          "end": 139.478,
+          "score": 0.073,
+          "speaker": "Zig"
+        },
+        {
+          "word": "three",
+          "start": 139.498,
+          "end": 139.678,
+          "score": 0.929,
+          "speaker": "Zig"
+        },
+        {
+          "word": "blocks",
+          "start": 139.698,
+          "end": 139.978,
+          "score": 0.837,
+          "speaker": "Zig"
+        },
+        {
+          "word": "away.",
+          "start": 140.018,
+          "end": 140.298,
+          "score": 0.974,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.09983648351112077,
+      "speaker": "Zig"
+    },
+    {
+      "start": 140.939,
+      "end": 141.319,
+      "text": "Okay.",
+      "words": [
+        {
+          "word": "Okay.",
+          "start": 140.939,
+          "end": 141.319,
+          "score": 0.57,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.09983648351112077,
+      "speaker": "Zig"
+    },
+    {
+      "start": 142.839,
+      "end": 143.32,
+      "text": "Three blocks.",
+      "words": [
+        {
+          "word": "Three",
+          "start": 142.839,
+          "end": 143.04,
+          "score": 0.781,
+          "speaker": "Zig"
+        },
+        {
+          "word": "blocks.",
+          "start": 143.14,
+          "end": 143.32,
+          "score": 0.495,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.09983648351112077,
+      "speaker": "Zig"
+    },
+    {
+      "start": 144.648,
+      "end": 145.609,
+      "text": " Trash, you're the pilot.",
+      "words": [
+        {
+          "word": "Trash,",
+          "start": 144.648,
+          "end": 144.928,
+          "score": 0.532,
+          "speaker": "Zig"
+        },
+        {
+          "word": "you're",
+          "start": 144.948,
+          "end": 145.088,
+          "score": 0.668,
+          "speaker": "Zig"
+        },
+        {
+          "word": "the",
+          "start": 145.108,
+          "end": 145.168,
+          "score": 0.091,
+          "speaker": "Zig"
+        },
+        {
+          "word": "pilot.",
+          "start": 145.188,
+          "end": 145.609,
+          "score": 0.967,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.09481189262519762,
+      "speaker": "Zig"
+    },
+    {
+      "start": 145.689,
+      "end": 147.41,
+      "text": "So you decide what we want to, pal.",
+      "words": [
+        {
+          "word": "So",
+          "start": 145.689,
+          "end": 145.809,
+          "score": 0.964,
+          "speaker": "Zig"
+        },
+        {
+          "word": "you",
+          "start": 145.849,
+          "end": 145.969,
+          "score": 0.788,
+          "speaker": "Zig"
+        },
+        {
+          "word": "decide",
+          "start": 146.009,
+          "end": 146.269,
+          "score": 0.89,
+          "speaker": "Zig"
+        },
+        {
+          "word": "what",
+          "start": 146.289,
+          "end": 146.389,
+          "score": 0.984,
+          "speaker": "Zig"
+        },
+        {
+          "word": "we",
+          "start": 146.649,
+          "end": 146.749,
+          "score": 0.992,
+          "speaker": "Zig"
+        },
+        {
+          "word": "want",
+          "start": 146.789,
+          "end": 146.949,
+          "score": 0.825,
+          "speaker": "Zig"
+        },
+        {
+          "word": "to,",
+          "start": 146.969,
+          "end": 147.109,
+          "score": 0.836,
+          "speaker": "Zig"
+        },
+        {
+          "word": "pal.",
+          "start": 147.17,
+          "end": 147.41,
+          "score": 0.656,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.09481189262519762,
+      "speaker": "Zig"
+    },
+    {
+      "start": 147.89,
+      "end": 149.011,
+      "text": "I think that sounds good.",
+      "words": [
+        {
+          "word": "I",
+          "start": 147.89,
+          "end": 147.99,
+          "score": 0.818,
+          "speaker": "Valient"
+        },
+        {
+          "word": "think",
+          "start": 148.03,
+          "end": 148.25,
+          "score": 0.737,
+          "speaker": "Valient"
+        },
+        {
+          "word": "that",
+          "start": 148.29,
+          "end": 148.41,
+          "score": 0.986,
+          "speaker": "Valient"
+        },
+        {
+          "word": "sounds",
+          "start": 148.47,
+          "end": 148.73,
+          "score": 0.864,
+          "speaker": "Valient"
+        },
+        {
+          "word": "good.",
+          "start": 148.81,
+          "end": 149.011,
+          "score": 0.905,
+          "speaker": "Valient"
+        }
+      ],
+      "avg_logprob": -0.09481189262519762,
+      "speaker": "Valient"
+    },
+    {
+      "start": 149.071,
+      "end": 150.051,
+      "text": "Three blocks away.",
+      "words": [
+        {
+          "word": "Three",
+          "start": 149.071,
+          "end": 149.291,
+          "score": 0.889,
+          "speaker": "Valient"
+        },
+        {
+          "word": "blocks",
+          "start": 149.331,
+          "end": 149.631,
+          "score": 0.895,
+          "speaker": "Valient"
+        },
+        {
+          "word": "away.",
+          "start": 149.691,
+          "end": 150.051,
+          "score": 0.952,
+          "speaker": "Valient"
+        }
+      ],
+      "avg_logprob": -0.09481189262519762,
+      "speaker": "Valient"
+    },
+    {
+      "start": 150.131,
+      "end": 154.754,
+      "text": "And do we have any mini drones that we could use to, like, spy nearby?",
+      "words": [
+        {
+          "word": "And",
+          "start": 150.131,
+          "end": 150.251,
+          "score": 0.736,
+          "speaker": "Valient"
+        },
+        {
+          "word": "do",
+          "start": 150.451,
+          "end": 150.571,
+          "score": 0.97,
+          "speaker": "Valient"
+        },
+        {
+          "word": "we",
+          "start": 150.612,
+          "end": 150.712,
+          "score": 0.872,
+          "speaker": "Valient"
+        },
+        {
+          "word": "have",
+          "start": 150.752,
+          "end": 150.912,
+          "score": 0.889,
+          "speaker": "Valient"
+        },
+        {
+          "word": "any",
+          "start": 150.972,
+          "end": 151.092,
+          "score": 0.983,
+          "speaker": "Valient"
+        },
+        {
+          "word": "mini",
+          "start": 151.152,
+          "end": 151.392,
+          "score": 0.68,
+          "speaker": "Valient"
+        },
+        {
+          "word": "drones",
+          "start": 151.432,
+          "end": 151.832,
+          "score": 0.904,
+          "speaker": "Valient"
+        },
+        {
+          "word": "that",
+          "start": 151.872,
+          "end": 151.992,
+          "score": 0.635,
+          "speaker": "Valient"
+        },
+        {
+          "word": "we",
+          "start": 152.032,
+          "end": 152.112,
+          "score": 0.998,
+          "speaker": "Valient"
+        },
+        {
+          "word": "could",
+          "start": 152.152,
+          "end": 152.312,
+          "score": 0.946,
+          "speaker": "Valient"
+        },
+        {
+          "word": "use",
+          "start": 152.453,
+          "end": 152.613,
+          "score": 0.813,
+          "speaker": "Valient"
+        },
+        {
+          "word": "to,",
+          "start": 152.653,
+          "end": 152.773,
+          "score": 0.94,
+          "speaker": "Valient"
+        },
+        {
+          "word": "like,",
+          "start": 152.793,
+          "end": 152.993,
+          "score": 0.836,
+          "speaker": "Valient"
+        },
+        {
+          "word": "spy",
+          "start": 153.153,
+          "end": 153.573,
+          "score": 0.939,
+          "speaker": "Valient"
+        },
+        {
+          "word": "nearby?",
+          "start": 154.094,
+          "end": 154.754,
+          "score": 0.78,
+          "speaker": "Valient"
+        }
+      ],
+      "avg_logprob": -0.09481189262519762,
+      "speaker": "Valient"
+    },
+    {
+      "start": 155.494,
+      "end": 158.016,
+      "text": "Mysteria, did you ever get hacked into the security system?",
+      "words": [
+        {
+          "word": "Mysteria,",
+          "start": 155.494,
+          "end": 155.995,
+          "score": 0.682,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "did",
+          "start": 156.015,
+          "end": 156.175,
+          "score": 0.722,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "you",
+          "start": 156.195,
+          "end": 156.275,
+          "score": 0.978,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "ever",
+          "start": 156.335,
+          "end": 156.475,
+          "score": 0.924,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "get",
+          "start": 156.515,
+          "end": 156.635,
+          "score": 0.837,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "hacked",
+          "start": 156.675,
+          "end": 156.915,
+          "score": 0.854,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "into",
+          "start": 156.955,
+          "end": 157.135,
+          "score": 0.887,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "the",
+          "start": 157.155,
+          "end": 157.215,
+          "score": 0.979,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "security",
+          "start": 157.255,
+          "end": 157.636,
+          "score": 0.906,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "system?",
+          "start": 157.676,
+          "end": 158.016,
+          "score": 0.963,
+          "speaker": "MarkFive"
+        }
+      ],
+      "avg_logprob": -0.09481189262519762,
+      "speaker": "MarkFive"
+    },
+    {
+      "start": 159.857,
+      "end": 162.638,
+      "text": "Because I thought you were trying to hack into the cameras.",
+      "words": [
+        {
+          "word": "Because",
+          "start": 159.857,
+          "end": 160.817,
+          "score": 0.472,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "I",
+          "start": 160.857,
+          "end": 160.897,
+          "score": 0.889,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "thought",
+          "start": 160.937,
+          "end": 161.078,
+          "score": 0.327,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "you",
+          "start": 161.118,
+          "end": 161.198,
+          "score": 0.099,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "were",
+          "start": 161.218,
+          "end": 161.318,
+          "score": 0.757,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "trying",
+          "start": 161.338,
+          "end": 161.558,
+          "score": 0.767,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "to",
+          "start": 161.578,
+          "end": 161.618,
+          "score": 0.979,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "hack",
+          "start": 161.658,
+          "end": 161.878,
+          "score": 0.902,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "into",
+          "start": 161.918,
+          "end": 162.058,
+          "score": 0.971,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "the",
+          "start": 162.078,
+          "end": 162.138,
+          "score": 0.985,
+          "speaker": "MarkFive"
+        },
+        {
+          "word": "cameras.",
+          "start": 162.178,
+          "end": 162.638,
+          "score": 0.684,
+          "speaker": "MarkFive"
+        }
+      ],
+      "avg_logprob": -0.09481189262519762,
+      "speaker": "MarkFive"
+    },
+    {
+      "start": 163.459,
+      "end": 166.321,
+      "text": "Well, let's get them set up before we went in.",
+      "words": [
+        {
+          "word": "Well,",
+          "start": 163.459,
+          "end": 163.819,
+          "score": 0.682,
+          "speaker": "Moria"
+        },
+        {
+          "word": "let's",
+          "start": 163.839,
+          "end": 164.099,
+          "score": 0.396,
+          "speaker": "Moria"
+        },
+        {
+          "word": "get",
+          "start": 164.119,
+          "end": 164.279,
+          "score": 0.777,
+          "speaker": "Moria"
+        },
+        {
+          "word": "them",
+          "start": 164.319,
+          "end": 164.52,
+          "score": 0.968,
+          "speaker": "Moria"
+        },
+        {
+          "word": "set",
+          "start": 164.6,
+          "end": 164.8,
+          "score": 0.865,
+          "speaker": "Moria"
+        },
+        {
+          "word": "up",
+          "start": 164.9,
+          "end": 165.0,
+          "score": 0.902,
+          "speaker": "Moria"
+        },
+        {
+          "word": "before",
+          "start": 165.08,
+          "end": 165.52,
+          "score": 0.849,
+          "speaker": "Moria"
+        },
+        {
+          "word": "we",
+          "start": 165.58,
+          "end": 165.7,
+          "score": 0.945,
+          "speaker": "Moria"
+        },
+        {
+          "word": "went",
+          "start": 165.74,
+          "end": 165.92,
+          "score": 0.921,
+          "speaker": "Moria"
+        },
+        {
+          "word": "in.",
+          "start": 166.12,
+          "end": 166.321,
+          "score": 0.743,
+          "speaker": "Moria"
+        }
+      ],
+      "avg_logprob": -0.09481189262519762,
+      "speaker": "Moria"
+    },
+    {
+      "start": 166.441,
+      "end": 170.103,
+      "text": "So let's see.",
+      "words": [
+        {
+          "word": "So",
+          "start": 166.441,
+          "end": 166.941,
+          "score": 0.932,
+          "speaker": "Moria"
+        },
+        {
+          "word": "let's",
+          "start": 166.961,
+          "end": 169.542,
+          "score": 0.556,
+          "speaker": "Moria"
+        },
+        {
+          "word": "see.",
+          "start": 169.602,
+          "end": 170.103,
+          "score": 0.883,
+          "speaker": "Moria"
+        }
+      ],
+      "avg_logprob": -0.09481189262519762,
+      "speaker": "Moria"
+    },
+    {
+      "start": 170.983,
+      "end": 171.744,
+      "text": "Make a roll for it.",
+      "words": [
+        {
+          "word": "Make",
+          "start": 170.983,
+          "end": 171.123,
+          "score": 0.368,
+          "speaker": "Moria"
+        },
+        {
+          "word": "a",
+          "start": 171.143,
+          "end": 171.183,
+          "score": 0.614,
+          "speaker": "Moria"
+        },
+        {
+          "word": "roll",
+          "start": 171.223,
+          "end": 171.404,
+          "score": 0.607,
+          "speaker": "Moria"
+        },
+        {
+          "word": "for",
+          "start": 171.424,
+          "end": 171.604,
+          "score": 0.942,
+          "speaker": "Moria"
+        },
+        {
+          "word": "it.",
+          "start": 171.664,
+          "end": 171.744,
+          "score": 0.901,
+          "speaker": "Moria"
+        }
+      ],
+      "avg_logprob": -0.09481189262519762,
+      "speaker": "Moria"
+    },
+    {
+      "start": 172.444,
+      "end": 173.625,
+      "text": "Yeah, roll some security system.",
+      "words": [
+        {
+          "word": "Yeah,",
+          "start": 172.444,
+          "end": 172.604,
+          "score": 0.248,
+          "speaker": "SPEAKER_06"
+        },
+        {
+          "word": "roll",
+          "start": 172.644,
+          "end": 172.924,
+          "score": 0.559,
+          "speaker": "SPEAKER_02"
+        },
+        {
+          "word": "some",
+          "start": 172.944,
+          "end": 173.024,
+          "score": 0.021,
+          "speaker": "Disco"
+        },
+        {
+          "word": "security",
+          "start": 173.085,
+          "end": 173.445,
+          "score": 0.509,
+          "speaker": "Disco"
+        },
+        {
+          "word": "system.",
+          "start": 173.485,
+          "end": 173.625,
+          "score": 0.267,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.09481189262519762,
+      "speaker": "Disco"
+    },
+    {
+      "start": 174.74,
+      "end": 178.442,
+      "text": " Three blocks away, we should be able to cover that in a segment or two, right?",
+      "words": [
+        {
+          "word": "Three",
+          "start": 174.74,
+          "end": 174.94,
+          "score": 0.844,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "blocks",
+          "start": 174.98,
+          "end": 175.22,
+          "score": 0.816,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "away,",
+          "start": 175.28,
+          "end": 175.501,
+          "score": 0.915,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "we",
+          "start": 175.521,
+          "end": 175.601,
+          "score": 0.997,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "should",
+          "start": 175.621,
+          "end": 175.801,
+          "score": 0.783,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "be",
+          "start": 175.821,
+          "end": 175.861,
+          "score": 1.0,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "able",
+          "start": 175.881,
+          "end": 176.021,
+          "score": 0.644,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "to",
+          "start": 176.041,
+          "end": 176.101,
+          "score": 0.75,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "cover",
+          "start": 176.141,
+          "end": 176.361,
+          "score": 0.89,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "that",
+          "start": 176.401,
+          "end": 176.521,
+          "score": 0.888,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "in",
+          "start": 176.541,
+          "end": 176.581,
+          "score": 0.892,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "a",
+          "start": 176.641,
+          "end": 176.661,
+          "score": 0.912,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "segment",
+          "start": 176.721,
+          "end": 177.081,
+          "score": 0.941,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "or",
+          "start": 177.121,
+          "end": 177.201,
+          "score": 0.506,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "two,",
+          "start": 177.241,
+          "end": 177.421,
+          "score": 0.927,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "right?",
+          "start": 177.481,
+          "end": 178.442,
+          "score": 0.749,
+          "speaker": "ArchRival"
+        }
+      ],
+      "avg_logprob": -0.09693877391365109,
+      "speaker": "ArchRival"
+    },
+    {
+      "start": 178.762,
+      "end": 180.463,
+      "text": "It just depends how fast you want to be there.",
+      "words": [
+        {
+          "word": "It",
+          "start": 178.762,
+          "end": 178.822,
+          "score": 0.313,
+          "speaker": "Disco"
+        },
+        {
+          "word": "just",
+          "start": 178.842,
+          "end": 178.942,
+          "score": 0.093,
+          "speaker": "Disco"
+        },
+        {
+          "word": "depends",
+          "start": 178.962,
+          "end": 179.262,
+          "score": 0.474,
+          "speaker": "Disco"
+        },
+        {
+          "word": "how",
+          "start": 179.302,
+          "end": 179.422,
+          "score": 0.186,
+          "speaker": "Disco"
+        },
+        {
+          "word": "fast",
+          "start": 179.462,
+          "end": 179.662,
+          "score": 0.233,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you",
+          "start": 179.722,
+          "end": 179.802,
+          "score": 0.254,
+          "speaker": "Disco"
+        },
+        {
+          "word": "want",
+          "start": 179.822,
+          "end": 179.943,
+          "score": 0.265,
+          "speaker": "Disco"
+        },
+        {
+          "word": "to",
+          "start": 179.963,
+          "end": 180.083,
+          "score": 0.437,
+          "speaker": "Disco"
+        },
+        {
+          "word": "be",
+          "start": 180.103,
+          "end": 180.223,
+          "score": 0.788,
+          "speaker": "Disco"
+        },
+        {
+          "word": "there.",
+          "start": 180.263,
+          "end": 180.463,
+          "score": 0.778,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.09693877391365109,
+      "speaker": "Disco"
+    },
+    {
+      "start": 181.583,
+      "end": 183.964,
+      "text": "The challenge is you've got to spin the plane up.",
+      "words": [
+        {
+          "word": "The",
+          "start": 181.583,
+          "end": 181.743,
+          "score": 0.908,
+          "speaker": "Disco"
+        },
+        {
+          "word": "challenge",
+          "start": 181.803,
+          "end": 182.164,
+          "score": 0.876,
+          "speaker": "Disco"
+        },
+        {
+          "word": "is",
+          "start": 182.224,
+          "end": 182.284,
+          "score": 0.325,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you've",
+          "start": 182.304,
+          "end": 182.564,
+          "score": 0.613,
+          "speaker": "Disco"
+        },
+        {
+          "word": "got",
+          "start": 182.864,
+          "end": 182.984,
+          "score": 0.784,
+          "speaker": "Disco"
+        },
+        {
+          "word": "to",
+          "start": 183.004,
+          "end": 183.044,
+          "score": 0.275,
+          "speaker": "Disco"
+        },
+        {
+          "word": "spin",
+          "start": 183.104,
+          "end": 183.324,
+          "score": 0.95,
+          "speaker": "Disco"
+        },
+        {
+          "word": "the",
+          "start": 183.364,
+          "end": 183.464,
+          "score": 0.476,
+          "speaker": "Disco"
+        },
+        {
+          "word": "plane",
+          "start": 183.504,
+          "end": 183.764,
+          "score": 0.835,
+          "speaker": "Disco"
+        },
+        {
+          "word": "up.",
+          "start": 183.884,
+          "end": 183.964,
+          "score": 0.548,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.09693877391365109,
+      "speaker": "Disco"
+    },
+    {
+      "start": 184.084,
+      "end": 185.485,
+      "text": "Let's say you're sitting there.",
+      "words": [
+        {
+          "word": "Let's",
+          "start": 184.084,
+          "end": 184.245,
+          "score": 0.417,
+          "speaker": "Disco"
+        },
+        {
+          "word": "say",
+          "start": 184.265,
+          "end": 184.385,
+          "score": 0.805,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you're",
+          "start": 184.405,
+          "end": 184.565,
+          "score": 0.817,
+          "speaker": "Disco"
+        },
+        {
+          "word": "sitting",
+          "start": 184.585,
+          "end": 185.105,
+          "score": 0.453,
+          "speaker": "Disco"
+        },
+        {
+          "word": "there.",
+          "start": 185.125,
+          "end": 185.485,
+          "score": 0.432,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.09693877391365109,
+      "speaker": "Disco"
+    },
+    {
+      "start": 185.685,
+      "end": 186.926,
+      "text": "We wouldn't need to take the plane.",
+      "words": [
+        {
+          "word": "We",
+          "start": 185.685,
+          "end": 185.785,
+          "score": 0.984,
+          "speaker": "Disco"
+        },
+        {
+          "word": "wouldn't",
+          "start": 185.825,
+          "end": 186.025,
+          "score": 0.834,
+          "speaker": "Disco"
+        },
+        {
+          "word": "need",
+          "start": 186.065,
+          "end": 186.185,
+          "score": 0.845,
+          "speaker": "Disco"
+        },
+        {
+          "word": "to",
+          "start": 186.205,
+          "end": 186.245,
+          "score": 0.979,
+          "speaker": "Disco"
+        },
+        {
+          "word": "take",
+          "start": 186.305,
+          "end": 186.426,
+          "score": 0.908,
+          "speaker": "Disco"
+        },
+        {
+          "word": "the",
+          "start": 186.466,
+          "end": 186.546,
+          "score": 0.819,
+          "speaker": "Disco"
+        },
+        {
+          "word": "plane.",
+          "start": 186.566,
+          "end": 186.926,
+          "score": 0.883,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.09693877391365109,
+      "speaker": "Disco"
+    },
+    {
+      "start": 187.386,
+      "end": 190.187,
+      "text": "Just fly or run or whatever.",
+      "words": [
+        {
+          "word": "Just",
+          "start": 187.386,
+          "end": 187.566,
+          "score": 0.88,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "fly",
+          "start": 188.186,
+          "end": 188.607,
+          "score": 0.936,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "or",
+          "start": 188.707,
+          "end": 188.847,
+          "score": 0.652,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "run",
+          "start": 189.027,
+          "end": 189.287,
+          "score": 0.828,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "or",
+          "start": 189.367,
+          "end": 189.447,
+          "score": 0.678,
+          "speaker": "ArchRival"
+        },
+        {
+          "word": "whatever.",
+          "start": 189.487,
+          "end": 190.187,
+          "score": 0.86,
+          "speaker": "ArchRival"
+        }
+      ],
+      "avg_logprob": -0.09693877391365109,
+      "speaker": "ArchRival"
+    },
+    {
+      "start": 191.888,
+      "end": 193.029,
+      "text": "It's not that far.",
+      "words": [
+        {
+          "word": "It's",
+          "start": 191.888,
+          "end": 192.008,
+          "score": 0.82,
+          "speaker": "Disco"
+        },
+        {
+          "word": "not",
+          "start": 192.048,
+          "end": 192.208,
+          "score": 0.721,
+          "speaker": "Disco"
+        },
+        {
+          "word": "that",
+          "start": 192.248,
+          "end": 192.428,
+          "score": 0.878,
+          "speaker": "Disco"
+        },
+        {
+          "word": "far.",
+          "start": 192.508,
+          "end": 193.029,
+          "score": 0.73,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.09693877391365109,
+      "speaker": "Disco"
+    },
+    {
+      "start": 193.069,
+      "end": 195.069,
+      "text": "Now, trash can can't fly.",
+      "words": [
+        {
+          "word": "Now,",
+          "start": 193.069,
+          "end": 193.289,
+          "score": 0.683,
+          "speaker": "Disco"
+        },
+        {
+          "word": "trash",
+          "start": 193.789,
+          "end": 194.069,
+          "score": 0.917,
+          "speaker": "Disco"
+        },
+        {
+          "word": "can",
+          "start": 194.089,
+          "end": 194.309,
+          "score": 0.867,
+          "speaker": "Disco"
+        },
+        {
+          "word": "can't",
+          "start": 194.349,
+          "end": 194.569,
+          "score": 0.8,
+          "speaker": "Disco"
+        },
+        {
+          "word": "fly.",
+          "start": 194.629,
+          "end": 195.069,
+          "score": 0.858,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.09693877391365109,
+      "speaker": "Disco"
+    },
+    {
+      "start": 195.65,
+      "end": 196.27,
+      "text": "Oh, wait a minute.",
+      "words": [
+        {
+          "word": "Oh,",
+          "start": 195.65,
+          "end": 195.81,
+          "score": 0.555,
+          "speaker": "Disco"
+        },
+        {
+          "word": "wait",
+          "start": 195.83,
+          "end": 195.97,
+          "score": 0.873,
+          "speaker": "Disco"
+        },
+        {
+          "word": "a",
+          "start": 196.01,
+          "end": 196.03,
+          "score": 0.985,
+          "speaker": "Disco"
+        },
+        {
+          "word": "minute.",
+          "start": 196.05,
+          "end": 196.27,
+          "score": 0.936,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.09693877391365109,
+      "speaker": "Disco"
+    },
+    {
+      "start": 197.27,
+      "end": 199.772,
+      "text": "Yeah, it's up on the 51st floor.",
+      "words": [
+        {
+          "word": "Yeah,",
+          "start": 197.27,
+          "end": 198.151,
+          "score": 0.524,
+          "speaker": "SPEAKER_01"
+        },
+        {
+          "word": "it's",
+          "start": 198.311,
+          "end": 198.451,
+          "score": 0.641,
+          "speaker": "Moria"
+        },
+        {
+          "word": "up",
+          "start": 198.531,
+          "end": 198.591,
+          "score": 0.209,
+          "speaker": "Moria"
+        },
+        {
+          "word": "on",
+          "start": 198.671,
+          "end": 198.771,
+          "score": 0.526,
+          "speaker": "Moria"
+        },
+        {
+          "word": "the",
+          "start": 198.791,
+          "end": 198.931,
+          "score": 0.474,
+          "speaker": "Moria"
+        },
+        {
+          "word": "51st",
+          "start": 198.951,
+          "end": 199.552,
+          "score": 0.534,
+          "speaker": "Moria"
+        },
+        {
+          "word": "floor.",
+          "start": 199.572,
+          "end": 199.772,
+          "score": 0.348,
+          "speaker": "Moria"
+        }
+      ],
+      "avg_logprob": -0.09693877391365109,
+      "speaker": "Moria"
+    },
+    {
+      "start": 203.452,
+      "end": 204.913,
+      "text": " I didn't think about this, Steve, in the emails.",
+      "words": [
+        {
+          "word": "I",
+          "start": 203.452,
+          "end": 203.492,
+          "score": 0.873,
+          "speaker": "Zig"
+        },
+        {
+          "word": "didn't",
+          "start": 203.532,
+          "end": 203.692,
+          "score": 0.856,
+          "speaker": "Zig"
+        },
+        {
+          "word": "think",
+          "start": 203.712,
+          "end": 203.872,
+          "score": 0.837,
+          "speaker": "Zig"
+        },
+        {
+          "word": "about",
+          "start": 203.892,
+          "end": 204.072,
+          "score": 0.744,
+          "speaker": "Zig"
+        },
+        {
+          "word": "this,",
+          "start": 204.092,
+          "end": 204.232,
+          "score": 0.744,
+          "speaker": "Zig"
+        },
+        {
+          "word": "Steve,",
+          "start": 204.252,
+          "end": 204.433,
+          "score": 0.646,
+          "speaker": "Zig"
+        },
+        {
+          "word": "in",
+          "start": 204.453,
+          "end": 204.513,
+          "score": 0.701,
+          "speaker": "Zig"
+        },
+        {
+          "word": "the",
+          "start": 204.533,
+          "end": 204.593,
+          "score": 0.974,
+          "speaker": "Zig"
+        },
+        {
+          "word": "emails.",
+          "start": 204.653,
+          "end": 204.913,
+          "score": 0.863,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Zig"
+    },
+    {
+      "start": 204.973,
+      "end": 206.674,
+      "text": "Is there a public park nearby?",
+      "words": [
+        {
+          "word": "Is",
+          "start": 204.973,
+          "end": 205.013,
+          "score": 0.366,
+          "speaker": "Zig"
+        },
+        {
+          "word": "there",
+          "start": 205.033,
+          "end": 205.233,
+          "score": 0.633,
+          "speaker": "Zig"
+        },
+        {
+          "word": "a",
+          "start": 205.253,
+          "end": 205.273,
+          "score": 0.048,
+          "speaker": "Zig"
+        },
+        {
+          "word": "public",
+          "start": 205.293,
+          "end": 205.593,
+          "score": 0.932,
+          "speaker": "Zig"
+        },
+        {
+          "word": "park",
+          "start": 205.653,
+          "end": 205.993,
+          "score": 0.807,
+          "speaker": "Zig"
+        },
+        {
+          "word": "nearby?",
+          "start": 206.154,
+          "end": 206.674,
+          "score": 0.852,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Zig"
+    },
+    {
+      "start": 211.216,
+      "end": 211.937,
+      "text": "Six blocks away.",
+      "words": [
+        {
+          "word": "Six",
+          "start": 211.216,
+          "end": 211.396,
+          "score": 0.859,
+          "speaker": "Zig"
+        },
+        {
+          "word": "blocks",
+          "start": 211.436,
+          "end": 211.657,
+          "score": 0.346,
+          "speaker": "Zig"
+        },
+        {
+          "word": "away.",
+          "start": 211.717,
+          "end": 211.937,
+          "score": 0.942,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Zig"
+    },
+    {
+      "start": 211.957,
+      "end": 213.338,
+      "text": "Oh, farther away.",
+      "words": [
+        {
+          "word": "Oh,",
+          "start": 211.957,
+          "end": 212.757,
+          "score": 0.309,
+          "speaker": "Zig"
+        },
+        {
+          "word": "farther",
+          "start": 212.797,
+          "end": 213.097,
+          "score": 0.787,
+          "speaker": "Zig"
+        },
+        {
+          "word": "away.",
+          "start": 213.137,
+          "end": 213.338,
+          "score": 0.928,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Zig"
+    },
+    {
+      "start": 213.358,
+      "end": 217.36,
+      "text": "OK.",
+      "words": [
+        {
+          "word": "OK.",
+          "start": 213.358,
+          "end": 217.36,
+          "score": 0.759,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Zig"
+    },
+    {
+      "start": 217.38,
+      "end": 218.14,
+      "text": "I came for the building.",
+      "words": [
+        {
+          "word": "I",
+          "start": 217.38,
+          "end": 217.4,
+          "score": 0.007,
+          "speaker": "Zig"
+        },
+        {
+          "word": "came",
+          "start": 217.5,
+          "end": 217.64,
+          "score": 0.907,
+          "speaker": "Zig"
+        },
+        {
+          "word": "for",
+          "start": 217.66,
+          "end": 217.74,
+          "score": 0.949,
+          "speaker": "Zig"
+        },
+        {
+          "word": "the",
+          "start": 217.76,
+          "end": 217.84,
+          "score": 0.778,
+          "speaker": "Zig"
+        },
+        {
+          "word": "building.",
+          "start": 217.86,
+          "end": 218.14,
+          "score": 0.897,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Zig"
+    },
+    {
+      "start": 218.7,
+      "end": 220.622,
+      "text": "I can't move that fast without a jet.",
+      "words": [
+        {
+          "word": "I",
+          "start": 218.7,
+          "end": 218.761,
+          "score": 0.691,
+          "speaker": "Zig"
+        },
+        {
+          "word": "can't",
+          "start": 218.801,
+          "end": 218.961,
+          "score": 0.916,
+          "speaker": "Zig"
+        },
+        {
+          "word": "move",
+          "start": 219.001,
+          "end": 219.121,
+          "score": 0.781,
+          "speaker": "Zig"
+        },
+        {
+          "word": "that",
+          "start": 219.141,
+          "end": 219.281,
+          "score": 0.826,
+          "speaker": "Zig"
+        },
+        {
+          "word": "fast",
+          "start": 219.321,
+          "end": 219.601,
+          "score": 0.951,
+          "speaker": "Zig"
+        },
+        {
+          "word": "without",
+          "start": 220.081,
+          "end": 220.321,
+          "score": 0.904,
+          "speaker": "Zig"
+        },
+        {
+          "word": "a",
+          "start": 220.341,
+          "end": 220.361,
+          "score": 0.961,
+          "speaker": "Zig"
+        },
+        {
+          "word": "jet.",
+          "start": 220.401,
+          "end": 220.622,
+          "score": 0.975,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Zig"
+    },
+    {
+      "start": 222.022,
+      "end": 222.242,
+      "text": "Great.",
+      "words": [
+        {
+          "word": "Great.",
+          "start": 222.022,
+          "end": 222.242,
+          "score": 0.369,
+          "speaker": "Valient"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Valient"
+    },
+    {
+      "start": 222.262,
+      "end": 223.443,
+      "text": "All right.",
+      "words": [
+        {
+          "word": "All",
+          "start": 222.262,
+          "end": 223.303,
+          "score": 0.321,
+          "speaker": "Valient"
+        },
+        {
+          "word": "right.",
+          "start": 223.323,
+          "end": 223.443,
+          "score": 0.268,
+          "speaker": "Valient"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Valient"
+    },
+    {
+      "start": 223.643,
+      "end": 224.043,
+      "text": "That's fine.",
+      "words": [
+        {
+          "word": "That's",
+          "start": 223.643,
+          "end": 223.843,
+          "score": 0.762,
+          "speaker": "Valient"
+        },
+        {
+          "word": "fine.",
+          "start": 223.883,
+          "end": 224.043,
+          "score": 0.559,
+          "speaker": "Valient"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Valient"
+    },
+    {
+      "start": 224.063,
+      "end": 224.644,
+      "text": "Jet's faster.",
+      "words": [
+        {
+          "word": "Jet's",
+          "start": 224.063,
+          "end": 224.244,
+          "score": 0.563,
+          "speaker": "Zig"
+        },
+        {
+          "word": "faster.",
+          "start": 224.284,
+          "end": 224.644,
+          "score": 0.841,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Zig"
+    },
+    {
+      "start": 224.984,
+      "end": 225.884,
+      "text": "So how do you want to do it?",
+      "words": [
+        {
+          "word": "So",
+          "start": 224.984,
+          "end": 225.164,
+          "score": 0.631,
+          "speaker": "Zig"
+        },
+        {
+          "word": "how",
+          "start": 225.204,
+          "end": 225.264,
+          "score": 0.871,
+          "speaker": "Zig"
+        },
+        {
+          "word": "do",
+          "start": 225.284,
+          "end": 225.344,
+          "score": 0.16,
+          "speaker": "Zig"
+        },
+        {
+          "word": "you",
+          "start": 225.364,
+          "end": 225.424,
+          "score": 0.037,
+          "speaker": "Zig"
+        },
+        {
+          "word": "want",
+          "start": 225.444,
+          "end": 225.544,
+          "score": 0.216,
+          "speaker": "Zig"
+        },
+        {
+          "word": "to",
+          "start": 225.564,
+          "end": 225.624,
+          "score": 0.426,
+          "speaker": "Zig"
+        },
+        {
+          "word": "do",
+          "start": 225.644,
+          "end": 225.804,
+          "score": 0.868,
+          "speaker": "Zig"
+        },
+        {
+          "word": "it?",
+          "start": 225.824,
+          "end": 225.884,
+          "score": 0.531,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Zig"
+    },
+    {
+      "start": 227.265,
+      "end": 229.326,
+      "text": "We could always leave it warm.",
+      "words": [
+        {
+          "word": "We",
+          "start": 227.265,
+          "end": 228.386,
+          "score": 0.648,
+          "speaker": "Zig"
+        },
+        {
+          "word": "could",
+          "start": 228.406,
+          "end": 228.506,
+          "score": 0.661,
+          "speaker": "Zig"
+        },
+        {
+          "word": "always",
+          "start": 228.526,
+          "end": 228.706,
+          "score": 0.82,
+          "speaker": "Zig"
+        },
+        {
+          "word": "leave",
+          "start": 228.746,
+          "end": 228.906,
+          "score": 0.715,
+          "speaker": "Zig"
+        },
+        {
+          "word": "it",
+          "start": 228.926,
+          "end": 228.966,
+          "score": 0.976,
+          "speaker": "Zig"
+        },
+        {
+          "word": "warm.",
+          "start": 229.026,
+          "end": 229.326,
+          "score": 0.946,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Zig"
+    },
+    {
+      "start": 229.506,
+      "end": 231.408,
+      "text": "We don't have to completely shut the engines down.",
+      "words": [
+        {
+          "word": "We",
+          "start": 229.506,
+          "end": 229.607,
+          "score": 0.482,
+          "speaker": "Zig"
+        },
+        {
+          "word": "don't",
+          "start": 229.627,
+          "end": 229.787,
+          "score": 0.473,
+          "speaker": "Zig"
+        },
+        {
+          "word": "have",
+          "start": 229.807,
+          "end": 230.007,
+          "score": 0.785,
+          "speaker": "Zig"
+        },
+        {
+          "word": "to",
+          "start": 230.027,
+          "end": 230.067,
+          "score": 0.014,
+          "speaker": "Zig"
+        },
+        {
+          "word": "completely",
+          "start": 230.127,
+          "end": 230.547,
+          "score": 0.939,
+          "speaker": "Zig"
+        },
+        {
+          "word": "shut",
+          "start": 230.587,
+          "end": 230.727,
+          "score": 0.97,
+          "speaker": "Zig"
+        },
+        {
+          "word": "the",
+          "start": 230.747,
+          "end": 230.827,
+          "score": 0.515,
+          "speaker": "Zig"
+        },
+        {
+          "word": "engines",
+          "start": 230.887,
+          "end": 231.187,
+          "score": 0.484,
+          "speaker": "Zig"
+        },
+        {
+          "word": "down.",
+          "start": 231.207,
+          "end": 231.408,
+          "score": 0.612,
+          "speaker": "Zig"
+        }
+      ],
+      "avg_logprob": -0.10733309938487681,
+      "speaker": "Zig"
+    },
+    {
+      "start": 233.546,
+      "end": 239.022,
+      "text": " Archer can probably fly there from wherever, I mean, I'll say it like this.",
+      "words": [
+        {
+          "word": "Archer",
+          "start": 233.546,
+          "end": 233.747,
+          "score": 0.497,
+          "speaker": "SPEAKER_04"
+        },
+        {
+          "word": "can",
+          "start": 233.767,
+          "end": 233.887,
+          "score": 0.379,
+          "speaker": "SPEAKER_04"
+        },
+        {
+          "word": "probably",
+          "start": 233.907,
+          "end": 234.208,
+          "score": 0.678,
+          "speaker": "Disco"
+        },
+        {
+          "word": "fly",
+          "start": 234.268,
+          "end": 234.569,
+          "score": 0.991,
+          "speaker": "Disco"
+        },
+        {
+          "word": "there",
+          "start": 234.609,
+          "end": 234.77,
+          "score": 0.875,
+          "speaker": "Disco"
+        },
+        {
+          "word": "from",
+          "start": 234.83,
+          "end": 234.95,
+          "score": 0.876,
+          "speaker": "Disco"
+        },
+        {
+          "word": "wherever,",
+          "start": 235.011,
+          "end": 235.392,
+          "score": 0.827,
+          "speaker": "Disco"
+        },
+        {
+          "word": "I",
+          "start": 236.254,
+          "end": 236.314,
+          "score": 0.719,
+          "speaker": "Disco"
+        },
+        {
+          "word": "mean,",
+          "start": 236.335,
+          "end": 236.575,
+          "score": 0.776,
+          "speaker": "Disco"
+        },
+        {
+          "word": "I'll",
+          "start": 238.16,
+          "end": 238.32,
+          "score": 0.721,
+          "speaker": "Disco"
+        },
+        {
+          "word": "say",
+          "start": 238.36,
+          "end": 238.501,
+          "score": 0.786,
+          "speaker": "Disco"
+        },
+        {
+          "word": "it",
+          "start": 238.521,
+          "end": 238.561,
+          "score": 0.069,
+          "speaker": "Disco"
+        },
+        {
+          "word": "like",
+          "start": 238.581,
+          "end": 238.722,
+          "score": 0.858,
+          "speaker": "Disco"
+        },
+        {
+          "word": "this.",
+          "start": 238.782,
+          "end": 239.022,
+          "score": 0.916,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.15687499821186066,
+      "speaker": "Disco"
+    },
+    {
+      "start": 240.647,
+      "end": 248.39,
+      "text": "You could, if you want to be really close, you put yourself on the very top of the roof of this building.",
+      "words": [
+        {
+          "word": "You",
+          "start": 240.647,
+          "end": 240.828,
+          "score": 0.936,
+          "speaker": "Disco"
+        },
+        {
+          "word": "could,",
+          "start": 241.109,
+          "end": 242.031,
+          "score": 0.72,
+          "speaker": "Disco"
+        },
+        {
+          "word": "if",
+          "start": 242.051,
+          "end": 242.091,
+          "score": 0.001,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you",
+          "start": 243.315,
+          "end": 243.375,
+          "score": 0.951,
+          "speaker": "Disco"
+        },
+        {
+          "word": "want",
+          "start": 243.415,
+          "end": 243.496,
+          "score": 0.712,
+          "speaker": "Disco"
+        },
+        {
+          "word": "to",
+          "start": 243.516,
+          "end": 243.576,
+          "score": 0.242,
+          "speaker": "Disco"
+        },
+        {
+          "word": "be",
+          "start": 243.596,
+          "end": 243.736,
+          "score": 0.406,
+          "speaker": "Disco"
+        },
+        {
+          "word": "really",
+          "start": 243.776,
+          "end": 244.077,
+          "score": 0.703,
+          "speaker": "Disco"
+        },
+        {
+          "word": "close,",
+          "start": 244.117,
+          "end": 244.458,
+          "score": 0.66,
+          "speaker": "Disco"
+        },
+        {
+          "word": "you",
+          "start": 244.479,
+          "end": 244.619,
+          "score": 0.91,
+          "speaker": "Disco"
+        },
+        {
+          "word": "put",
+          "start": 244.639,
+          "end": 244.779,
+          "score": 0.863,
+          "speaker": "Disco"
+        },
+        {
+          "word": "yourself",
+          "start": 244.799,
+          "end": 245.161,
+          "score": 0.842,
+          "speaker": "Disco"
+        },
+        {
+          "word": "on",
+          "start": 245.361,
+          "end": 245.441,
+          "score": 0.838,
+          "speaker": "Disco"
+        },
+        {
+          "word": "the",
+          "start": 245.461,
+          "end": 245.602,
+          "score": 0.742,
+          "speaker": "Disco"
+        },
+        {
+          "word": "very",
+          "start": 245.682,
+          "end": 246.043,
+          "score": 0.822,
+          "speaker": "Disco"
+        },
+        {
+          "word": "top",
+          "start": 246.404,
+          "end": 246.725,
+          "score": 0.975,
+          "speaker": "Disco"
+        },
+        {
+          "word": "of",
+          "start": 246.866,
+          "end": 246.966,
+          "score": 0.827,
+          "speaker": "Disco"
+        },
+        {
+          "word": "the",
+          "start": 247.006,
+          "end": 247.086,
+          "score": 0.745,
+          "speaker": "Disco"
+        },
+        {
+          "word": "roof",
+          "start": 247.146,
+          "end": 247.427,
+          "score": 0.854,
+          "speaker": "Disco"
+        },
+        {
+          "word": "of",
+          "start": 247.548,
+          "end": 247.628,
+          "score": 0.818,
+          "speaker": "Disco"
+        },
+        {
+          "word": "this",
+          "start": 247.688,
+          "end": 247.889,
+          "score": 0.811,
+          "speaker": "Disco"
+        },
+        {
+          "word": "building.",
+          "start": 248.029,
+          "end": 248.39,
+          "score": 0.856,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.15687499821186066,
+      "speaker": "Disco"
+    },
+    {
+      "start": 248.43,
+      "end": 249.293,
+      "text": "Now, getting down my",
+      "words": [
+        {
+          "word": "Now,",
+          "start": 248.43,
+          "end": 248.611,
+          "score": 0.599,
+          "speaker": "Disco"
+        },
+        {
+          "word": "getting",
+          "start": 248.631,
+          "end": 248.871,
+          "score": 0.839,
+          "speaker": "Disco"
+        },
+        {
+          "word": "down",
+          "start": 248.912,
+          "end": 249.172,
+          "score": 0.918,
+          "speaker": "Disco"
+        },
+        {
+          "word": "my",
+          "start": 249.192,
+          "end": 249.293,
+          "score": 0.8,
+          "speaker": "Disco"
+        }
+      ],
+      "avg_logprob": -0.15687499821186066,
+      "speaker": "Disco"
+    }
+  ],
+  "language": "en"
+}

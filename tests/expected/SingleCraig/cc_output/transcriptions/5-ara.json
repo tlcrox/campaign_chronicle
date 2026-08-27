@@ -1,0 +1,44 @@
+{
+  "segments": [
+    {
+      "start": 3.312,
+      "end": 3.823,
+      "text": " Don't miss.",
+      "words": [
+        {
+          "word": "Don't",
+          "start": 3.312,
+          "end": 3.537,
+          "score": 0.813,
+          "speaker": "SPEAKER_00"
+        },
+        {
+          "word": "miss.",
+          "start": 3.598,
+          "end": 3.823,
+          "score": 0.87,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.043017578125,
+      "speaker": "Monk"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "Don't",
+      "start": 3.312,
+      "end": 3.537,
+      "score": 0.813,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "miss.",
+      "start": 3.598,
+      "end": 3.823,
+      "score": 0.87,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "language": "en"
+}

@@ -1,0 +1,66 @@
+# WhisperX transcription service.
+#
+# PATHS ARE RELATIVE TO THIS FILE — compose resolves relative paths against the
+# compose file's own directory, hence the ../../ prefixes back to the repo root.
+#
+# Invoked as:  docker compose -f compose/whisperx/docker-compose.yml run --rm whisperx
+# with per-run  -v <session>:/session_input:ro  -v <out>:/session_output
+# and           -e AUDIO_DIR=/session_input -e OUTPUT_DIR=/session_output
+# supplied by the host stages (see pipeline.common.mounts.session_mounts).
+
+services:
+  whisperx:
+    build:
+      # The build context is the IMAGE dir, which holds both the Dockerfile and
+      # the requirements-docker.txt it COPYs — not this directory.
+      context: ../../docker/whisperx
+      dockerfile: Dockerfile
+    image: whisperx:local
+    entrypoint: ["/usr/local/bin/scripts/entrypoint.sh"]
+    # No container_name: a fixed name makes Docker refuse a second concurrent
+    # instance, which would break orchestrate --parallel.
+
+    environment:
+      # WHISPER_* are supplied per-run by the host stages from config.yaml
+      # (passed as `docker compose run -e ...`), so config.yaml is authoritative.
+      # Listed by NAME ONLY so a bare `WHISPER_MODEL=tiny docker compose run
+      # whisperx` still reaches the container; a value here would be a second
+      # copy of a config.yaml setting. entrypoint.sh refuses to guess: anything
+      # it needs and does not get, it names.
+      WHISPER_MODEL:
+      WHISPER_LANGUAGE:
+      WHISPER_COMPUTE_TYPE:
+      WHISPER_DEVICE:
+      WHISPER_BATCH_SIZE:
+      WHISPER_OUTPUT_FORMAT:
+      WHISPER_DIARIZE:
+      WHISPER_HOTWORDS:
+      WHISPER_INITIAL_PROMPT:
+      # The secret, and the plumbing:
+      HF_TOKEN: ${HF_TOKEN:-}
+      # `pipeline` is importable from the mounted src/ root, NOT from the shell
+      # scripts mount — the two were conflated before the src/ reorg.
+      PYTHONPATH: /usr/local/bin/pylib
+      WHISPERX_CONFIG: /usr/local/bin/config.yaml
+    volumes:
+      # Entrypoint + helper shell scripts for THIS image.
+      - ../../docker/whisperx:/usr/local/bin/scripts:ro
+      # The importable library root (src/pipeline -> `pipeline`).
+      - ../../src:/usr/local/bin/pylib:ro
+      # Config lives under config/ since the reorg.
+      - ../../config/config.yaml:/usr/local/bin/config.yaml:ro
+      - whisperx-models:/models
+      # NOTE: no ./audio, ./video or ./output. Input/output are per-session bind
+      # mounts passed at run time (/session_input, /session_output), which is
+      # what makes concurrent sessions safe.
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    tty: true
+
+volumes:
+  whisperx-models:

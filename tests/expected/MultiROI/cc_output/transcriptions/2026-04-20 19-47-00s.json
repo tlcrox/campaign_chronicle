@@ -1,0 +1,863 @@
+{
+  "segments": [
+    {
+      "start": 0.031,
+      "end": 0.712,
+      "text": " The real dude.",
+      "words": [
+        {
+          "word": "The",
+          "start": 0.031,
+          "end": 0.131,
+          "score": 0.812,
+          "speaker": "Vail"
+        },
+        {
+          "word": "real",
+          "start": 0.151,
+          "end": 0.351,
+          "score": 0.823,
+          "speaker": "Vail"
+        },
+        {
+          "word": "dude.",
+          "start": 0.391,
+          "end": 0.712,
+          "score": 0.525,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.09054904389712545,
+      "speaker": "Vail"
+    },
+    {
+      "start": 4.655,
+      "end": 7.857,
+      "text": "Yeah, the problem is that he can still get himself out wireless.",
+      "words": [
+        {
+          "word": "Yeah,",
+          "start": 4.655,
+          "end": 4.975,
+          "score": 0.807,
+          "speaker": "Racy"
+        },
+        {
+          "word": "the",
+          "start": 5.015,
+          "end": 5.095,
+          "score": 0.991,
+          "speaker": "Racy"
+        },
+        {
+          "word": "problem",
+          "start": 5.135,
+          "end": 5.475,
+          "score": 0.858,
+          "speaker": "Racy"
+        },
+        {
+          "word": "is",
+          "start": 5.575,
+          "end": 5.815,
+          "score": 0.63,
+          "speaker": "Racy"
+        },
+        {
+          "word": "that",
+          "start": 5.855,
+          "end": 6.016,
+          "score": 0.877,
+          "speaker": "Racy"
+        },
+        {
+          "word": "he",
+          "start": 6.076,
+          "end": 6.196,
+          "score": 0.706,
+          "speaker": "Racy"
+        },
+        {
+          "word": "can",
+          "start": 6.216,
+          "end": 6.356,
+          "score": 0.995,
+          "speaker": "Racy"
+        },
+        {
+          "word": "still",
+          "start": 6.396,
+          "end": 6.576,
+          "score": 0.956,
+          "speaker": "Racy"
+        },
+        {
+          "word": "get",
+          "start": 6.596,
+          "end": 6.716,
+          "score": 0.74,
+          "speaker": "Racy"
+        },
+        {
+          "word": "himself",
+          "start": 6.756,
+          "end": 7.096,
+          "score": 0.875,
+          "speaker": "Racy"
+        },
+        {
+          "word": "out",
+          "start": 7.176,
+          "end": 7.297,
+          "score": 0.861,
+          "speaker": "Racy"
+        },
+        {
+          "word": "wireless.",
+          "start": 7.357,
+          "end": 7.857,
+          "score": 0.872,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.09054904389712545,
+      "speaker": "Racy"
+    },
+    {
+      "start": 7.877,
+      "end": 8.878,
+      "text": "That's a pain in the butt.",
+      "words": [
+        {
+          "word": "That's",
+          "start": 7.877,
+          "end": 8.077,
+          "score": 0.82,
+          "speaker": "Racy"
+        },
+        {
+          "word": "a",
+          "start": 8.117,
+          "end": 8.157,
+          "score": 0.529,
+          "speaker": "Racy"
+        },
+        {
+          "word": "pain",
+          "start": 8.217,
+          "end": 8.417,
+          "score": 0.951,
+          "speaker": "Racy"
+        },
+        {
+          "word": "in",
+          "start": 8.457,
+          "end": 8.497,
+          "score": 0.972,
+          "speaker": "Racy"
+        },
+        {
+          "word": "the",
+          "start": 8.537,
+          "end": 8.597,
+          "score": 0.989,
+          "speaker": "Racy"
+        },
+        {
+          "word": "butt.",
+          "start": 8.638,
+          "end": 8.878,
+          "score": 0.954,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.09054904389712545,
+      "speaker": "Racy"
+    },
+    {
+      "start": 11.7,
+      "end": 12.781,
+      "text": "Mirage was thinking about that.",
+      "words": [
+        {
+          "word": "Mirage",
+          "start": 11.7,
+          "end": 12.0,
+          "score": 0.555,
+          "speaker": "Racy"
+        },
+        {
+          "word": "was",
+          "start": 12.02,
+          "end": 12.16,
+          "score": 0.75,
+          "speaker": "Racy"
+        },
+        {
+          "word": "thinking",
+          "start": 12.18,
+          "end": 12.42,
+          "score": 0.935,
+          "speaker": "Racy"
+        },
+        {
+          "word": "about",
+          "start": 12.44,
+          "end": 12.601,
+          "score": 0.821,
+          "speaker": "Racy"
+        },
+        {
+          "word": "that.",
+          "start": 12.621,
+          "end": 12.781,
+          "score": 0.938,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.09054904389712545,
+      "speaker": "Racy"
+    },
+    {
+      "start": 12.801,
+      "end": 20.847,
+      "text": "Can I go find all the antennas and kill the Wi-Fi in this area?",
+      "words": [
+        {
+          "word": "Can",
+          "start": 12.801,
+          "end": 12.941,
+          "score": 0.77,
+          "speaker": "Racy"
+        },
+        {
+          "word": "I",
+          "start": 12.961,
+          "end": 13.021,
+          "score": 0.995,
+          "speaker": "Racy"
+        },
+        {
+          "word": "go",
+          "start": 13.061,
+          "end": 13.181,
+          "score": 0.997,
+          "speaker": "Racy"
+        },
+        {
+          "word": "find",
+          "start": 13.261,
+          "end": 13.461,
+          "score": 0.783,
+          "speaker": "Racy"
+        },
+        {
+          "word": "all",
+          "start": 13.481,
+          "end": 13.621,
+          "score": 0.7,
+          "speaker": "Racy"
+        },
+        {
+          "word": "the",
+          "start": 13.641,
+          "end": 13.721,
+          "score": 0.834,
+          "speaker": "Racy"
+        },
+        {
+          "word": "antennas",
+          "start": 13.781,
+          "end": 14.242,
+          "score": 0.808,
+          "speaker": "Racy"
+        },
+        {
+          "word": "and",
+          "start": 14.282,
+          "end": 14.362,
+          "score": 0.849,
+          "speaker": "Racy"
+        },
+        {
+          "word": "kill",
+          "start": 14.442,
+          "end": 14.762,
+          "score": 0.883,
+          "speaker": "Racy"
+        },
+        {
+          "word": "the",
+          "start": 14.782,
+          "end": 14.862,
+          "score": 0.799,
+          "speaker": "Racy"
+        },
+        {
+          "word": "Wi-Fi",
+          "start": 14.902,
+          "end": 15.303,
+          "score": 0.781,
+          "speaker": "Racy"
+        },
+        {
+          "word": "in",
+          "start": 15.343,
+          "end": 15.383,
+          "score": 0.996,
+          "speaker": "Racy"
+        },
+        {
+          "word": "this",
+          "start": 15.423,
+          "end": 15.523,
+          "score": 0.964,
+          "speaker": "Racy"
+        },
+        {
+          "word": "area?",
+          "start": 15.603,
+          "end": 20.847,
+          "score": 0.912,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.09054904389712545,
+      "speaker": "Racy"
+    },
+    {
+      "start": 20.967,
+      "end": 22.368,
+      "text": "I'm going to help.",
+      "words": [
+        {
+          "word": "I'm",
+          "start": 20.967,
+          "end": 21.427,
+          "score": 0.563,
+          "speaker": "Vail"
+        },
+        {
+          "word": "going",
+          "start": 21.487,
+          "end": 21.727,
+          "score": 0.364,
+          "speaker": "Vail"
+        },
+        {
+          "word": "to",
+          "start": 21.767,
+          "end": 21.848,
+          "score": 0.57,
+          "speaker": "Vail"
+        },
+        {
+          "word": "help.",
+          "start": 21.888,
+          "end": 22.368,
+          "score": 0.557,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.09054904389712545,
+      "speaker": "Vail"
+    },
+    {
+      "start": 23.269,
+      "end": 27.992,
+      "text": "He probably has his own transmitter and backup stored somewhere else.",
+      "words": [
+        {
+          "word": "He",
+          "start": 23.269,
+          "end": 23.429,
+          "score": 0.72,
+          "speaker": "Vail"
+        },
+        {
+          "word": "probably",
+          "start": 24.029,
+          "end": 24.309,
+          "score": 0.865,
+          "speaker": "Vail"
+        },
+        {
+          "word": "has",
+          "start": 24.349,
+          "end": 24.449,
+          "score": 0.604,
+          "speaker": "Vail"
+        },
+        {
+          "word": "his",
+          "start": 24.49,
+          "end": 24.57,
+          "score": 0.909,
+          "speaker": "Vail"
+        },
+        {
+          "word": "own",
+          "start": 24.63,
+          "end": 24.75,
+          "score": 0.874,
+          "speaker": "Vail"
+        },
+        {
+          "word": "transmitter",
+          "start": 24.81,
+          "end": 25.41,
+          "score": 0.886,
+          "speaker": "Vail"
+        },
+        {
+          "word": "and",
+          "start": 26.411,
+          "end": 26.511,
+          "score": 0.766,
+          "speaker": "Vail"
+        },
+        {
+          "word": "backup",
+          "start": 26.551,
+          "end": 26.971,
+          "score": 0.674,
+          "speaker": "Vail"
+        },
+        {
+          "word": "stored",
+          "start": 26.991,
+          "end": 27.292,
+          "score": 0.748,
+          "speaker": "Vail"
+        },
+        {
+          "word": "somewhere",
+          "start": 27.332,
+          "end": 27.672,
+          "score": 0.889,
+          "speaker": "Vail"
+        },
+        {
+          "word": "else.",
+          "start": 27.772,
+          "end": 27.992,
+          "score": 0.878,
+          "speaker": "Vail"
+        }
+      ],
+      "avg_logprob": -0.09054904389712545,
+      "speaker": "Vail"
+    },
+    {
+      "start": 28.533,
+      "end": 28.953,
+      "text": "Probably.",
+      "words": [
+        {
+          "word": "Probably.",
+          "start": 28.533,
+          "end": 28.953,
+          "score": 0.854,
+          "speaker": "Racy"
+        }
+      ],
+      "avg_logprob": -0.09054904389712545,
+      "speaker": "Racy"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "The",
+      "start": 0.031,
+      "end": 0.131,
+      "score": 0.812,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "real",
+      "start": 0.151,
+      "end": 0.351,
+      "score": 0.823,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "dude.",
+      "start": 0.391,
+      "end": 0.712,
+      "score": 0.525,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Yeah,",
+      "start": 4.655,
+      "end": 4.975,
+      "score": 0.807,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 5.015,
+      "end": 5.095,
+      "score": 0.991,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "problem",
+      "start": 5.135,
+      "end": 5.475,
+      "score": 0.858,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "is",
+      "start": 5.575,
+      "end": 5.815,
+      "score": 0.63,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "that",
+      "start": 5.855,
+      "end": 6.016,
+      "score": 0.877,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "he",
+      "start": 6.076,
+      "end": 6.196,
+      "score": 0.706,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "can",
+      "start": 6.216,
+      "end": 6.356,
+      "score": 0.995,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "still",
+      "start": 6.396,
+      "end": 6.576,
+      "score": 0.956,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "get",
+      "start": 6.596,
+      "end": 6.716,
+      "score": 0.74,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "himself",
+      "start": 6.756,
+      "end": 7.096,
+      "score": 0.875,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "out",
+      "start": 7.176,
+      "end": 7.297,
+      "score": 0.861,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "wireless.",
+      "start": 7.357,
+      "end": 7.857,
+      "score": 0.872,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "That's",
+      "start": 7.877,
+      "end": 8.077,
+      "score": 0.82,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "a",
+      "start": 8.117,
+      "end": 8.157,
+      "score": 0.529,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "pain",
+      "start": 8.217,
+      "end": 8.417,
+      "score": 0.951,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "in",
+      "start": 8.457,
+      "end": 8.497,
+      "score": 0.972,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 8.537,
+      "end": 8.597,
+      "score": 0.989,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "butt.",
+      "start": 8.638,
+      "end": 8.878,
+      "score": 0.954,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Mirage",
+      "start": 11.7,
+      "end": 12.0,
+      "score": 0.555,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "was",
+      "start": 12.02,
+      "end": 12.16,
+      "score": 0.75,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "thinking",
+      "start": 12.18,
+      "end": 12.42,
+      "score": 0.935,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "about",
+      "start": 12.44,
+      "end": 12.601,
+      "score": 0.821,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "that.",
+      "start": 12.621,
+      "end": 12.781,
+      "score": 0.938,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Can",
+      "start": 12.801,
+      "end": 12.941,
+      "score": 0.77,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "I",
+      "start": 12.961,
+      "end": 13.021,
+      "score": 0.995,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "go",
+      "start": 13.061,
+      "end": 13.181,
+      "score": 0.997,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "find",
+      "start": 13.261,
+      "end": 13.461,
+      "score": 0.783,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "all",
+      "start": 13.481,
+      "end": 13.621,
+      "score": 0.7,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 13.641,
+      "end": 13.721,
+      "score": 0.834,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "antennas",
+      "start": 13.781,
+      "end": 14.242,
+      "score": 0.808,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "and",
+      "start": 14.282,
+      "end": 14.362,
+      "score": 0.849,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "kill",
+      "start": 14.442,
+      "end": 14.762,
+      "score": 0.883,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "the",
+      "start": 14.782,
+      "end": 14.862,
+      "score": 0.799,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "Wi-Fi",
+      "start": 14.902,
+      "end": 15.303,
+      "score": 0.781,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "in",
+      "start": 15.343,
+      "end": 15.383,
+      "score": 0.996,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "this",
+      "start": 15.423,
+      "end": 15.523,
+      "score": 0.964,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "area?",
+      "start": 15.603,
+      "end": 20.847,
+      "score": 0.912,
+      "speaker": "SPEAKER_00"
+    },
+    {
+      "word": "I'm",
+      "start": 20.967,
+      "end": 21.427,
+      "score": 0.563,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "going",
+      "start": 21.487,
+      "end": 21.727,
+      "score": 0.364,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "to",
+      "start": 21.767,
+      "end": 21.848,
+      "score": 0.57,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "help.",
+      "start": 21.888,
+      "end": 22.368,
+      "score": 0.557,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "He",
+      "start": 23.269,
+      "end": 23.429,
+      "score": 0.72,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "probably",
+      "start": 24.029,
+      "end": 24.309,
+      "score": 0.865,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "has",
+      "start": 24.349,
+      "end": 24.449,
+      "score": 0.604,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "his",
+      "start": 24.49,
+      "end": 24.57,
+      "score": 0.909,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "own",
+      "start": 24.63,
+      "end": 24.75,
+      "score": 0.874,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "transmitter",
+      "start": 24.81,
+      "end": 25.41,
+      "score": 0.886,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "and",
+      "start": 26.411,
+      "end": 26.511,
+      "score": 0.766,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "backup",
+      "start": 26.551,
+      "end": 26.971,
+      "score": 0.674,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "stored",
+      "start": 26.991,
+      "end": 27.292,
+      "score": 0.748,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "somewhere",
+      "start": 27.332,
+      "end": 27.672,
+      "score": 0.889,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "else.",
+      "start": 27.772,
+      "end": 27.992,
+      "score": 0.878,
+      "speaker": "SPEAKER_01"
+    },
+    {
+      "word": "Probably.",
+      "start": 28.533,
+      "end": 28.953,
+      "score": 0.854,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "language": "en"
+}

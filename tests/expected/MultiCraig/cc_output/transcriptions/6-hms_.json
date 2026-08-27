@@ -1,0 +1,30 @@
+{
+  "segments": [
+    {
+      "start": 10.939,
+      "end": 11.144,
+      "text": " Yeah.",
+      "words": [
+        {
+          "word": "Yeah.",
+          "start": 10.939,
+          "end": 11.144,
+          "score": 0.483,
+          "speaker": "SPEAKER_00"
+        }
+      ],
+      "avg_logprob": -0.06510416666666667,
+      "speaker": "Max"
+    }
+  ],
+  "word_segments": [
+    {
+      "word": "Yeah.",
+      "start": 10.939,
+      "end": 11.144,
+      "score": 0.483,
+      "speaker": "SPEAKER_00"
+    }
+  ],
+  "language": "en"
+}
