@@ -31,7 +31,6 @@ This README is the entry point and covers architecture. See also:
 | Doc | What's in it |
 |---|---|
 | **[ORCHESTRATION.md](ORCHESTRATION.md)** | How to run it — `orchestrate.py` and every step, file locations, integration points. |
-| **[HISTORY.md](HISTORY.md)** | How it evolved, the refactor, bugs fixed, current state (what broke and how it's being restored). |
 | **[IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md)** | Pending work, plus deferred work (embeddings, security, infrastructure). |
 | **[TESTING.md](TESTING.md)** | What tests exist and how to run them.
 
