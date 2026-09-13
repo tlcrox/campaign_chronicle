@@ -7,7 +7,8 @@ local timestamp parser was replaced by the shared pipeline.common.timecode
 (killing one of the duplicate timecode implementations).
 
 Public API:
-    generate_storyboard(csv_path, transcript_path, image_folder, output_docx)
+    generate_storyboard(csv_path, transcript_path, image_folder, output_docx,
+                        layout=None)
 
 CLI:
     python3 -m pipeline.merge.storyboard <scene_dir> <session_text>
@@ -16,7 +17,7 @@ CLI:
 from typing import Any, Callable
 
 from docx import Document
-from docx.shared import Inches, Pt
+from docx.shared import Emu, Inches, Pt
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 import pandas as pd
@@ -32,6 +33,28 @@ from pipeline.common.timecode import timestamp_to_seconds
 
 import logging
 logger = logging.getLogger(__name__)
+
+# Word lays pictures out at 96 dpi: one CSS/screen pixel is 9525 EMU.
+EMU_PER_PX = 9525
+
+_ALIGNMENT = {
+    "left": WD_ALIGN_PARAGRAPH.LEFT,
+    "center": WD_ALIGN_PARAGRAPH.CENTER,
+    "right": WD_ALIGN_PARAGRAPH.RIGHT,
+}
+
+
+def Px(pixels) -> Emu:
+    """A python-docx Length from a pixel count (python-docx has no Px unit)."""
+    return Emu(int(pixels) * EMU_PER_PX)
+
+
+def storyboard_filename(session_name: str, layout: str) -> str:
+    """``<session>_storyboard.docx`` for the chapter layout, ``<session>_inline.docx``
+    for inline — so the two can sit side by side in one cc_output/ and be told
+    apart at a glance."""
+    suffix = "inline" if layout == "inline" else "storyboard"
+    return f"{session_name}_{suffix}.docx"
 
 
 def parse_txt_transcript(transcript_path):
@@ -93,8 +116,12 @@ def detect_transcript_format(transcript_path):
     path_str = str(transcript_path).lower()
     return path_str.endswith('.json')
 
-def generate_storyboard(csv_path, transcript_path, image_folder, output_docx):
+def generate_storyboard(csv_path, transcript_path, image_folder, output_docx,
+                        layout=None):
+    """``layout`` overrides merge.images.layout for this one document; None
+    means "whatever the config says", which is the normal case."""
     cfg = get_config()
+    layout = layout or cfg.storyboard_layout
 
     doc = Document()
     doc.add_heading(cfg.document_title, 0)
@@ -166,13 +193,11 @@ def generate_storyboard(csv_path, transcript_path, image_folder, output_docx):
             entries, entry_idx, doc, is_json, image_start_time)
         paragraph_count += added
 
-        # Add image
-        if paragraph_count > 0:
-            doc.add_page_break()
-        # Use Heading 2 for scene headers (for TOC)
-        hdr = doc.add_heading(f"Scene {video_idx:02d}-{scene_num:03d}", level=2)
-        hdr.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        doc.add_picture(str(image_path), width=Inches(cfg.image_width_inches))
+        if layout == "inline":
+            _add_scene_inline(doc, cfg, image_path)
+        else:
+            _add_scene_chapter(doc, cfg, video_idx, scene_num, image_path,
+                               first=paragraph_count == 0)
 
     # Process remaining entries after last image
     if entry_idx < len(entries):
@@ -184,6 +209,33 @@ def generate_storyboard(csv_path, transcript_path, image_folder, output_docx):
     logger.info(f"Total entries processed: {len(entries)}")
     logger.info(f"Average parts per paragraph: {len(entries) / max(paragraph_count, 1):.2f}")
     logger.info(f"Document saved as {output_docx}")
+
+def _add_scene_chapter(doc, cfg, video_idx, scene_num, image_path, first):
+    """One scene per page: page break, Heading 2 (so Word builds a TOC), then
+    the picture at merge.images.width inches. ``first`` is "no dialogue has
+    been written yet": the title page's own break already put us on a fresh
+    page, so a scene that opens the document gets no break of its own."""
+    if not first:
+        doc.add_page_break()
+    hdr = doc.add_heading(f"Scene {video_idx:02d}-{scene_num:03d}", level=2)
+    hdr.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    doc.add_picture(str(image_path), width=Inches(cfg.image_width_inches))
+
+
+def _add_scene_inline(doc, cfg, image_path):
+    """The picture in the flow of dialogue: no heading, no page break, its own
+    paragraph aligned per merge.images.inline.align, sized in pixels. Giving
+    one of width/height keeps the image's aspect ratio; giving both scales it
+    to exactly that box (python-docx stretches, it does not crop)."""
+    width_px, height_px = cfg.inline_image_size_px
+    paragraph = doc.add_paragraph()
+    paragraph.alignment = _ALIGNMENT[cfg.inline_image_align]
+    paragraph.add_run().add_picture(
+        str(image_path),
+        width=Px(width_px) if width_px else None,
+        height=Px(height_px) if height_px else None,
+    )
+
 
 def _flush_speaker_entries(entries, entry_idx, doc, is_json, stop_at=None):
     """

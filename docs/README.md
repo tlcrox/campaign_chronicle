@@ -192,6 +192,7 @@ Both workflows produce identical final output: character names, filler removed, 
                 └─ (or manual_source screens, when the session supplies them)
        │
   mapped+cleaned transcripts + CSV + images ──► MERGE ──► cc_output/<session>_storyboard.docx
+                                                       (or <session>_inline.docx: merge.images.layout)
                      ├─ combine_transcripts (build sources → interleave by timestamp)
                      └─ combine_scenes (merge multi-video CSVs + images, Scene-MM-NNN.jpg)
                         (merged results land in cc_output/combined_output/)
@@ -333,7 +334,7 @@ Week 13/                     <- your source, untouched apart from this one folde
     transcriptions/          per-source WhisperX transcripts
     scenes_output/           per-video PySceneDetect CSVs + images
     combined_output/         merged transcript + merged scenes
-    Week 13_storyboard.docx  the deliverable
+    Week 13_storyboard.docx  the deliverable (Week 13_inline.docx in the inline layout)
 ```
 
 One root means "delete everything this tool made" is a single `rmtree`, and a

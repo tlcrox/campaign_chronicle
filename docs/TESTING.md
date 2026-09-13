@@ -96,8 +96,8 @@ handled by the single `transcribe.py` stage, which auto-detects the source
 
 | Fixture | Shape | Exercises | Expected output |
 |---|---|---|---|
-| **SingleVideo** | 1 video, embedded audio | baseline: transcribe → single-ROI scenes → merge | `cc_output/transcriptions/*.json`, `cc_output/scenes_output/<video>/…-Scenes.csv` + `Scene-01-###.jpg`, `cc_output/…storyboard.docx` |
-| **MultiVideo** | 3 videos, embedded audio | per-video indexing | separate CSV per video; images `Scene-01-*`, `Scene-02-*`, `Scene-03-*` |
+| **SingleVideo** | 1 video, embedded audio | baseline: transcribe → single-ROI scenes → merge; both storyboard layouts (`INLINE_ALSO` in `run_tests.py`) | `cc_output/transcriptions/*.json`, `cc_output/scenes_output/<video>/…-Scenes.csv` + `Scene-01-###.jpg`, `SingleVideo_storyboard.docx` and `SingleVideo_inline.docx` |
+| **MultiVideo** | 3 videos, embedded audio | per-video indexing; both storyboard layouts (`INLINE_ALSO` in `run_tests.py`) | separate CSV per video; images `Scene-01-*`, `Scene-02-*`, `Scene-03-*`; `MultiVideo_storyboard.docx` and `MultiVideo_inline.docx` |
 | **SingleCraig** | 1 video + Audacity project | Audacity audio path | transcript from `.aup` audio; single-ROI scenes |
 | **MultiCraig** | 2 videos + shared Audacity + `roi_history.json` | multi-video + per-video ROI | one CSV per video; per-video ROI applied |
 | **MultiROI** *(sic)* | 3 videos + `roi_history.json` | time-based multi-ROI | multi-ROI scene detection per time segment, reassembled |

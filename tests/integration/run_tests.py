@@ -91,6 +91,7 @@ from pipeline.common.mounts import (  # noqa: E402
     COMBINED_OUTPUT_SUBDIR,
 )
 from pipeline.common.scenes import iter_scene_images  # noqa: E402
+from pipeline.merge.storyboard import storyboard_filename  # noqa: E402
 # Imported, not restated: this driver's per-tool cap has to match the cap
 # the Docker layer applies inside it.
 from pipeline.common.docker import DOCKER_RUN_TIMEOUT  # noqa: E402
@@ -145,7 +146,16 @@ STAGE_KEYS = (
     "merge_transcripts",
     "merge_scenes",
     "generate_storyboard",
+    "generate_storyboard_inline",
 )
+
+# Sessions that also build the storyboard in the inline layout, as a fourth
+# merge step (generate_storyboard --layout inline). The document lands beside
+# the chapter one as <session>_inline.docx, so one cc_output/ and one expected
+# tree hold both; the docx comparator sees the text, and the two layouts differ
+# in text (inline has no "Scene NN-NNN" headings), so it is a real golden.
+# Everywhere else the stage is recorded as None: not applicable.
+INLINE_ALSO = ("SingleVideo", "MultiVideo")
 
 
 class TestRunner:
@@ -285,17 +295,18 @@ class TestRunner:
         # Check storyboard — it lands in the OUTPUT tree at
         # out_root/OUTPUT_ROOT/<session>_storyboard.docx, NOT beside the input.
         # Resolve via the constants; a hand-written literal here would silently
-        # report False for every session.
-        storyboard = out_root / OUTPUT_ROOT / f"{session_path.name}_storyboard.docx"
-        if storyboard.exists():
-            validation["storyboard"] = True
-            validation["details"]["storyboard"] = {
-                "exists": True,
-                "name": storyboard.name,
-                "size": storyboard.stat().st_size,
-            }
-        else:
-            validation["details"]["storyboard"] = {"exists": False}
+        # report False for every session. A session in INLINE_ALSO must also
+        # have produced <session>_inline.docx.
+        expected_docs = [storyboard_filename(session_path.name, "chapter")]
+        if session_path.name in INLINE_ALSO:
+            expected_docs.append(storyboard_filename(session_path.name, "inline"))
+        found = {name: (out_root / OUTPUT_ROOT / name) for name in expected_docs}
+        validation["storyboard"] = all(p.exists() for p in found.values())
+        validation["details"]["storyboard"] = {
+            name: {"exists": p.exists(),
+                   "size": p.stat().st_size if p.exists() else None}
+            for name, p in found.items()
+        }
 
         return validation
 
@@ -432,12 +443,26 @@ class TestRunner:
             # Each result is recorded. merge_transcripts and merge_scenes feed
             # generate_storyboard, but a failure in either is its own failure —
             # storyboard can still succeed against stale or partial input.
-            for tool in ("merge_transcripts", "merge_scenes", "generate_storyboard"):
+            for tool in ("merge_transcripts", "merge_scenes"):
                 self.results[test_dir_name][tool] = self.run_tool(tool, test_path)
+            # Pin the layout for each storyboard pass rather than inheriting the
+            # fixture config's default: the golden tree fixes which documents
+            # exist (<session>_storyboard.docx always, plus <session>_inline.docx
+            # for INLINE_ALSO), and a run must reproduce exactly those whatever
+            # merge.images.layout happens to be set to in the fixture config.
+            self.results[test_dir_name]["generate_storyboard"] = self.run_tool(
+                "generate_storyboard", test_path, ["--layout", "chapter"])
+            if test_dir_name in INLINE_ALSO:
+                self.results[test_dir_name]["generate_storyboard_inline"] = self.run_tool(
+                    "generate_storyboard", test_path, ["--layout", "inline"])
+            else:
+                self.results[test_dir_name]["generate_storyboard_inline"] = None
         else:
             logger.info("(dry-run: skipping)")
             for tool in ("merge_transcripts", "merge_scenes", "generate_storyboard"):
                 self.results[test_dir_name][tool] = True  # Mark as skipped
+            self.results[test_dir_name]["generate_storyboard_inline"] = (
+                True if test_dir_name in INLINE_ALSO else None)
 
         # 4. Validation - skipped on a dry run, where nothing was written and
         # every check would report a false miss. Recorded only when it ran, so

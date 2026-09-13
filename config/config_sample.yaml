@@ -129,8 +129,26 @@ merge:
 
   # Scene image configuration for storyboard
   images:
-    # Width for images in generated document (in inches)
+    # How scene images sit in the document:
+    #   chapter - one scene per page: page break, "Scene NN-NNN" heading (so
+    #             Word can build a table of contents), picture `width` inches wide.
+    #   inline  - no headings, no page breaks. A small picture is set in the flow
+    #             of dialogue at the scene's start time, sized and aligned per
+    #             `inline` below.
+    layout: chapter
+
+    # Width for images in generated document (in inches) — chapter layout only
     width: 6.0
+
+    # Inline layout only
+    inline:
+      # Picture size in pixels (Word's 96 dpi). Give one and the other follows the
+      # image's aspect ratio; give both and the image is scaled to exactly that
+      # box (stretched, not cropped). 0 = not set.
+      width_px: 320
+      height_px: 0
+      # Paragraph alignment of the picture: left, center or right
+      align: right
 
   # Document formatting
   document:

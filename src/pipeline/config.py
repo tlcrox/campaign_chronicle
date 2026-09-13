@@ -85,7 +85,11 @@ DEFAULTS = {
             "end_time_column": "End Time (seconds)",
             "video_column": "Video",
         },
-        "images": {"width": 6.0},
+        "images": {
+            "width": 6.0,
+            "layout": "chapter",
+            "inline": {"width_px": 320, "height_px": 0, "align": "right"},
+        },
         "document": {"title": "Transcript"},
     },
     "speakers": {
@@ -102,6 +106,12 @@ WHISPER_COMPUTE_TYPES = ("float16", "float32", "bfloat16", "int8",
 # CTranslate2 has no efficient float16 path on CPU and refuses at model load.
 CPU_COMPUTE_TYPES = ("int8", "float32")
 WHISPER_OUTPUT_FORMATS = ("json", "txt", "srt", "vtt", "tsv", "aud", "all")
+
+# merge.images.layout: "chapter" is one scene per page under a Heading 2;
+# "inline" drops the headings and page breaks and sets a small picture in
+# the flow of dialogue, aligned per merge.images.inline.align.
+STORYBOARD_LAYOUTS = ("chapter", "inline")
+IMAGE_ALIGNMENTS = ("left", "center", "right")
 
 
 def _deep_merge(defaults: dict, loaded, path: str = ""):
@@ -290,12 +300,40 @@ class Config:
                 problems.append(
                     f"scenes.roi must be four integers 'x y width height', got {roi!r}")
 
-        width = (self.get("merge", "images") or {}).get("width")
+        images = self.get("merge", "images") or {}
+        width = images.get("width")
         try:
             if float(width) <= 0:
                 problems.append(f"merge.images.width must be greater than 0, got {width!r}")
         except (TypeError, ValueError):
             problems.append(f"merge.images.width must be a number, got {width!r}")
+
+        layout = str(images.get("layout") or "").lower()
+        if layout not in STORYBOARD_LAYOUTS:
+            problems.append(
+                f"merge.images.layout must be one of: {', '.join(STORYBOARD_LAYOUTS)}; "
+                f"got {images.get('layout')!r}")
+        inline = images.get("inline") or {}
+        align = str(inline.get("align") or "").lower()
+        if align not in IMAGE_ALIGNMENTS:
+            problems.append(
+                f"merge.images.inline.align must be one of: "
+                f"{', '.join(IMAGE_ALIGNMENTS)}; got {inline.get('align')!r}")
+        sizes = {}
+        for key in ("width_px", "height_px"):
+            value = inline.get(key, 0)
+            try:
+                sizes[key] = int(value)
+                if sizes[key] < 0:
+                    raise ValueError
+            except (TypeError, ValueError):
+                problems.append(
+                    f"merge.images.inline.{key} must be a whole number of pixels "
+                    f"(0 = derive from the other), got {value!r}")
+        if layout == "inline" and len(sizes) == 2 and not any(sizes.values()):
+            problems.append(
+                "merge.images.inline needs width_px or height_px (or both); "
+                "both are 0")
 
         if problems:
             listed = "\n".join(f"  - {p}" for p in problems)
@@ -792,8 +830,25 @@ class Config:
 
     @property
     def image_width_inches(self) -> float:
-        """Image width in inches for storyboard."""
+        """Image width in inches for the storyboard's chapter layout."""
         return self.get("merge", "images")["width"]
+
+    @property
+    def storyboard_layout(self) -> str:
+        """"chapter" (one scene per page under a heading) or "inline"."""
+        return str(self.get("merge", "images")["layout"]).lower()
+
+    @property
+    def inline_image_size_px(self) -> tuple:
+        """(width_px, height_px) for the inline layout; a 0 becomes None, meaning
+        "derive from the other to keep the image's aspect ratio"."""
+        inline = self.get("merge", "images")["inline"]
+        return (int(inline["width_px"]) or None, int(inline["height_px"]) or None)
+
+    @property
+    def inline_image_align(self) -> str:
+        """left | center | right — paragraph alignment of an inline picture."""
+        return str(self.get("merge", "images")["inline"]["align"]).lower()
 
     @property
     def document_title(self) -> str:

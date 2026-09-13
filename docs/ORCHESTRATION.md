@@ -377,6 +377,27 @@ python -m pipeline.merge.storyboard <scene_dir> <session_text>
 # scene_dir must contain a *.csv; transcript may be .json (whisperx) or .txt
 ```
 
+`merge.images.layout` in config.yaml picks how scene images sit in the
+document. `chapter` (default) gives one scene per page — page break, a
+"Scene NN-NNN" heading Word can build a table of contents from, and the
+picture at `merge.images.width` inches. `inline` drops the headings and page
+breaks and sets a small picture in the flow of dialogue at the scene's start
+time, `merge.images.inline.width_px` × `height_px` pixels (one of them keeps
+the aspect ratio; both scale to that box) with paragraph alignment
+`merge.images.inline.align` (left, center, right). The dialogue paragraphs
+are the same in both layouts. Bad values fail at config load with the rest
+of the validation report.
+
+The document is named for its layout — `<session>_storyboard.docx` for
+chapter, `<session>_inline.docx` for inline — so both can be built into one
+`cc_output/`. `generate_storyboard --layout inline` (or `chapter`) overrides
+the config for one run, which is how to get the other document for a session
+without editing config.yaml:
+
+```bash
+python scripts/cc_stages/generate_storyboard.py --session-dir "Weeks/Week 13" --layout inline
+```
+
 Use `python scripts/orchestrate.py --merge-only` to re-run the merge on
 existing outputs, or set `config.yaml: merge: auto_merge: true` to run it
 automatically right after processing. Storyboard formatting (title, fonts,

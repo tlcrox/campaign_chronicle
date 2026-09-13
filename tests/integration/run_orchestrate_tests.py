@@ -41,6 +41,7 @@ logger = logging.getLogger(__name__)
 # repo above it cannot do anything useful.
 REPO_ROOT = find_repo_root(__file__, required=True)
 ORCHESTRATE = REPO_ROOT / "scripts" / "orchestrate.py"
+STORYBOARD_STAGE = REPO_ROOT / "scripts" / "cc_stages" / "generate_storyboard.py"
 
 # Integration-test layout: tests/test_source/ holds the INPUTS (and the
 # governing config.yaml); tests/expected/ holds the GOLDEN outcomes.
@@ -100,6 +101,47 @@ def run_one_session(source_dir: Path, session_dir: str, dry_run: bool = False,
     return True
 
 
+def normalize_storyboards(source_dir: Path, session_dir: str) -> bool:
+    """Regenerate the produced storyboard docx set to match the golden's names.
+
+    orchestrate emits ONE storyboard, named for whatever merge.images.layout the
+    config happens to select. The golden tree, though, fixes which documents a
+    session has: every session a ``<session>_storyboard.docx`` (chapter), and a
+    session tested in both layouts also a ``<session>_inline.docx``. So after the
+    run we drop orchestrate's config-driven document and rebuild exactly the
+    golden set, layout pinned per filename — the same pinning run_tests.py does
+    on its storyboard passes. Both drivers then produce the identical docx set
+    regardless of the fixture config's layout, and the layout choice itself stays
+    a unit-tested concern rather than a golden that shifts when the config does.
+
+    Driven by the golden filenames rather than a hardcoded session list, so a new
+    inline golden is picked up here the moment it is committed.
+    """
+    produced_cc = Path(source_dir) / session_dir / OUTPUT_ROOT
+    expected_cc = EXPECTED / session_dir / OUTPUT_ROOT
+    golden_docs = sorted(p.name for p in expected_cc.glob("*.docx")) if expected_cc.exists() else []
+    if not golden_docs:
+        return True
+
+    for docx in produced_cc.glob("*.docx"):
+        docx.unlink()
+
+    env = dict(os.environ)
+    env.setdefault("WHISPERX_CONFIG", str(FIXTURE_CONFIG))
+    for name in golden_docs:
+        layout = "inline" if name.endswith("_inline.docx") else "chapter"
+        cmd = [
+            sys.executable, str(STORYBOARD_STAGE),
+            "--session-dir", str(Path(source_dir) / session_dir),
+            "--layout", layout,
+        ]
+        result = subprocess.run(cmd, cwd=str(REPO_ROOT), env=env)
+        if result.returncode != 0:
+            logger.error(f"✗ {session_dir}: regenerating {layout} storyboard failed")
+            return False
+    return True
+
+
 def compare_session(source_dir: Path, session_dir: str) -> bool:
     """Compare a session's produced output against its golden.
 
@@ -137,6 +179,7 @@ def run_orchestrate(source_dir: Path, session_dirs: list, dry_run: bool = False,
             wipe_output_tree(Path(source_dir) / sd / OUTPUT_ROOT, OUTPUT_ROOT)
         ok = run_one_session(source_dir, sd, dry_run=dry_run, timeout=timeout)
         if ok and compare and not dry_run:
+            ok = normalize_storyboards(source_dir, sd) and ok
             ok = compare_session(source_dir, sd) and ok
         results[sd] = ok
 

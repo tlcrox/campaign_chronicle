@@ -23,7 +23,7 @@ from pathlib import Path
 from pipeline.config import get_config, resolve_tool_config
 from pipeline.common.mounts import output_dir_for, COMBINED_OUTPUT_SUBDIR, OUTPUT_ROOT
 from pipeline.common.scenes import iter_scene_images
-from pipeline.merge.storyboard import generate_storyboard
+from pipeline.merge.storyboard import generate_storyboard, storyboard_filename
 
 from pipeline.common.logs import setup_logging
 
@@ -39,7 +39,8 @@ def run(
     csv_path: Path = None,
     output_path: Path = None,
     config=None,
-    dry_run: bool = False
+    dry_run: bool = False,
+    layout: str = None,
 ) -> bool:
     """
     Generate a storyboard Word document.
@@ -56,15 +57,19 @@ def run(
         transcript_path: Path to transcript JSON/TXT file (if not using session_dir)
         scenes_dir: Path to scenes image folder (if not using session_dir)
         csv_path: Path to scenes CSV file (if not using session_dir)
-        output_path: Output Word document path
+        output_path: Output Word document path. Default: <session>_storyboard.docx,
+            or <session>_inline.docx when the effective layout is inline.
         config: Config object
         dry_run: If True, show what would happen without making any changes
+        layout: "chapter" | "inline" — overrides merge.images.layout for this
+            run only. None (the default) uses the config.
 
     Returns:
         True if successful, False otherwise
     """
     if config is None:
         config = get_config()
+    layout = layout or config.storyboard_layout
 
     # Mode 1: Session directory mode
     if session_dir:
@@ -104,7 +109,7 @@ def run(
             # at the root of cc_output/ rather than under combined_output/
             # because it is the final deliverable, not an intermediate.
             output_path = (output_dir_for(session_dir, OUTPUT_ROOT, config)
-                           / f"{session_name}_storyboard.docx")
+                           / storyboard_filename(session_name, layout))
             output_path.parent.mkdir(parents=True, exist_ok=True)
 
         logger.info(f"  Transcript: {transcript_path.name} (from {combined_dir}/)")
@@ -137,7 +142,8 @@ def run(
             return False
 
         if output_path is None:
-            output_path = Path(transcript_path.parent) / f"{transcript_path.stem}_storyboard.docx"
+            output_path = (Path(transcript_path.parent)
+                           / storyboard_filename(transcript_path.stem, layout))
 
         logger.info(f"Generating storyboard...")
         logger.info(f"  Transcript: {transcript_path.name}")
@@ -167,7 +173,7 @@ def run(
         logger.info(f"  ⊘ No scene CSV/images; transcript-only document")
 
     # Generate storyboard
-    logger.info(f"  → Generating storyboard document...")
+    logger.info(f"  → Generating storyboard document ({layout} layout)...")
 
     if dry_run:
         logger.info(f"  [DRY RUN] Would generate: {output_path}")
@@ -180,6 +186,7 @@ def run(
             str(transcript_path),
             str(scenes_dir) if scenes_dir else None,
             str(output_path),
+            layout=layout,
         )
         logger.info(f"  ✓ Storyboard document created: {output_path.name}")
     except Exception as e:
@@ -254,7 +261,18 @@ Examples:
         "--output",
         type=Path,
         default=None,
-        help="Output Word document path (default: {session_name}_storyboard.docx or based on transcript name)"
+        help="Output Word document path (default: {session_name}_storyboard.docx, "
+             "or {session_name}_inline.docx for the inline layout; based on the "
+             "transcript name without --session-dir)"
+    )
+
+    parser.add_argument(
+        "--layout",
+        choices=("chapter", "inline"),
+        default=None,
+        help="Override merge.images.layout for this run: chapter (one scene per "
+             "page under a heading) or inline (small aligned pictures in the "
+             "dialogue, no headings). Default: the config"
     )
 
     parser.add_argument(
@@ -294,7 +312,8 @@ Examples:
         scenes_dir=args.scenes,
         csv_path=args.csv,
         output_path=args.output,
-        dry_run=args.dry_run
+        dry_run=args.dry_run,
+        layout=args.layout,
     )
     sys.exit(0 if success else 1)
 

@@ -71,7 +71,19 @@ merge:
     start_time_column: "Start Time (seconds)"
     end_time_column: "End Time (seconds)"
   images:
-    width: 6.0            
+    width: 2.0            
+ 
+    layout: chapter
+    # Inline layout only
+    # for integration testing, ignoring, integration testing tests both chapter and inline for Video screen sources.
+    #inline:
+      # Picture size in pixels (Word's 96 dpi). Give one and the other follows the
+      # image's aspect ratio; give both and the image is scaled to exactly that
+      # box (stretched, not cropped). 0 = not set.
+      #width_px: 192
+      #height_px: 0
+      # Paragraph alignment of the picture: left, center or right
+      #align: right
   document:
     title: "Session Storyboard"   
 
