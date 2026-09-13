@@ -77,9 +77,10 @@ def diarization_video_offsets(session_dir: Path, transcript_files: list) -> dict
 
     Each Video with Diarization per-video transcript is 0-based; to line up with the offset
     scene times, shift each video's segments by the summed duration of the
-    videos before it. Videos are ordered by creation time (matching the scene
-    merge) and measured with ffprobe (falling back to the transcript's own last
-    spoken time when ffprobe is unavailable). Returns {} for a single video.
+    videos before it. Videos are in find_video_files() order — sorted name,
+    the same rule the scene merge and the detect stages use — and measured
+    with ffprobe (falling back to the transcript's own last spoken time when
+    ffprobe is unavailable). Returns {} for a single video.
     """
     if len(transcript_files) < 2:
         return {}
@@ -87,7 +88,6 @@ def diarization_video_offsets(session_dir: Path, transcript_files: list) -> dict
     matched = [v for v in find_video_files(session_dir) if v.stem in tf_by_stem]
     if len(matched) < 2:
         return {}
-    matched.sort(key=lambda v: v.stat().st_ctime)
     offsets, running = {}, 0.0
     for v in matched:
         tf = tf_by_stem[v.stem]

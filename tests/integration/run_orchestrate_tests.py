@@ -53,7 +53,7 @@ DEFAULT_SOURCE_DIR = FIXTURES
 
 DEFAULT_TEST_DIRS = [
     "SingleVideo",      # Basic: 1 video, embedded audio
-    "MultiVideo",       # Multiple videos, embedded audio (tests VIDEO_INDEX)
+    "MultiVideo",       # Multiple videos, embedded audio (tests per-video indexing)
     "SingleCraig",      # Single video + Audacity audio
     "MultiCraig",       # Multiple videos + shared Audacity audio + per-video ROI
     "MultiROI",         # Multiple videos + time-based ROI regions

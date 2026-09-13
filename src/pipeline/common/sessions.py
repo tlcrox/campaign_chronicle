@@ -92,8 +92,9 @@ def media_files(directory: Path, extensions: set, recursive: bool = False) -> Li
     case-insensitivity the comments claim. And ``is_file()`` excludes a
     *directory* named ``something.mp4``, which a bare glob happily returned.
 
-    Sorted because filesystem order is not defined; no caller depends on the
-    order today, and a stable one is cheaper to reason about than an arbitrary one.
+    Sorted because filesystem order is not defined — and for videos the order
+    is load-bearing: it is the video index in Scene-{video}-{scene} names and
+    the layout of the session timeline, in every stage that assigns either.
     """
     walk = directory.rglob("*") if recursive else directory.glob("*")
     return sorted(p for p in walk if p.is_file() and p.suffix.lower() in extensions)

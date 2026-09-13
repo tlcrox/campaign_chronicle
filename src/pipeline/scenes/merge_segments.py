@@ -70,7 +70,7 @@ def _read_offset(segment_dir: Path) -> float:
         print(f"WARNING: no offset.txt in {segment_dir.name}, assuming 0.0", file=sys.stderr)
         return 0.0
     try:
-        return float(offset_file.read_text().strip())
+        return float(offset_file.read_text(encoding="utf-8").strip())
     except ValueError:
         print(f"WARNING: bad offset.txt in {segment_dir.name}, assuming 0.0", file=sys.stderr)
         return 0.0

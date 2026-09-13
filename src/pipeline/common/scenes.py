@@ -177,7 +177,7 @@ def rename_scene_images(scenes_dir, num_images: int = 1) -> int:
     PySceneDetect writes ``<video-stem>-Scene-NNN-MM.ext`` into one subdirectory
     per video under ``scenes_dir``. This walks those subdirs (sorted), assigns
     the video index by order — so multi-video sessions get 01, 02, 03… (this is
-    where VIDEO_INDEX is correctly established, not the container) — and renames
+    where the video index is established, not the container) — and renames
     each image to ``Scene-{video:02d}-{scene:03d}.ext`` using the scene number
     parsed from the raw name.
 

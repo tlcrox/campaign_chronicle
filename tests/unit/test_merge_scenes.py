@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Comprehensive tests for merge_scenes.py - scene discovery and merging."""
 
+import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -8,14 +9,19 @@ from unittest.mock import MagicMock, patch
 
 
 from cc_stages.merge_scenes import (
-    find_videos_by_creation_time,
     find_scene_dirs_and_csvs,
-    order_scenes_by_video_time,
+    order_scenes_by_video,
 )
 
 
-class TestVideoDiscovery(unittest.TestCase):
-    """Test video file discovery and creation time sorting."""
+class TestVideoOrder(unittest.TestCase):
+    """The video index comes from filename order, never from file times.
+
+    Before this, ordering was by creation time (falling back to mtime), and the
+    test for it touched files in reverse and then asserted only the *set* of
+    names — it could not fail. Here the mtimes are deliberately the reverse of
+    the names, so the two rules disagree and the assertion picks one.
+    """
 
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
@@ -24,63 +30,24 @@ class TestVideoDiscovery(unittest.TestCase):
     def tearDown(self):
         self.tmp.cleanup()
 
-    def test_find_videos_single_video(self):
-        """Find single video file."""
-        video = self.root / "recording.mp4"
+    def _video_with_scenes(self, stem: str, mtime: float):
+        video = self.root / f"{stem}.mp4"
         video.touch()
-        results = find_videos_by_creation_time(self.root)
-        self.assertEqual(len(results), 1)
-        self.assertEqual(results[0][0].name, "recording.mp4")
+        os.utime(video, (mtime, mtime))
+        scene_dir = self.root / "scenes_output" / stem
+        scene_dir.mkdir(parents=True)
+        csv = scene_dir / f"{stem}-Scenes.csv"
+        csv.touch()
+        return scene_dir, csv
 
-    def test_find_videos_multiple_formats(self):
-        """Find videos in multiple formats."""
-        formats = [".mp4", ".mkv", ".mov", ".webm"]
-        for fmt in formats:
-            (self.root / f"video{fmt}").touch()
-        results = find_videos_by_creation_time(self.root)
-        self.assertEqual(len(results), len(formats))
-
-    def test_find_videos_sorted_by_creation_time(self):
-        """Videos sorted by creation time (simulated by names)."""
-        # Create videos with names indicating order
-        video1 = self.root / "video1.mp4"
-        video2 = self.root / "video2.mp4"
-        video3 = self.root / "video3.mp4"
-
-        # Create in reverse order to test sorting
-        for video in [video3, video2, video1]:
-            video.touch()
-
-        results = find_videos_by_creation_time(self.root)
-        # Results should be sorted by creation time
-        self.assertEqual(len(results), 3)
-        # Verify all videos are present
-        names = {r[0].name for r in results}
-        self.assertEqual(names, {"video1.mp4", "video2.mp4", "video3.mp4"})
-
-    def test_find_videos_ignores_non_video_files(self):
-        """Ignore non-video files."""
-        (self.root / "readme.txt").touch()
-        (self.root / "data.json").touch()
-        (self.root / "video.mp4").touch()
-        results = find_videos_by_creation_time(self.root)
-        self.assertEqual(len(results), 1)
-        self.assertEqual(results[0][0].name, "video.mp4")
-
-    def test_find_videos_no_videos(self):
-        """Handle empty directory."""
-        results = find_videos_by_creation_time(self.root)
-        self.assertEqual(len(results), 0)
-
-    def test_find_videos_includes_creation_time(self):
-        """Results include creation time tuple."""
-        video = self.root / "video.mp4"
-        video.touch()
-        results = find_videos_by_creation_time(self.root)
-        self.assertEqual(len(results), 1)
-        path, ctime = results[0]
-        self.assertEqual(path.name, "video.mp4")
-        self.assertIsInstance(ctime, (int, float))
+    def test_name_order_wins_over_file_times(self):
+        names = ["2026-04-20 14-47-12s", "2026-04-20 15-39-46s", "2026-04-20 19-47-00s"]
+        # Written last-first, as a copy of the project folder happened to do.
+        pairs = {n: self._video_with_scenes(n, 1_700_000_000 - i)
+                 for i, n in enumerate(names)}
+        ordered = order_scenes_by_video(self.root, list(pairs.values())[::-1])
+        self.assertEqual([(o[1].parent.name, o[2]) for o in ordered],
+                         [(names[0], 1), (names[1], 2), (names[2], 3)])
 
 
 class TestSceneDiscovery(unittest.TestCase):
@@ -182,13 +149,13 @@ class TestSceneOrdering(unittest.TestCase):
         csv.touch()
 
         scene_pairs = [(scene_dir, csv)]
-        ordered = order_scenes_by_video_time(self.root, scene_pairs)
+        ordered = order_scenes_by_video(self.root, scene_pairs)
 
         self.assertEqual(len(ordered), 1)
         self.assertEqual(ordered[0][2], 1)  # video index
 
     def test_order_scenes_multiple_videos(self):
-        """Order multiple videos by creation time."""
+        """Order multiple videos by name."""
         # Create videos
         video1 = self.root / "video1.mp4"
         video2 = self.root / "video2.mp4"
@@ -207,7 +174,7 @@ class TestSceneOrdering(unittest.TestCase):
         csv2.touch()
 
         scene_pairs = [(scenes1, csv1), (scenes2, csv2)]
-        ordered = order_scenes_by_video_time(self.root, scene_pairs)
+        ordered = order_scenes_by_video(self.root, scene_pairs)
 
         self.assertEqual(len(ordered), 2)
         # Both should have video indices assigned
@@ -222,7 +189,7 @@ class TestSceneOrdering(unittest.TestCase):
         csv.touch()
 
         scene_pairs = [(scene_dir, csv)]
-        ordered = order_scenes_by_video_time(self.root, scene_pairs)
+        ordered = order_scenes_by_video(self.root, scene_pairs)
 
         # Should still assign indices sequentially
         self.assertEqual(len(ordered), 1)
@@ -247,7 +214,7 @@ class TestSceneOrdering(unittest.TestCase):
         csv2.touch()
 
         scene_pairs = [(scenes1, csv1), (scenes2, csv2)]
-        ordered = order_scenes_by_video_time(self.root, scene_pairs)
+        ordered = order_scenes_by_video(self.root, scene_pairs)
 
         # Should match by filename
         self.assertEqual(len(ordered), 2)
@@ -268,7 +235,7 @@ class TestSceneOrdering(unittest.TestCase):
         csv2.touch()
 
         scene_pairs = [(scenes1, csv1), (scenes2, csv2)]
-        ordered = order_scenes_by_video_time(self.root, scene_pairs)
+        ordered = order_scenes_by_video(self.root, scene_pairs)
 
         # All should be present, matched one first
         self.assertEqual(len(ordered), 2)
@@ -288,7 +255,7 @@ class TestSceneMergingLogic(unittest.TestCase):
     @patch("cc_stages.merge_scenes.merge_image_folders")
     @patch("cc_stages.merge_scenes.merge_scene_csvs")
     @patch("cc_stages.merge_scenes.probe_duration")
-    @patch("cc_stages.merge_scenes.find_videos_by_creation_time")
+    @patch("cc_stages.merge_scenes.find_video_files")
     @patch("cc_stages.merge_scenes.find_scene_dirs_and_csvs")
     def test_merge_scenes_tool_single_video(
         self, mock_find_scenes, mock_find_videos, mock_probe, mock_merge_csv, mock_merge_img
@@ -303,7 +270,7 @@ class TestSceneMergingLogic(unittest.TestCase):
         csv.touch()
 
         mock_find_scenes.return_value = [(scene_dir, csv)]
-        mock_find_videos.return_value = [(self.root / "video.mp4", 0.0)]
+        mock_find_videos.return_value = [self.root / "video.mp4"]
         mock_probe.return_value = 300.0
         mock_merge_csv.return_value = (MagicMock(), {}, None)
 

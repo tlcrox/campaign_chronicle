@@ -31,6 +31,8 @@ import re
 from pathlib import Path
 from typing import Dict, List
 
+from pipeline.common.text import read_text_lenient
+
 # SPEAKER_MAP (Craig filename token -> character name) and FILLER_PHRASES are
 # user data, not code — they live in the user's speaker_config.json under the
 # "filename_mapping" and "filler_phrases" keys, loaded via load_merge_speaker_data().
@@ -70,8 +72,8 @@ def load_merge_speaker_data(cfg):
     if not path.exists():
         return filename_mapping, filler_phrases
     try:
-        with open(path, "r", encoding="utf-8") as f:
-            data = json.load(f)
+        # Hand-edited, so a cp1252 save must not be a traceback.
+        data = json.loads(read_text_lenient(path))
     except (json.JSONDecodeError, IOError):
         return filename_mapping, filler_phrases
     fm = data.get("filename_mapping") or {}

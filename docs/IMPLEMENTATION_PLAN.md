@@ -62,7 +62,7 @@ everything else by bytes.
   in-container via `detect_scenes_multi.sh`.
 - [ ] Single-ROI source variation end-to-end (CLI override, explicit full-frame).
   `resolve_single_roi` is unit-tested; the tool path is not.
-- [ ] Assert VIDEO_INDEX image naming in the multi-video runner (ties to Issue #1).
+- [ ] Assert per-video image indexing (Scene-01/02/03-*) in the multi-video runner (ties to Issue #1).
 - [ ] Exercise the config-driven `session_dirs` default — the runners pass
   explicit `--session-dirs`, bypassing it.
 - [ ] Filler-phrase removal.

@@ -174,9 +174,9 @@ python3 tests/unit/detect_scenes_single_roi.py --session-dir TestWhisper/SingleV
 
 ## 5. Known coverage gaps
 
-- **VIDEO_INDEX not incremented** (MultiVideo/MultiCraig/MultiROI) — multi-video
-  runs may emit all images as `Scene-01-*` instead of `01/02/03`. Runners don't
-  yet *assert* per-video indexing.
+- **Per-video indexing not asserted** (MultiVideo/MultiCraig/MultiROI) — the
+  golden comparison catches a wrong `Scene-01/02/03-*` index, but the runners
+  don't *assert* it directly.
 - **Per-video ROI** (MultiCraig) — not yet implemented.
 - **Multi-ROI is not exercised by `run_tests.py`** — it currently skips that
   branch; needs a fixture run end-to-end.

@@ -3,10 +3,11 @@
 Merge multiple scene image folders and CSVs from a multi-video session.
 
 Combines scenes from multiple videos into a single merged set with standardized naming:
-- Scene-{video:02d}-{scene:03d}.jpg (video index based on creation order)
+- Scene-{video:02d}-{scene:03d}.jpg (video index = position in name order)
 - Merged CSV with scenes in chronological order
 
-Video ordering is determined by file creation time (used as "start time" of recording).
+Videos are ordered by filename, the same rule the detect stages numbered the
+images by (pipeline.common.sessions.find_video_files).
 
 Usage (CLI):
     python merge_scenes.py --session-dir Week_77
@@ -23,7 +24,7 @@ from typing import List, Tuple
 
 from pipeline.config import get_config, resolve_tool_config
 from pipeline.common.mounts import output_dir_for, SCENES_OUTPUT_SUBDIR, COMBINED_OUTPUT_SUBDIR
-from pipeline.common.sessions import media_files, probe_duration
+from pipeline.common.sessions import find_video_files, probe_duration
 from pipeline.merge.combine_scenes import merge_image_folders, merge_scene_csvs, HAS_PANDAS
 
 from pipeline.common.logs import setup_logging
@@ -31,32 +32,6 @@ from pipeline.common.logs import setup_logging
 # Configured in main(), never here: importing a module must not reconfigure
 # logging for whatever process happened to import it.
 logger = logging.getLogger(__name__)
-
-# Video file extensions to look for
-VIDEO_EXTENSIONS = {'.mp4', '.mkv', '.mov', '.webm', '.avi', '.m4v', '.flv', '.wmv'}
-
-
-def find_videos_by_creation_time(session_dir: Path) -> List[Tuple[Path, float]]:
-    """
-    Find all video files and sort by creation time.
-
-    Returns:
-        List of (video_path, creation_time) tuples sorted by creation time
-    """
-    videos = []
-
-    for video_file in media_files(session_dir, VIDEO_EXTENSIONS):
-        # Use creation time (ctime on Unix, birthtime on macOS)
-        # Falls back to modification time if creation time unavailable
-        stat = video_file.stat()
-        ctime = stat.st_birthtime if hasattr(stat, 'st_birthtime') else stat.st_mtime
-        videos.append((video_file, ctime))
-
-    # Sort by creation time
-    videos.sort(key=lambda v: v[1])
-
-    return videos
-
 
 def find_scene_dirs_and_csvs(
     session_dir: Path,
@@ -110,37 +85,43 @@ def find_scene_dirs_and_csvs(
     return scene_pairs
 
 
-def order_scenes_by_video_time(
+def order_scenes_by_video(
     session_dir: Path,
     scene_pairs: List[Tuple[Path, Path]]
 ) -> List[Tuple[Path, Path, int]]:
     """
-    Order scene directories/CSVs based on video file creation times.
+    Order scene directories/CSVs by video, in the pipeline's one video order.
+
+    That order is sorted filename — ``find_video_files()`` — which is what the
+    detect stages numbered the images by and what the transcript merge lays the
+    audio out by. It used to be file creation time here, which is not a
+    property of the recording: copying the project folder rewrote every
+    video's timestamp in copy order, and the merged session came out with the
+    videos shuffled while the images still carried the detect stage's numbers.
+    Recording order is in the filenames (OBS names captures by start time) and
+    survives any copy.
 
     Args:
         session_dir: Session directory
         scene_pairs: List of (scene_dir, csv_file) tuples
 
     Returns:
-        List of (scene_dir, csv_file, video_index) tuples ordered by video creation time
+        List of (scene_dir, csv_file, video_index) tuples in video order
     """
-    # Find all videos with creation times
-    videos = find_videos_by_creation_time(session_dir)
+    videos = find_video_files(session_dir)
 
     if not videos:
         logger.warning(f"  ⊘ No video files found in {session_dir}")
         return [(s, c, i+1) for i, (s, c) in enumerate(scene_pairs)]
 
-    logger.info(f"  Found {len(videos)} video file(s), ordered by creation time:")
-    for i, (video_path, ctime) in enumerate(videos, 1):
-        from datetime import datetime
-        creation_time = datetime.fromtimestamp(ctime).strftime("%Y-%m-%d %H:%M:%S")
-        logger.info(f"    {i}. {video_path.name} (created {creation_time})")
+    logger.info(f"  Found {len(videos)} video file(s), in name order:")
+    for i, video_path in enumerate(videos, 1):
+        logger.info(f"    {i}. {video_path.name}")
 
     # Match scene dirs to videos by filename
     # Try to find a scene dir/CSV that matches each video
     ordered_pairs = []
-    for video_idx, (video_path, ctime) in enumerate(videos, 1):
+    for video_idx, video_path in enumerate(videos, 1):
         video_stem = video_path.stem
 
         # Look for matching scene pair
@@ -179,7 +160,7 @@ def run(
     """
     Merge scene images and CSVs from multiple videos.
 
-    Videos are ordered by file creation time. Scene images are renamed to
+    Videos are ordered by filename. Scene images are renamed to
     Scene-{video:02d}-{scene:03d}.jpg format. CSVs are merged with scenes
     in chronological order.
 
@@ -216,9 +197,8 @@ def run(
 
     logger.info(f"  Found {len(scene_pairs)} scene source(s)")
 
-    # Order by video creation time
-    logger.info(f"  → Ordering scenes by video creation time...")
-    ordered_pairs = order_scenes_by_video_time(session_dir, scene_pairs)
+    logger.info(f"  → Ordering scenes by video...")
+    ordered_pairs = order_scenes_by_video(session_dir, scene_pairs)
 
     scene_dirs = [pair[0] for pair in ordered_pairs]
     csv_files = [pair[1] for pair in ordered_pairs]
@@ -251,8 +231,8 @@ def run(
     # Probe each video's true duration (ffprobe) so the per-video time offset in
     # the merged CSV is exact, not just the last-scene-end proxy. Matched to the
     # CSVs by video stem; None (probe unavailable) => proxy fallback per CSV.
-    videos = find_videos_by_creation_time(session_dir)
-    duration_by_stem = {v.stem: probe_duration(v) for v, _ in videos}
+    videos = find_video_files(session_dir)
+    duration_by_stem = {v.stem: probe_duration(v) for v in videos}
     video_durations = {}
     for csv_file in csv_files:
         for stem, dur in duration_by_stem.items():
@@ -285,11 +265,11 @@ def main():
     """CLI entry point."""
     setup_logging()
     parser = argparse.ArgumentParser(
-        description="Merge scene images and CSVs from multiple videos by creation time",
+        description="Merge scene images and CSVs from multiple videos, in name order",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
-  # Merge scenes (ordered by video creation time)
+  # Merge scenes (videos in name order)
   python merge_scenes.py --session-dir Week_77
 
   # Specify output directory
@@ -302,7 +282,8 @@ Examples:
   python merge_scenes.py --session-dir Week_77 --dry-run
 
 Video Ordering:
-  Videos are automatically ordered by file creation time (start time of recording).
+  Videos are ordered by filename (OBS names captures by start time, so this is
+  recording order, and unlike file times it survives copying the folder).
   Scene images are renamed to Scene-{video:02d}-{scene:03d}.jpg based on this order.
   CSV files are merged with scenes in chronological order.
         """

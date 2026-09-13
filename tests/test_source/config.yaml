@@ -45,7 +45,7 @@ scenes:
 # ORCHESTRATION
 # ============================================================================
 orchestration:
-  source_dir: <<project-root>>\tests\test_source
+  source_dir: ..\..\tests\test_source
 
   # Explicit test directories (week-based discovery is bypassed when present)
   session_dirs:

@@ -47,9 +47,12 @@ whisper:
   # so anything that must hold throughout belongs in hotwords_file instead.
   initial_prompt_file: whisperx_initial_prompt.txt
 
-  # Hallucination cleanup thresholds (pipeline.transcribe.remove_hallucination)
-  # A segment is kept only if it passes all of these and has non-empty text.
+  # Hallucination cleanup (pipeline.transcribe.remove_hallucination). OPT-IN:
+  # the thresholds below do nothing until enabled is true, so tuning them alone
+  # changes nothing and reports no error. When on, a segment is kept only if it
+  # passes all of them and has non-empty text.
   clean:
+    enabled: false          # <- the switch; thresholds are inert while this is false
     no_speech_max: 0.6      # drop if no_speech_prob >= this
     logprob_min: -1.0       # drop if avg_logprob <= this
     compression_max: 2.4    # drop if compression_ratio >= this

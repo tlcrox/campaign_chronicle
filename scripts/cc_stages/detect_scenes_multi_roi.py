@@ -47,10 +47,6 @@ def set_env(cfg):
     env_vars["SCENE_NUM_IMAGES"] = str(cfg.scene_num_images)
     env_vars["SCENE_IMAGE_FORMAT"] = cfg.scene_image_format
 
-    # VIDEO_INDEX is not used in multi-ROI (processes all videos at once)
-    # but included for consistency with single-ROI
-    env_vars["VIDEO_INDEX"] = "01"
-
 
     return env_vars
 

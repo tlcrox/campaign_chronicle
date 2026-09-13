@@ -108,9 +108,8 @@ class ConfigImageFormat(unittest.TestCase):
     def _config(self, image_format_line: str) -> Path:
         path = self.root / "config.yaml"
         # Only the section under test: every other section is defaulted at load.
-        io.open(path, "w", encoding="utf-8", newline="\n").write(
-            "scenes:\n" + image_format_line
-        )
+        path.write_text("scenes:\n" + image_format_line,
+                        encoding="utf-8", newline="\n")
         return path
 
     def test_each_supported_format_loads(self):
@@ -341,10 +340,10 @@ class StoryboardEmbedsBothFormats(unittest.TestCase):
             writer.writerow([1, 2, 20.0])
 
         transcript = base / "transcript.txt"
-        io.open(transcript, "w", encoding="utf-8", newline="\n").write(
+        transcript.write_text(
             "[0:05.00] Alice: before the second scene\n"
-            "[0:30.00] Bob: after it\n"
-        )
+            "[0:30.00] Bob: after it\n",
+            encoding="utf-8", newline="\n")
         return csv_path, transcript, images, base / "out.docx"
 
     def test_images_are_embedded_in_each_format(self):

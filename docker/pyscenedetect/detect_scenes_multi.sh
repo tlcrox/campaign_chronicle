@@ -27,7 +27,6 @@ IMAGE_FORMAT="${SCENE_IMAGE_FORMAT:?config.yaml owns this (scenes.image_format);
 VIDEO_DIR="${VIDEO_DIR:-/video}"
 SCENES_DIR="${SCENES_DIR:-/output/scenes}"
 ROI_FILE="${ROI_FILE:?config.yaml owns this (scenes.roi_file); pass -e ROI_FILE=... for a bare container run}"
-VIDEO_INDEX="${VIDEO_INDEX:-01}"  # Video sequence number for naming (01, 02, 03, etc.)
 
 # Temporary working directory for segment files and debugging
 # Using /output/temp so you can inspect intermediate results

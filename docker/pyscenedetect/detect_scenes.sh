@@ -4,17 +4,18 @@
 # Processes videos with a single ROI value from SCENE_ROI environment variable.
 # For time-varying ROI (from time_segments), use detect_scenes_multi.sh instead.
 #
-# Output files use standardized naming: Scene-{VIDEO_INDEX:02d}-{scene:03d}.{ext}
-# Where:
-#   VIDEO_INDEX = video sequence number (01, 02, 03 for multi-video; defaults to 01)
-#   scene       = scene number within that video (001, 002, 003, etc.)
+# Images keep PySceneDetect's raw <video>-Scene-NNN-MM names here. The host
+# renames them to Scene-{video:02d}-{scene:03d}.{ext} after the run
+# (pipeline/common/scenes.py::rename_scene_images): the video index is the
+# video's position in name order, which the host decides — this container
+# only sees a directory of files.
 #
 # Two modes:
 #   1. No args  -> detect scenes in every video in $VIDEO_DIR (default /video),
 #                  writing per-video output to $SCENES_DIR (default /output/scenes).
 #                  Each video's folder contains:
 #                    <basename>-Scenes.csv   - scene list with timestamps
-#                    Scene-{VIDEO_INDEX:02d}-001.jpg, Scene-{VIDEO_INDEX:02d}-002.jpg, etc.
+#                    <basename>-Scene-001-01.jpg, <basename>-Scene-002-01.jpg, etc.
 #   2. With args -> pass through directly to `scenedetect`, e.g.
 #                   docker compose run --rm scenes --help
 set -euo pipefail
@@ -25,7 +26,6 @@ NUM_IMAGES="${SCENE_NUM_IMAGES:?config.yaml owns this (scenes.num_images); pass 
 IMAGE_FORMAT="${SCENE_IMAGE_FORMAT:?config.yaml owns this (scenes.image_format); pass -e SCENE_IMAGE_FORMAT=... for a bare container run}"
 VIDEO_DIR="${VIDEO_DIR:-/video}"
 SCENES_DIR="${SCENES_DIR:-/output/scenes}"
-VIDEO_INDEX="${VIDEO_INDEX:-01}"  # Video sequence number for multi-video sessions (default 01 for single)
 ROI="${SCENE_ROI-}"   # optional: empty (or unset) means full frame
 
 # Map IMAGE_FORMAT to scenedetect flag
@@ -81,7 +81,6 @@ mkdir -p "$SCENES_DIR"
 
 echo "PySceneDetect batch mode (single ROI)"
 echo "  threshold=$THRESHOLD  min_scene_len=$MIN_SCENE_LEN  num_images=$NUM_IMAGES  format=$IMAGE_FORMAT  roi=$ROI"
-echo "  video_index=$VIDEO_INDEX (for multi-video sessions)"
 echo "  ${#files[@]} video(s) to process"
 echo
 

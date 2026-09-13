@@ -7,7 +7,6 @@ constructs Config(config_path=...) directly, so nothing depends on the repo's
 own config or on the filesystem layout around it.
 """
 
-import io
 import os
 import tempfile
 import unittest
@@ -444,7 +443,7 @@ class ConfigIsCompleteAfterLoad(unittest.TestCase):
 
     def _cfg(self, body: str) -> Config:
         p = self.root / "config.yaml"
-        io.open(p, "w", encoding="utf-8", newline="\n").write(body)
+        p.write_text(body, encoding="utf-8", newline="\n")
         return Config(config_path=p)
 
     def test_empty_file_yields_a_working_config(self):
@@ -519,7 +518,7 @@ class ConfigValidation(unittest.TestCase):
 
     def _load(self, body: str) -> Config:
         p = self.root / "config.yaml"
-        io.open(p, "w", encoding="utf-8", newline="\n").write(body)
+        p.write_text(body, encoding="utf-8", newline="\n")
         return Config(config_path=p)
 
     def _error(self, body: str) -> str:

@@ -14,6 +14,7 @@ from typing import Any, Optional
 # pipeline.common.scenes is a leaf module (stdlib imports only) and must stay
 # that way: it may not import this one, or config loading becomes a cycle.
 from pipeline.common.scenes import normalize_image_format
+from pipeline.common.text import read_text_lenient
 
 try:
     import yaml
@@ -140,24 +141,6 @@ def _deep_merge(defaults: dict, loaded, path: str = ""):
 
 
 
-def _read_text(path) -> str:
-    """Read a text file as UTF-8, falling back to cp1252.
-
-    These files are hand-edited on Windows, where Notepad and similar still save
-    cp1252 by default. An em-dash or smart quote in such a file is not valid
-    UTF-8, and the resulting UnicodeDecodeError is a ValueError — so an
-    `except OSError` around the read will not catch it and the run dies.
-    """
-    data = Path(path).read_bytes()
-    try:
-        return data.decode("utf-8")
-    except UnicodeDecodeError:
-        logger.warning(
-            f"{path} is not valid UTF-8; falling back to cp1252. "
-            f"Re-save it as UTF-8 to silence this.")
-        return data.decode("cp1252", errors="replace")
-
-
 def find_repo_root(start=None, required: bool = False):
     """The directory holding ``pyproject.toml``, walking up from ``start``.
 
@@ -208,8 +191,8 @@ class Config:
         if not config_path.exists():
             raise FileNotFoundError(f"Config file not found: {config_path}")
 
-        with open(config_path, "r", encoding="utf-8") as f:
-            loaded = yaml.safe_load(f)
+        # Hand-edited, so a cp1252 save must not be a traceback.
+        loaded = yaml.safe_load(read_text_lenient(config_path))
 
         # Complete the document before anything reads it. safe_load returns None
         # for an empty file and for a section header with nothing under it, so
@@ -553,7 +536,7 @@ class Config:
             # source_dir not configured; nothing to read.
             return ""
         try:
-            text = _read_text(path)
+            text = read_text_lenient(path)
         except OSError:
             return ""
         lines = [ln for ln in text.splitlines() if not ln.lstrip().startswith("#")]
