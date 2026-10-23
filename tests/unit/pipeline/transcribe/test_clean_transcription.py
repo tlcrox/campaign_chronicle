@@ -105,6 +105,56 @@ class CleanTranscriptStage(unittest.TestCase):
     def test_no_transcripts_returns_false(self):
         self.assertFalse(clean_transcript(self.session, _CleanCfg(self.scf)))
 
+    def test_name_corrections_applied_whole_word_and_case_insensitive(self):
+        self.scf.write_text(json.dumps({
+            "corrections": {"mysteria": "Mysteria", "aberrancy": "Aberrency"}}))
+        self._write("a.json", [
+            {"start": 0.0, "end": 1.0, "text": "misread MYSTERIA and aberrancy here"},
+            {"start": 1.0, "end": 2.0, "text": "the mysterialand estate"},  # no \b -> untouched
+        ])
+        clean_transcript(self.session, _CleanCfg(self.scf))
+        segs = self._segs("a.json")
+        self.assertEqual(segs[0]["text"], "misread Mysteria and Aberrency here")
+        self.assertEqual(segs[1]["text"], "the mysterialand estate",
+                         "substring inside a longer word must not be replaced")
+
+    def test_corrections_are_idempotent(self):
+        self.scf.write_text(json.dumps({"corrections": {"baz": "Bazyn"}}))
+        self._write("a.json", [{"start": 0.0, "end": 1.0, "text": "baz says hi"}])
+        clean_transcript(self.session, _CleanCfg(self.scf))
+        clean_transcript(self.session, _CleanCfg(self.scf))
+        self.assertEqual(self._segs("a.json")[0]["text"], "Bazyn says hi")
+
+
+class CorrectionMatching(unittest.TestCase):
+    """The whole-word, case-insensitive, longest-first replacement rule."""
+
+    def _fix(self, text, corrections):
+        from pipeline.transcribe.clean_transcription import (
+            compile_corrections, apply_corrections)
+        pat, lookup = compile_corrections(corrections)
+        return apply_corrections(text, pat, lookup)[0]
+
+    def test_empty_map_is_a_noop(self):
+        self.assertEqual(self._fix("anything", {}), "anything")
+
+    def test_case_insensitive_match_verbatim_replacement(self):
+        for given in ("mysteria", "Mysteria", "MYSTERIA"):
+            self.assertEqual(self._fix(given, {"mysteria": "Mysteria"}), "Mysteria")
+
+    def test_word_boundary_protects_longer_words(self):
+        self.assertEqual(self._fix("bazaar", {"baz": "Bazyn"}), "bazaar")
+        self.assertEqual(self._fix("baz", {"baz": "Bazyn"}), "Bazyn")
+
+    def test_longest_key_wins(self):
+        corr = {"baz": "Bazyn", "baz points": "Dave Points"}
+        self.assertEqual(self._fix("baz points scored", corr), "Dave Points scored")
+
+    def test_multiword_key(self):
+        self.assertEqual(self._fix("the city knights win",
+                                   {"city knights": "City Knights"}),
+                         "the City Knights win")
+
 
 if __name__ == "__main__":
     unittest.main()

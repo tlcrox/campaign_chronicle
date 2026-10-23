@@ -13,7 +13,8 @@ from unittest import mock
 from pathlib import Path
 
 
-from pipeline.common.sessions import media_files, find_sessions, NoSessionsError  # noqa: E402
+from pipeline.common.sessions import (  # noqa: E402
+    media_files, find_sessions, detect_audio_source, NoSessionsError)
 
 
 class MediaFiles(unittest.TestCase):
@@ -91,6 +92,64 @@ class MediaFiles(unittest.TestCase):
 
     def test_missing_directory_is_empty_not_an_error(self):
         self.assertEqual(media_files(self.root / "nope", {".wav"}), [])
+
+
+class DetectAudioSource(unittest.TestCase):
+    """Classifying a session by what media it holds."""
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.root = Path(self.tmp.name)
+
+    def _touch(self, rel):
+        p = self.root / rel
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_bytes(b"")
+        return p
+
+    def test_audacity_exports_are_found_under_the_project_dir(self):
+        self._touch("2026-09-18.mkv")                       # session video
+        self._touch("craig.aup/x_data/1-alice.flac")
+        self._touch("craig.aup/x_data/2-bob.flac")
+        kind, files = detect_audio_source(self.root)
+        self.assertEqual(kind, "audacity")
+        self.assertEqual(sorted(f.name for f in files),
+                         ["1-alice.flac", "2-bob.flac"])
+
+    def test_a_screen_capture_video_is_not_an_audacity_export(self):
+        """A .mkv in a tool/screens subfolder must not be collected as export
+        audio: it drags the exports' common parent up to the session root, and
+        transcribe then drops the subdir narrowing and falls back to the root
+        video — the Audacity audio silently ignored. (Week 18 live regression.)"""
+        self._touch("2026-09-18.mkv")
+        self._touch("craig.aup/x_data/1-alice.flac")
+        self._touch("tool/screens/2026-09-18 20-43-55.mkv")
+        kind, files = detect_audio_source(self.root)
+        self.assertEqual(kind, "audacity")
+        self.assertEqual([f.name for f in files], ["1-alice.flac"])
+        # The exports' common parent stays inside the project dir.
+        import os
+        parent = Path(os.path.commonpath([str(f.parent) for f in files]))
+        self.assertNotEqual(parent, self.root)
+
+    def test_standalone_audio_without_a_project(self):
+        self._touch("session.wav")
+        kind, files = detect_audio_source(self.root)
+        self.assertEqual(kind, "standalone")
+        self.assertEqual([f.name for f in files], ["session.wav"])
+
+    def test_video_only(self):
+        self._touch("only.mp4")
+        kind, files = detect_audio_source(self.root)
+        self.assertEqual(kind, "video")
+        self.assertEqual(files, [])
+
+    def test_project_with_no_exports_falls_back_to_video(self):
+        self._touch("only.mkv")
+        (self.root / "craig.aup").mkdir()
+        kind, files = detect_audio_source(self.root)
+        self.assertEqual(kind, "video")
 
 
 class FindSessions(unittest.TestCase):

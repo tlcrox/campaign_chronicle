@@ -126,10 +126,18 @@ def detect_audio_source(session_dir: Path) -> Tuple[str, List[Path]]:
         # Look in expanded Audacity directories (craig/*, Issue_*/*, etc.)
         # These contain the exported audio from Audacity, sometimes several
         # levels down, hence the recursive walk.
+        #
+        # AUDIO_ONLY_EXTENSIONS, not AUDIO_EXTENSIONS: a per-speaker export is
+        # always a real audio file (Craig ships .flac), never a video container.
+        # The broad set would also pull in a screen-capture .mkv sitting in a
+        # tool/ or screens/ subfolder, and that stray then drags the exports'
+        # common parent up to the session root — which makes transcribe drop the
+        # subdir narrowing and fall back to the root video, i.e. the Audacity
+        # audio is silently ignored.
         for expanded_dir in session_dir.glob("*"):
             if expanded_dir.is_dir():
                 audio_files.extend(
-                    media_files(expanded_dir, AUDIO_EXTENSIONS, recursive=True))
+                    media_files(expanded_dir, AUDIO_ONLY_EXTENSIONS, recursive=True))
 
         if audio_files:
             return "audacity", audio_files

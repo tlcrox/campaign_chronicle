@@ -104,13 +104,29 @@ class ChapterLayout(_SessionCase):
         self.assertEqual(len(doc.inline_shapes), 2)
 
 
+def _anchors(doc):
+    """Every floating picture (``<wp:anchor>``) in the document. Floating images
+    are deliberately NOT inline_shapes — python-docx's inline_shapes counts only
+    ``<wp:inline>`` — so the inline layout is inspected through the anchor XML."""
+    return list(doc.element.body.iter(qn("wp:anchor")))
+
+
+def _extent_px(anchor):
+    ext = anchor.find(qn("wp:extent"))
+    return (int(ext.get("cx")) // EMU_PER_PX, int(ext.get("cy")) // EMU_PER_PX)
+
+
 class InlineLayout(_SessionCase):
-    def test_no_headings_and_no_scene_page_breaks(self):
+    """Inline = the picture floated into the flow, dialogue wrapping beside it."""
+
+    def test_no_headings_no_page_breaks_and_pictures_float(self):
         doc = self._build(layout="inline")
         self.assertEqual([p.text for p in doc.paragraphs if p.style.name.startswith("Heading")],
                          [])
         self.assertEqual(_page_breaks(doc), 1, "only the title page's break")
-        self.assertEqual(len(doc.inline_shapes), 2)
+        # Floating, so nothing inline; two anchored pictures instead.
+        self.assertEqual(len(doc.inline_shapes), 0)
+        self.assertEqual(len(_anchors(doc)), 2)
 
     def test_dialogue_is_the_same_in_both_layouts(self):
         chapter = [p.text for p in self._build().paragraphs
@@ -129,30 +145,36 @@ class InlineLayout(_SessionCase):
         self.assertEqual(kinds, ["Transcript",  # the document title
                                  "Alice", "picture", "Bob", "picture", "Alice"])
 
+    def test_text_wraps_beside_each_picture(self):
+        """A wrapSquare element is what makes dialogue flow beside the image
+        rather than only above and below it."""
+        doc = self._build(layout="inline")
+        for anchor in _anchors(doc):
+            self.assertIsNotNone(anchor.find(qn("wp:wrapSquare")),
+                                 "no wrap element -> text would not flow beside it")
+
     def test_width_only_keeps_the_aspect_ratio(self):
         doc = self._build(layout="inline", width_px=320, height_px=0)
-        for shape in doc.inline_shapes:
-            self.assertEqual(shape.width, 320 * EMU_PER_PX)
-            self.assertEqual(shape.height, 320 * EMU_PER_PX, "1x1 source stays square")
+        for anchor in _anchors(doc):
+            self.assertEqual(_extent_px(anchor), (320, 320), "1x1 source stays square")
 
     def test_both_dimensions_scale_to_that_box(self):
         doc = self._build(layout="inline", width_px=320, height_px=180)
-        for shape in doc.inline_shapes:
-            self.assertEqual((shape.width, shape.height),
-                             (Px(320), Px(180)))
+        for anchor in _anchors(doc):
+            self.assertEqual(_extent_px(anchor), (320, 180))
 
-    def test_alignment_is_applied_to_the_picture_paragraph(self):
-        expected = {"left": WD_ALIGN_PARAGRAPH.LEFT,
-                    "center": WD_ALIGN_PARAGRAPH.CENTER,
-                    "right": WD_ALIGN_PARAGRAPH.RIGHT}
-        for align, want in expected.items():
+    def test_alignment_places_and_wraps_the_float(self):
+        # align -> (anchor horizontal alignment, which side the text wraps on)
+        expected = {"left": "right", "center": "bothSides", "right": "left"}
+        for align, wrap_side in expected.items():
             with self.subTest(align=align):
-                doc = self._build(layout="inline", align=align)
-                picture_paragraphs = [p for p in doc.paragraphs
-                                      if p._element.findall(".//" + qn("w:drawing"))]
-                self.assertEqual(len(picture_paragraphs), 2)
-                for p in picture_paragraphs:
-                    self.assertEqual(p.alignment, want)
+                anchors = _anchors(self._build(layout="inline", align=align))
+                self.assertEqual(len(anchors), 2)
+                for anchor in anchors:
+                    self.assertEqual(
+                        anchor.find(qn("wp:positionH")).find(qn("wp:align")).text, align)
+                    self.assertEqual(
+                        anchor.find(qn("wp:wrapSquare")).get("wrapText"), wrap_side)
 
 
 class LayoutConfigIsValidatedAtLoad(_SessionCase):

@@ -59,6 +59,11 @@ class TranscriptionSource:
     in_subdir: Optional[Path] = None
     # Video speakers come from diarization (SPEAKER_XX), so it must be enabled.
     needs_diarization: bool = False
+    # Each file already IS one speaker (Audacity per-player exports), named from
+    # its filename. Diarizing it is wasted work — and worse, splits the single
+    # speaker into SPEAKER_XX that map_speakers then has to overwrite — so the
+    # whisper.diarize flag is ignored for this source regardless of config.
+    one_speaker_per_file: bool = False
 
 
 def _audacity_export_subdir(session_dir: Path, audio_files: List[Path]) -> Optional[Path]:
@@ -96,6 +101,7 @@ def discover_source(session_dir: Path) -> Optional[TranscriptionSource]:
             files=audio_files,
             label="per-speaker audio file",
             in_subdir=_audacity_export_subdir(session_dir, audio_files),
+            one_speaker_per_file=True,
         )
 
     if audio_source == "standalone":
@@ -159,6 +165,27 @@ def run(session_dir: Path, config=None, dry_run: bool = False) -> bool:
 
     logger.info(f"  → Running WhisperX transcription...")
     env_vars = whisper_env(config)
+    if src.one_speaker_per_file:
+        # Each file is one speaker and mostly silence while the others talk. Two
+        # whisper settings backfire on that shape and are overridden here whatever
+        # the config says:
+        #   diarize  — pointless (the file is one speaker) and it splits that
+        #              speaker into SPEAKER_XX that map_speakers must overwrite.
+        #   hotwords — faster-whisper injects them into the decoder prompt on
+        #              every chunk; across the long silences of a per-speaker
+        #              track the decoder has no acoustics to go on and echoes the
+        #              hint terms, producing name-salad hallucinations
+        #              ("Arlin, Shara, Hako, Jenick."). Names here are recovered
+        #              by the filename->character mapping and the corrections map,
+        #              so hotwords are low-benefit and high-harm on this source.
+        if env_vars.get("WHISPER_DIARIZE") == "true":
+            logger.info("  diarization disabled: one speaker per file "
+                        "(ignoring whisper.diarize for this source)")
+            env_vars["WHISPER_DIARIZE"] = "false"
+        if env_vars.get("WHISPER_HOTWORDS"):
+            logger.info("  hotwords disabled: one speaker per file "
+                        "(prevents silence-hallucination of hint terms)")
+            env_vars["WHISPER_HOTWORDS"] = ""
     env_vars.update(dir_env)
     logger.info(f"  input (ro):  {session_dir.resolve()}")
     logger.info(f"  output:      {out_dir}")

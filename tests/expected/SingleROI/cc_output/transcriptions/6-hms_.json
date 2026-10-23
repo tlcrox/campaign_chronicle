@@ -9,8 +9,7 @@
           "word": "Yeah.",
           "start": 19.581,
           "end": 19.799,
-          "score": 0.533,
-          "speaker": "SPEAKER_00"
+          "score": 0.533
         }
       ],
       "avg_logprob": -0.07963053385416667,
@@ -22,8 +21,7 @@
       "word": "Yeah.",
       "start": 19.581,
       "end": 19.799,
-      "score": 0.533,
-      "speaker": "SPEAKER_00"
+      "score": 0.533
     }
   ],
   "language": "en"

@@ -347,9 +347,14 @@ class StoryboardEmbedsBothFormats(unittest.TestCase):
         return csv_path, transcript, images, base / "out.docx"
 
     def test_images_are_embedded_in_each_format(self):
+        # Pin the chapter layout: this test is about image bytes embedding for
+        # each format (where webp would fail), not placement. Chapter uses inline
+        # drawings, so inline_shapes is the count; the inline layout floats them
+        # (no inline_shapes) and is covered in test_storyboard_layout.
         for ext in FORMATS:
             csv_path, transcript, images, out = self._session(ext)
-            generate_storyboard(str(csv_path), str(transcript), str(images), str(out))
+            generate_storyboard(str(csv_path), str(transcript), str(images), str(out),
+                                layout="chapter")
             self.assertTrue(out.exists(), f"{ext}: no document written")
             self.assertEqual(len(Document(str(out)).inline_shapes), 2,
                              f"{ext}: both scene images should be embedded")

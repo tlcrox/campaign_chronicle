@@ -381,12 +381,13 @@ python -m pipeline.merge.storyboard <scene_dir> <session_text>
 document. `chapter` (default) gives one scene per page — page break, a
 "Scene NN-NNN" heading Word can build a table of contents from, and the
 picture at `merge.images.width` inches. `inline` drops the headings and page
-breaks and sets a small picture in the flow of dialogue at the scene's start
-time, `merge.images.inline.width_px` × `height_px` pixels (one of them keeps
-the aspect ratio; both scale to that box) with paragraph alignment
-`merge.images.inline.align` (left, center, right). The dialogue paragraphs
-are the same in both layouts. Bad values fail at config load with the rest
-of the validation report.
+breaks and *floats* a small picture into the flow of dialogue at the scene's
+start time, so the dialogue wraps beside it — `merge.images.inline.width_px` ×
+`height_px` pixels (one of them keeps the aspect ratio; both scale to that box),
+anchored to `merge.images.inline.align` (left, center, right) with the text
+wrapping on the opposite side (both sides when centred). The dialogue text is
+the same in both layouts. Bad values fail at config load with the rest of the
+validation report.
 
 The document is named for its layout — `<session>_storyboard.docx` for
 chapter, `<session>_inline.docx` for inline — so both can be built into one

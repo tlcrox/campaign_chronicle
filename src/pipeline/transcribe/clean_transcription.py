@@ -23,13 +23,41 @@ Importable API:
 
 import json
 import logging
+import re
 from pathlib import Path
 
 from pipeline.common.mounts import output_dir_for, SESSION_OUTPUT_SUBDIR
-from pipeline.merge.combine_transcripts import is_filler, load_merge_speaker_data
+from pipeline.merge.combine_transcripts import (
+    is_filler, load_merge_speaker_data, load_name_corrections)
 from pipeline.transcribe.remove_hallucination import clean_segments, thresholds_from_config
 
 logger = logging.getLogger(__name__)
+
+
+def compile_corrections(corrections: dict):
+    """Return (pattern, lookup) for whole-word, case-insensitive replacement, or
+    (None, {}) when there is nothing to correct.
+
+    One alternation of all keys, longest first so a longer key wins over a prefix
+    of it, each \\b-bounded so "baz" fixes the word "baz" but never "bazaar". The
+    match is case-insensitive; the replacement is written verbatim from the map,
+    so "mysteria", "Mysteria" and "MYSTERIA" all become the exact cased value.
+    """
+    lookup = {str(k).lower(): str(v) for k, v in (corrections or {}).items()
+              if str(k).strip()}
+    if not lookup:
+        return None, {}
+    keys = sorted(lookup, key=len, reverse=True)
+    pattern = re.compile(r"\b(" + "|".join(re.escape(k) for k in keys) + r")\b",
+                         re.IGNORECASE)
+    return pattern, lookup
+
+
+def apply_corrections(text: str, pattern, lookup) -> tuple:
+    """Apply a compiled correction pattern to one string. Returns (text, n)."""
+    if not pattern or not text:
+        return text, 0
+    return pattern.subn(lambda m: lookup[m.group(0).lower()], text)
 
 
 def _confidence_enabled(config) -> bool:
@@ -61,13 +89,15 @@ def clean_transcript(session_dir: Path, config, dry_run: bool = False) -> bool:
     conf_enabled = _confidence_enabled(config)
     thresholds = thresholds_from_config(config) if conf_enabled else None
     _, filler_phrases = load_merge_speaker_data(config)
+    corr_pattern, corr_lookup = compile_corrections(load_name_corrections(config))
 
     logger.info(
         f"  → Cleaning transcripts "
         f"(confidence pass {'ON' if conf_enabled else 'off'}, "
-        f"{len(filler_phrases)} filler phrase(s))..."
+        f"{len(filler_phrases)} filler phrase(s), "
+        f"{len(corr_lookup)} name correction(s))..."
     )
-    total_before = total_after = 0
+    total_before = total_after = total_corrected = 0
     for transcript_file in transcript_files:
         try:
             with open(transcript_file, 'r', encoding='utf-8') as f:
@@ -85,6 +115,12 @@ def clean_transcript(session_dir: Path, config, dry_run: bool = False) -> bool:
             s for s in segments
             if not is_filler(s.get('text', '').strip(), filler_phrases)
         ]                                                            # Pass B
+        if corr_pattern is not None:                                 # Pass C
+            for s in segments:
+                fixed, n = apply_corrections(s.get('text', ''), corr_pattern, corr_lookup)
+                if n:
+                    s['text'] = fixed
+                    total_corrected += n
 
         data['segments'] = segments
         if not dry_run:
@@ -97,6 +133,6 @@ def clean_transcript(session_dir: Path, config, dry_run: bool = False) -> bool:
 
     logger.info(
         f"  ✓ Cleaned transcripts: {total_before} -> {total_after} segment(s) "
-        f"({total_before - total_after} dropped)"
+        f"({total_before - total_after} dropped, {total_corrected} name fix(es))"
     )
     return True

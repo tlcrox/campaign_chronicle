@@ -9,15 +9,13 @@
           "word": "I'm",
           "start": 7.23,
           "end": 7.292,
-          "score": 0.003,
-          "speaker": "SPEAKER_00"
+          "score": 0.003
         },
         {
           "word": "here.",
           "start": 7.312,
           "end": 7.539,
-          "score": 0.704,
-          "speaker": "SPEAKER_00"
+          "score": 0.704
         }
       ],
       "avg_logprob": -0.11025390625,
@@ -44,15 +42,13 @@
       "word": "I'm",
       "start": 7.23,
       "end": 7.292,
-      "score": 0.003,
-      "speaker": "SPEAKER_00"
+      "score": 0.003
     },
     {
       "word": "here.",
       "start": 7.312,
       "end": 7.539,
-      "score": 0.704,
-      "speaker": "SPEAKER_00"
+      "score": 0.704
     },
     {
       "word": "Okay.",

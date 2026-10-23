@@ -14,11 +14,14 @@ CLI:
     python3 -m pipeline.merge.storyboard <scene_dir> <session_text>
 """
 
+import copy
 from typing import Any, Callable
 
 from docx import Document
 from docx.shared import Emu, Inches, Pt
 from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.oxml import OxmlElement
+from docx.oxml.ns import qn
 
 import pandas as pd
 import re
@@ -37,11 +40,10 @@ logger = logging.getLogger(__name__)
 # Word lays pictures out at 96 dpi: one CSS/screen pixel is 9525 EMU.
 EMU_PER_PX = 9525
 
-_ALIGNMENT = {
-    "left": WD_ALIGN_PARAGRAPH.LEFT,
-    "center": WD_ALIGN_PARAGRAPH.CENTER,
-    "right": WD_ALIGN_PARAGRAPH.RIGHT,
-}
+# Which side the dialogue wraps on, given where the picture is anchored. A
+# picture on the right leaves the text to its left, and vice versa; centred
+# lets text run down both sides.
+_WRAP_TEXT = {"left": "right", "right": "left", "center": "bothSides"}
 
 
 def Px(pixels) -> Emu:
@@ -223,18 +225,90 @@ def _add_scene_chapter(doc, cfg, video_idx, scene_num, image_path, first):
 
 
 def _add_scene_inline(doc, cfg, image_path):
-    """The picture in the flow of dialogue: no heading, no page break, its own
-    paragraph aligned per merge.images.inline.align, sized in pixels. Giving
-    one of width/height keeps the image's aspect ratio; giving both scales it
-    to exactly that box (python-docx stretches, it does not crop)."""
+    """The picture floated into the flow of dialogue: no heading, no page break.
+    The image is anchored to merge.images.inline.align (left/right/centre) and
+    the following dialogue wraps beside it, sized in pixels. Giving one of
+    width/height keeps the image's aspect ratio; giving both scales it to exactly
+    that box (python-docx stretches, it does not crop)."""
     width_px, height_px = cfg.inline_image_size_px
-    paragraph = doc.add_paragraph()
-    paragraph.alignment = _ALIGNMENT[cfg.inline_image_align]
-    paragraph.add_run().add_picture(
+    run = doc.add_paragraph().add_run()
+    _float_picture(
+        run,
         str(image_path),
         width=Px(width_px) if width_px else None,
         height=Px(height_px) if height_px else None,
+        align=cfg.inline_image_align,
     )
+
+
+def _float_picture(run, image_path, width, height, align):
+    """Embed a picture as a floating anchor so text wraps beside it.
+
+    python-docx only writes inline drawings (``<wp:inline>``), where the image
+    is a character in the line and text can only sit above and below it. Wrapping
+    text *beside* a picture needs ``<wp:anchor>`` with a wrap element, which the
+    library has no API for. So we let ``add_picture`` build the inline drawing —
+    that resolves the size and creates the image relationship — then rewrite its
+    single ``<wp:inline>`` child into a ``<wp:anchor>``, carrying the resolved
+    ``extent``, ``docPr`` and ``graphic`` across unchanged and adding the
+    position and wrap the anchor form requires.
+    """
+    inline = run.add_picture(image_path, width=width, height=height)._inline
+    drawing = inline.getparent()
+
+    extent = copy.deepcopy(inline.find(qn("wp:extent")))
+    doc_pr = copy.deepcopy(inline.find(qn("wp:docPr")))
+    frame_pr = inline.find(qn("wp:cNvGraphicFramePr"))
+    frame_pr = copy.deepcopy(frame_pr) if frame_pr is not None else None
+    graphic = copy.deepcopy(inline.find(qn("a:graphic")))
+
+    anchor = OxmlElement("wp:anchor")
+    for name, value in {
+        # distL/distR are the gap Word keeps between the image and the wrapped
+        # text (0.125"); the rest are the anchor defaults Word itself writes.
+        "distT": "0", "distB": "0", "distL": "114300", "distR": "114300",
+        "simplePos": "0", "relativeHeight": "251658240", "behindDoc": "0",
+        "locked": "0", "layoutInCell": "1", "allowOverlap": "1",
+    }.items():
+        anchor.set(name, value)
+
+    simple_pos = OxmlElement("wp:simplePos")
+    simple_pos.set("x", "0")
+    simple_pos.set("y", "0")
+    anchor.append(simple_pos)
+
+    position_h = OxmlElement("wp:positionH")
+    position_h.set("relativeFrom", "margin")
+    h_align = OxmlElement("wp:align")
+    h_align.text = align
+    position_h.append(h_align)
+    anchor.append(position_h)
+
+    position_v = OxmlElement("wp:positionV")
+    position_v.set("relativeFrom", "paragraph")
+    v_offset = OxmlElement("wp:posOffset")
+    v_offset.text = "0"
+    position_v.append(v_offset)
+    anchor.append(position_v)
+
+    anchor.append(extent)
+    effect_extent = OxmlElement("wp:effectExtent")
+    for edge in ("l", "t", "r", "b"):
+        effect_extent.set(edge, "0")
+    anchor.append(effect_extent)
+
+    wrap = OxmlElement("wp:wrapSquare")
+    wrap.set("wrapText", _WRAP_TEXT[align])
+    anchor.append(wrap)
+
+    anchor.append(doc_pr)
+    if frame_pr is not None:
+        anchor.append(frame_pr)
+    anchor.append(graphic)
+
+    drawing.remove(inline)
+    drawing.append(anchor)
+    return anchor
 
 
 def _flush_speaker_entries(entries, entry_idx, doc, is_json, stop_at=None):

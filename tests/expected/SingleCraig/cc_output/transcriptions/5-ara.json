@@ -9,15 +9,13 @@
           "word": "Don't",
           "start": 3.312,
           "end": 3.537,
-          "score": 0.813,
-          "speaker": "SPEAKER_00"
+          "score": 0.813
         },
         {
           "word": "miss.",
           "start": 3.598,
           "end": 3.823,
-          "score": 0.87,
-          "speaker": "SPEAKER_00"
+          "score": 0.87
         }
       ],
       "avg_logprob": -0.043017578125,
@@ -29,15 +27,13 @@
       "word": "Don't",
       "start": 3.312,
       "end": 3.537,
-      "score": 0.813,
-      "speaker": "SPEAKER_00"
+      "score": 0.813
     },
     {
       "word": "miss.",
       "start": 3.598,
       "end": 3.823,
-      "score": 0.87,
-      "speaker": "SPEAKER_00"
+      "score": 0.87
     }
   ],
   "language": "en"

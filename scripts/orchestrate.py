@@ -126,6 +126,30 @@ def run_merge_tools(session_dir: Path, config, dry_run: bool = False) -> bool:
     return True
 
 
+def run_merge_only(session_dir: Path, config, dry_run: bool = False) -> bool:
+    """Rebuild a session's deliverable from existing transcripts/scenes, after
+    re-applying speaker names — the recovery path for --merge-only.
+
+    The names are written into the per-source transcripts by the map_speakers
+    stage, not by the merge; a full run does that right after transcription. So a
+    session whose speaker_config.json only arrived AFTER transcription (or was
+    wrong at the time) merges with raw SPEAKER_XX and no names. Running
+    map_speakers here first stamps the names in place, so dropping in the config
+    and re-running --merge-only is enough — no re-transcribe.
+
+    map_speakers and clean_transcription are best-effort and idempotent: with no
+    config they are no-ops, and re-running them over already-processed transcripts
+    changes nothing. Running clean here is also what lets edited filler phrases or
+    name corrections in speaker_config.json be re-applied by a plain --merge-only,
+    no re-transcribe. The merge is what must succeed, so its result is returned.
+    """
+    logger.info(f"    Mapping speakers...")
+    map_speakers.run(session_dir, config=config, dry_run=dry_run)
+    logger.info(f"    Cleaning transcripts...")
+    clean_transcription.run(session_dir, config=config, dry_run=dry_run)
+    return run_merge_tools(session_dir, config, dry_run)
+
+
 
 
 def process_session(
@@ -362,7 +386,10 @@ def main():
     parser.add_argument(
         "--merge-only",
         action="store_true",
-        help="Skip processing, only run merge/combine step (requires existing outputs)"
+        help="Skip transcription/scene detection: re-map speaker names from "
+             "speaker_config.json, then merge/combine into the storyboard "
+             "(requires existing transcriptions/ and scenes). Use this to name a "
+             "session whose speaker config arrived late — no re-transcribe."
     )
     parser.add_argument(
         "--config",
@@ -426,7 +453,7 @@ def main():
         for session in sessions:
             try:
                 logger.info(f"  → Merging {session.name}...")
-                if run_merge_tools(session, cfg, args.dry_run):
+                if run_merge_only(session, cfg, args.dry_run):
                     logger.info(f"  ✓ {session.name} merged")
                     merged_count += 1
                 else:

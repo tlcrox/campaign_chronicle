@@ -9,36 +9,31 @@
           "word": "DCV",
           "start": 85.337,
           "end": 86.02,
-          "score": 0.722,
-          "speaker": "SPEAKER_00"
+          "score": 0.722
         },
         {
           "word": "12",
           "start": 86.321,
           "end": 86.582,
-          "score": 0.621,
-          "speaker": "SPEAKER_00"
+          "score": 0.621
         },
         {
           "word": "doesn't",
           "start": 86.662,
           "end": 87.003,
-          "score": 0.856,
-          "speaker": "SPEAKER_00"
+          "score": 0.856
         },
         {
           "word": "hit",
           "start": 87.063,
           "end": 87.264,
-          "score": 0.857,
-          "speaker": "SPEAKER_00"
+          "score": 0.857
         },
         {
           "word": "her.",
           "start": 87.304,
           "end": 87.425,
-          "score": 0.998,
-          "speaker": "SPEAKER_00"
+          "score": 0.998
         }
       ],
       "avg_logprob": -0.22833807901902634,
@@ -53,8 +48,7 @@
           "word": "Oh.",
           "start": 87.445,
           "end": 87.505,
-          "score": 0.329,
-          "speaker": "SPEAKER_00"
+          "score": 0.329
         }
       ],
       "avg_logprob": -0.22833807901902634,
@@ -66,43 +60,37 @@
       "word": "DCV",
       "start": 85.337,
       "end": 86.02,
-      "score": 0.722,
-      "speaker": "SPEAKER_00"
+      "score": 0.722
     },
     {
       "word": "12",
       "start": 86.321,
       "end": 86.582,
-      "score": 0.621,
-      "speaker": "SPEAKER_00"
+      "score": 0.621
     },
     {
       "word": "doesn't",
       "start": 86.662,
       "end": 87.003,
-      "score": 0.856,
-      "speaker": "SPEAKER_00"
+      "score": 0.856
     },
     {
       "word": "hit",
       "start": 87.063,
       "end": 87.264,
-      "score": 0.857,
-      "speaker": "SPEAKER_00"
+      "score": 0.857
     },
     {
       "word": "her.",
       "start": 87.304,
       "end": 87.425,
-      "score": 0.998,
-      "speaker": "SPEAKER_00"
+      "score": 0.998
     },
     {
       "word": "Oh.",
       "start": 87.445,
       "end": 87.505,
-      "score": 0.329,
-      "speaker": "SPEAKER_00"
+      "score": 0.329
     }
   ],
   "language": "en"

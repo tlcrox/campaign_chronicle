@@ -9,8 +9,7 @@
           "word": "Yes.",
           "start": 5.591,
           "end": 5.819,
-          "score": 0.993,
-          "speaker": "SPEAKER_00"
+          "score": 0.993
         }
       ],
       "avg_logprob": -0.10888671875,
@@ -25,8 +24,7 @@
           "word": "eyes.",
           "start": 217.232,
           "end": 217.42,
-          "score": 0.574,
-          "speaker": "SPEAKER_00"
+          "score": 0.574
         }
       ],
       "avg_logprob": -0.9322916666666666,
@@ -38,15 +36,13 @@
       "word": "Yes.",
       "start": 5.591,
       "end": 5.819,
-      "score": 0.993,
-      "speaker": "SPEAKER_00"
+      "score": 0.993
     },
     {
       "word": "eyes.",
       "start": 217.232,
       "end": 217.42,
-      "score": 0.574,
-      "speaker": "SPEAKER_00"
+      "score": 0.574
     },
     {
       "word": "Thank",

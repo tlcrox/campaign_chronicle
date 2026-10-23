@@ -40,12 +40,35 @@ whisper:
   #
   # --hotwords biases recognition for the WHOLE run. Proper nouns and jargon
   # belong here ("Mysteria", not "Mysterio" / "mystery").
+  #
+  # NOTE: hotwords are automatically SKIPPED for Audacity / one-speaker-per-file
+  # sources. Those per-speaker tracks are mostly silence (each player is quiet
+  # while others talk), and faster-whisper injects hotwords into the decoder on
+  # every chunk — so across the silences it echoes the hint terms as name-salad
+  # hallucinations ("Arlin, Shara, Hako, Jenick."). On those sources names are
+  # recovered by the filename->character mapping and speaker_config.json
+  # "corrections" instead. Hotwords still apply to video (single mixed track).
   hotwords_file: whisperx_hotwords.txt
   #
   # --initial_prompt seeds only the FIRST WINDOW, setting spelling and style
   # conventions ("DEX", not "decks"). Its influence fades over a long session,
   # so anything that must hold throughout belongs in hotwords_file instead.
+  #
+  # WRITE IT AS A SHORT SENTENCE, NOT A LIST OF NAMES. A comma-list of proper
+  # nouns here is the classic Whisper hallucination trigger: on a long silence
+  # the model has nothing to decode and echoes the prompt, chanting those names.
+  # Put proper nouns in hotwords_file (to bias) and in speaker_config.json
+  # "corrections" (to fix spelling deterministically) — not here.
   initial_prompt_file: whisperx_initial_prompt.txt
+
+  # Neither hotwords nor initial_prompt RELIABLY fixes the spelling of unusual
+  # proper names — they only bias recognition. For names you keep hand-correcting,
+  # add a deterministic wrong -> right map to speaker_config.json (same file as
+  # filename_mapping / filler_phrases), applied by the clean_transcription stage:
+  #   "corrections": { "aberrancy": "Aberrency", "misteria": "Mysteria" }
+  # Matching is whole-word and case-insensitive; the replacement is written as
+  # given. Edit the map and re-run `orchestrate.py --merge-only` to re-apply it
+  # (and any filler_phrases changes) without re-transcribing.
 
   # Hallucination cleanup (pipeline.transcribe.remove_hallucination). OPT-IN:
   # the thresholds below do nothing until enabled is true, so tuning them alone
@@ -132,9 +155,9 @@ merge:
     # How scene images sit in the document:
     #   chapter - one scene per page: page break, "Scene NN-NNN" heading (so
     #             Word can build a table of contents), picture `width` inches wide.
-    #   inline  - no headings, no page breaks. A small picture is set in the flow
-    #             of dialogue at the scene's start time, sized and aligned per
-    #             `inline` below.
+    #   inline  - no headings, no page breaks. A small picture is FLOATED into the
+    #             flow of dialogue at the scene's start time so the text wraps
+    #             beside it, sized and aligned per `inline` below.
     layout: chapter
 
     # Width for images in generated document (in inches) — chapter layout only
@@ -147,7 +170,8 @@ merge:
       # box (stretched, not cropped). 0 = not set.
       width_px: 320
       height_px: 0
-      # Paragraph alignment of the picture: left, center or right
+      # Which side to anchor the floating picture: left, center or right.
+      # Dialogue wraps on the opposite side (both sides when centered).
       align: right
 
   # Document formatting

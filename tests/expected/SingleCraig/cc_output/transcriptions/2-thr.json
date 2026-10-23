@@ -9,64 +9,55 @@
           "word": "Hopefully",
           "start": 42.222,
           "end": 42.462,
-          "score": 0.157,
-          "speaker": "SPEAKER_00"
+          "score": 0.157
         },
         {
           "word": "it's",
           "start": 42.482,
           "end": 42.603,
-          "score": 0.368,
-          "speaker": "SPEAKER_00"
+          "score": 0.368
         },
         {
           "word": "on",
           "start": 42.643,
           "end": 42.723,
-          "score": 0.456,
-          "speaker": "SPEAKER_00"
+          "score": 0.456
         },
         {
           "word": "your",
           "start": 42.743,
           "end": 42.823,
-          "score": 0.104,
-          "speaker": "SPEAKER_00"
+          "score": 0.104
         },
         {
           "word": "framework",
           "start": 42.843,
           "end": 43.163,
-          "score": 0.446,
-          "speaker": "SPEAKER_00"
+          "score": 0.446
         },
         {
           "word": "laptop",
           "start": 43.203,
           "end": 43.604,
-          "score": 0.839,
-          "speaker": "SPEAKER_00"
+          "score": 0.839
         },
         {
           "word": "and",
           "start": 43.644,
           "end": 43.704,
-          "score": 0.579,
-          "speaker": "SPEAKER_00"
+          "score": 0.579
         },
         {
           "word": "that's",
           "start": 43.724,
           "end": 43.904,
-          "score": 0.804,
-          "speaker": "SPEAKER_00"
+          "score": 0.804
         },
         {
           "word": "easy.",
           "start": 43.964,
           "end": 44.325,
-          "score": 0.849,
-          "speaker": "SPEAKER_00"
+          "score": 0.849
         }
       ],
       "avg_logprob": -0.10537574688593547,
@@ -81,50 +72,43 @@
           "word": "You",
           "start": 56.38,
           "end": 56.46,
-          "score": 0.18,
-          "speaker": "SPEAKER_00"
+          "score": 0.18
         },
         {
           "word": "got",
           "start": 56.48,
           "end": 56.62,
-          "score": 0.696,
-          "speaker": "SPEAKER_00"
+          "score": 0.696
         },
         {
           "word": "to",
           "start": 56.64,
           "end": 56.8,
-          "score": 0.568,
-          "speaker": "SPEAKER_00"
+          "score": 0.568
         },
         {
           "word": "get",
           "start": 56.82,
           "end": 57.501,
-          "score": 0.507,
-          "speaker": "SPEAKER_00"
+          "score": 0.507
         },
         {
           "word": "the",
           "start": 57.521,
           "end": 57.601,
-          "score": 0.886,
-          "speaker": "SPEAKER_00"
+          "score": 0.886
         },
         {
           "word": "season",
           "start": 57.621,
           "end": 57.922,
-          "score": 0.864,
-          "speaker": "SPEAKER_00"
+          "score": 0.864
         },
         {
           "word": "there.",
           "start": 57.942,
           "end": 58.082,
-          "score": 0.834,
-          "speaker": "SPEAKER_00"
+          "score": 0.834
         }
       ],
       "avg_logprob": -0.10537574688593547,
@@ -139,29 +123,25 @@
           "word": "that",
           "start": 83.594,
           "end": 83.737,
-          "score": 0.257,
-          "speaker": "SPEAKER_00"
+          "score": 0.257
         },
         {
           "word": "you",
           "start": 83.757,
           "end": 83.88,
-          "score": 0.837,
-          "speaker": "SPEAKER_00"
+          "score": 0.837
         },
         {
           "word": "were",
           "start": 83.9,
           "end": 84.064,
-          "score": 0.785,
-          "speaker": "SPEAKER_00"
+          "score": 0.785
         },
         {
           "word": "getting",
           "start": 84.125,
           "end": 84.391,
-          "score": 0.789,
-          "speaker": "SPEAKER_00"
+          "score": 0.789
         }
       ],
       "avg_logprob": -0.15078125,
@@ -173,141 +153,121 @@
       "word": "Hopefully",
       "start": 42.222,
       "end": 42.462,
-      "score": 0.157,
-      "speaker": "SPEAKER_00"
+      "score": 0.157
     },
     {
       "word": "it's",
       "start": 42.482,
       "end": 42.603,
-      "score": 0.368,
-      "speaker": "SPEAKER_00"
+      "score": 0.368
     },
     {
       "word": "on",
       "start": 42.643,
       "end": 42.723,
-      "score": 0.456,
-      "speaker": "SPEAKER_00"
+      "score": 0.456
     },
     {
       "word": "your",
       "start": 42.743,
       "end": 42.823,
-      "score": 0.104,
-      "speaker": "SPEAKER_00"
+      "score": 0.104
     },
     {
       "word": "framework",
       "start": 42.843,
       "end": 43.163,
-      "score": 0.446,
-      "speaker": "SPEAKER_00"
+      "score": 0.446
     },
     {
       "word": "laptop",
       "start": 43.203,
       "end": 43.604,
-      "score": 0.839,
-      "speaker": "SPEAKER_00"
+      "score": 0.839
     },
     {
       "word": "and",
       "start": 43.644,
       "end": 43.704,
-      "score": 0.579,
-      "speaker": "SPEAKER_00"
+      "score": 0.579
     },
     {
       "word": "that's",
       "start": 43.724,
       "end": 43.904,
-      "score": 0.804,
-      "speaker": "SPEAKER_00"
+      "score": 0.804
     },
     {
       "word": "easy.",
       "start": 43.964,
       "end": 44.325,
-      "score": 0.849,
-      "speaker": "SPEAKER_00"
+      "score": 0.849
     },
     {
       "word": "You",
       "start": 56.38,
       "end": 56.46,
-      "score": 0.18,
-      "speaker": "SPEAKER_00"
+      "score": 0.18
     },
     {
       "word": "got",
       "start": 56.48,
       "end": 56.62,
-      "score": 0.696,
-      "speaker": "SPEAKER_00"
+      "score": 0.696
     },
     {
       "word": "to",
       "start": 56.64,
       "end": 56.8,
-      "score": 0.568,
-      "speaker": "SPEAKER_00"
+      "score": 0.568
     },
     {
       "word": "get",
       "start": 56.82,
       "end": 57.501,
-      "score": 0.507,
-      "speaker": "SPEAKER_00"
+      "score": 0.507
     },
     {
       "word": "the",
       "start": 57.521,
       "end": 57.601,
-      "score": 0.886,
-      "speaker": "SPEAKER_00"
+      "score": 0.886
     },
     {
       "word": "season",
       "start": 57.621,
       "end": 57.922,
-      "score": 0.864,
-      "speaker": "SPEAKER_00"
+      "score": 0.864
     },
     {
       "word": "there.",
       "start": 57.942,
       "end": 58.082,
-      "score": 0.834,
-      "speaker": "SPEAKER_00"
+      "score": 0.834
     },
     {
       "word": "that",
       "start": 83.594,
       "end": 83.737,
-      "score": 0.257,
-      "speaker": "SPEAKER_00"
+      "score": 0.257
     },
     {
       "word": "you",
       "start": 83.757,
       "end": 83.88,
-      "score": 0.837,
-      "speaker": "SPEAKER_00"
+      "score": 0.837
     },
     {
       "word": "were",
       "start": 83.9,
       "end": 84.064,
-      "score": 0.785,
-      "speaker": "SPEAKER_00"
+      "score": 0.785
     },
     {
       "word": "getting",
       "start": 84.125,
       "end": 84.391,
-      "score": 0.789,
-      "speaker": "SPEAKER_00"
+      "score": 0.789
     }
   ],
   "language": "en"

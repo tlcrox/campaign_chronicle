@@ -35,6 +35,12 @@
     "waterloo": "Jhin"
   },
   "filler_phrases": ["thank you", "thanks", "hmm", "mm", "mmm", "you","Bye"],
+  "corrections": {
+    "comment": "Wrong -> right proper-name fixes WhisperX mis-hears. Whole-word, case-insensitive match; the value is written verbatim. --hotwords/--initial_prompt only bias recognition, so names you keep hand-correcting go here. Applied by the clean_transcription stage; edit and re-run `orchestrate.py --merge-only` to re-apply without re-transcribing.",
+    "sylis": "Sylas",
+    "fioria": "Fiora",
+    "a collie": "Akali"
+  },
   "use_embeddings": false,
   "confidence_threshold": 0.75,
   "notes": "Fill in the mapping arrays with your actual player names. Speaker IDs come from WhisperX diarization output."

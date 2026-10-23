@@ -83,6 +83,30 @@ def load_merge_speaker_data(cfg):
     return filename_mapping, filler_phrases
 
 
+def load_name_corrections(cfg) -> dict:
+    """Wrong -> right proper-name fixes from speaker_config.json "corrections".
+
+    A deterministic post-transcription find/replace — the reliable way to fix the
+    spelling of unusual proper names, which --hotwords / --initial_prompt only
+    bias and never guarantee. Lives beside filename_mapping and filler_phrases
+    because it is the same kind of per-source user data. Returns {} when absent.
+    """
+    try:
+        path = Path(cfg.speaker_config_file)
+    except Exception:
+        return {}
+    if not path.exists():
+        return {}
+    try:
+        # Hand-edited, so a cp1252 save must not be a traceback.
+        data = json.loads(read_text_lenient(path))
+    except (json.JSONDecodeError, IOError):
+        return {}
+    corrections = data.get("corrections") or {}
+    return {str(k): str(v) for k, v in corrections.items()
+            if str(k).strip() and str(k).lower() != "comment"}
+
+
 def speaker_from_filename(transcript_file, filename_mapping):
     """Resolve a per-speaker file's character name from a token in its filename
     (Workflow A / Audacity), falling back to a same-named audio file next to it.
